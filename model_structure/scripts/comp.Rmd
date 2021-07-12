@@ -1,0 +1,9 @@
+---
+title: Slow pool emission
+author: Sasha D. Hafner
+output: pdf_document
+date: 2020
+---
+
+
+

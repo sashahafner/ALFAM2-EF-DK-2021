@@ -1,0 +1,45 @@
+---
+title: Bootstrap estimation of overall median and 90%ile
+author: Sasha D. Hafner
+output: pdf_document
+date: August 2020
+---
+
+# Bootstrap settings
+Number of samples and one-tailed probability
+
+```{r}
+nsamp <- 10000
+p <- 0.9
+```
+
+# Sampling
+
+```{r}
+r1md <- r3md <- vector()
+r1v <- acid.pars$man.ph.r1
+r3v <- acid.pars$man.ph.r3
+
+for (i in 1:nsamp) {
+  s1 <- sample(r1v, replace = TRUE)
+  s3 <- sample(r3v, replace = TRUE)
+
+  r1md <- c(r1md, median(s1))
+  r3md <- c(r3md, median(s3))
+}
+```
+
+Check
+
+```{r}
+median(r1v)
+median(r3v)
+
+median(r1md)
+median(r3md)
+```
+
+```{r}
+quantile(r1md, 1:9/10)
+quantile(r3md, 1:9/10)
+```

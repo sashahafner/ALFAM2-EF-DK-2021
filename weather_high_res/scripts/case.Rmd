@@ -1,0 +1,262 @@
+---
+title: 'Case study, single day'
+output: pdf_document
+author: Sasha D. Hafner
+classoption: landscape
+date: June 2021
+---
+
+# Case 1
+
+```{r}
+ss <- subset(dath, date == '2018-04-15' & ct == 3)$sim[1]
+dc <- subset(dath, sim == ss)
+dc <- dc[order(dc$ct), ]
+```
+Use average inputs.
+```{r}
+dm <- dc[, 1:15]
+dm$wind.2m <- mean(dc$wind.2m)
+dm$air.temp <- mean(dc$air.temp)
+dm$rain.rate <- mean(dc$rain.rate)
+```
+
+```{r}
+preds <- ALFAM2mod(dm, pars = pars, app.name = 'tan.app', time.name = 'ct')
+dm <- cbind(dm, preds[, -1:-3])
+```
+
+```{r}
+ggplot(dc, aes(ct, er)) + geom_line() +
+  geom_line(data = dm, colour = 'red')
+ggplot(dc, aes(ct, j)) + geom_step() +
+  geom_step(data = dm, colour = 'red')
+ggplot(dc, aes(ct, air.temp)) + geom_step() +
+  geom_step(data = dm, colour = 'red')
+ggplot(dc, aes(ct, wind.2m)) + geom_step() +
+  geom_step(data = dm, colour = 'red')
+```
+
+# Case 2
+
+```{r}
+ss <- subset(dath, date == '2020-04-01' & ct == 3)$sim[1]
+dc <- subset(dath, sim == ss)
+dc <- dc[order(dc$ct), ]
+```
+Use average inputs.
+```{r}
+dm <- dc[, 1:15]
+dm$wind.2m <- mean(dc$wind.2m)
+dm$air.temp <- mean(dc$air.temp)
+dm$rain.rate <- mean(dc$rain.rate)
+```
+
+```{r}
+preds <- ALFAM2mod(dm, pars = pars, app.name = 'tan.app', time.name = 'ct')
+dm <- cbind(dm, preds[, -1:-3])
+```
+
+```{r}
+ggplot(dc, aes(ct, er)) + geom_line() +
+  geom_line(data = dm, colour = 'red')
+ggplot(dc, aes(ct, j)) + geom_step() +
+  geom_step(data = dm, colour = 'red')
+ggplot(dc, aes(ct, air.temp)) + geom_step() +
+  geom_step(data = dm, colour = 'red')
+ggplot(dc, aes(ct, wind.2m)) + geom_step() +
+  geom_step(data = dm, colour = 'red')
+```
+
+# Case 3. Random
+
+```{r}
+dc <- data.frame(ct = 1:168, wind.2m = rnorm(168, mean = 4, sd = 1), air.temp = rnorm(168, mean = 7, sd = 2), tan.app = 100)
+preds <- ALFAM2mod(dc, pars = pars, app.name = 'tan.app', time.name = 'ct')
+dc <- cbind(dc, preds[, -1:-3])
+```
+
+Average.
+
+```{r}
+dm <- data.frame(ct = 1:168, wind.2m = 4, air.temp = 7, tan.app = 100)
+preds <- ALFAM2mod(dm, pars = pars, app.name = 'tan.app', time.name = 'ct')
+dm <- cbind(dm, preds[, -1:-3])
+```
+
+```{r}
+ggplot(dc, aes(ct, er)) + geom_line() +
+  geom_line(data = dm, colour = 'red')
+ggplot(dc, aes(ct, j)) + geom_step() +
+  geom_step(data = dm, colour = 'red')
+ggplot(dc, aes(ct, air.temp)) + geom_step() +
+  geom_step(data = dm, colour = 'red')
+ggplot(dc, aes(ct, wind.2m)) + geom_step() +
+  geom_step(data = dm, colour = 'red')
+```
+
+# Case 4. Random but correlated
+
+```{r}
+dc <- data.frame(ct = 1:168, wind.2m = rnorm(168, mean = 4, sd = 1), tan.app = 100)
+dc$air.temp <- dc$wind.2m + 3 + rnorm(168, mean = 0, sd = 1)
+preds <- ALFAM2mod(dc, pars = pars, app.name = 'tan.app', time.name = 'ct')
+dc <- cbind(dc, preds[, -1:-3])
+```
+
+Average.
+
+```{r}
+dm <- data.frame(ct = 1:168, wind.2m = 4, air.temp = 7, tan.app = 100)
+preds <- ALFAM2mod(dm, pars = pars, app.name = 'tan.app', time.name = 'ct')
+dm <- cbind(dm, preds[, -1:-3])
+```
+
+```{r}
+ggplot(dc, aes(ct, er)) + geom_line() +
+  geom_line(data = dm, colour = 'red')
+ggplot(dc, aes(ct, j)) + geom_step() +
+  geom_step(data = dm, colour = 'red')
+ggplot(dc, aes(ct, air.temp)) + geom_step() +
+  geom_step(data = dm, colour = 'red')
+ggplot(dc, aes(ct, wind.2m)) + geom_step() +
+  geom_step(data = dm, colour = 'red')
+```
+
+# Case 4. Fixed diurnal
+
+```{r}
+ss <- subset(dath, date == '2018-04-15' & ct == 3)$sim[1]
+dc <- subset(dath, sim == ss & ct <= 24)
+dc <- dc[order(dc$ct), ]
+dc <- dc[, 1:15]
+dc <- dc[rep(1:nrow(dc), 7), ]
+dc$ct <- 1:nrow(dc) * 3
+preds <- ALFAM2mod(dc, pars = pars, app.name = 'tan.app', time.name = 'ct')
+dc <- cbind(dc, preds[, -1:-3])
+```
+
+Use average inputs.
+
+```{r}
+dm <- dc[, 1:15]
+dm$wind.2m <- mean(dc$wind.2m)
+dm$air.temp <- mean(dc$air.temp)
+dm$rain.rate <- mean(dc$rain.rate)
+```
+
+```{r}
+preds <- ALFAM2mod(dm, pars = pars, app.name = 'tan.app', time.name = 'ct')
+dm <- cbind(dm, preds[, -1:-3])
+```
+
+```{r}
+tail(dc$er)
+tail(dm$er)
+```
+
+```{r}
+ggplot(dc, aes(ct, er)) + geom_line() +
+  geom_line(data = dm, colour = 'red')
+ggplot(dc, aes(ct, j)) + geom_step() +
+  geom_step(data = dm, colour = 'red')
+ggplot(dc, aes(ct, air.temp)) + geom_step() +
+  geom_step(data = dm, colour = 'red')
+ggplot(dc, aes(ct, wind.2m)) + geom_step() +
+  geom_step(data = dm, colour = 'red')
+```
+
+# Case 5. Fixed diurnal but night application
+
+```{r}
+ss <- subset(dath, date == '2018-04-15' & ct == 3)$sim[1]
+dc <- subset(dath, sim == ss & ct <= 36 & ct >= 12)
+dc <- dc[order(dc$ct), ]
+dc <- dc[, 1:15]
+dc <- dc[rep(1:nrow(dc), 7), ]
+dc$ct <- 1:nrow(dc) * 3
+preds <- ALFAM2mod(dc, pars = pars, app.name = 'tan.app', time.name = 'ct')
+dc <- cbind(dc, preds[, -1:-3])
+```
+
+Use average inputs.
+
+```{r}
+dm <- dc[, 1:15]
+dm$wind.2m <- mean(dc$wind.2m)
+dm$air.temp <- mean(dc$air.temp)
+dm$rain.rate <- mean(dc$rain.rate)
+```
+
+```{r}
+preds <- ALFAM2mod(dm, pars = pars, app.name = 'tan.app', time.name = 'ct')
+dm <- cbind(dm, preds[, -1:-3])
+```
+
+```{r}
+tail(dc$er)
+tail(dm$er)
+```
+
+```{r}
+ggplot(dc, aes(ct, er)) + geom_line() +
+  geom_line(data = dm, colour = 'red')
+ggplot(dc, aes(ct, j)) + geom_step() +
+  geom_step(data = dm, colour = 'red')
+ggplot(dc, aes(ct, air.temp)) + geom_step() +
+  geom_step(data = dm, colour = 'red')
+ggplot(dc, aes(ct, wind.2m)) + geom_step() +
+  geom_step(data = dm, colour = 'red')
+```
+
+
+# Case 6. 2020
+
+In 2020 the mean response was about the same as the lowest 3 hourly curve. 
+Strange.
+
+```{r}
+head(dath, 2)
+x <- subset(dath, yr == 2020 & ct == 168)
+x <- x[order(x$er), ]
+dim(x)
+x$sim
+#155 lowest
+
+x <- subset(dath, sim == 155)
+y <- subset(datm, yr == 2020)
+ggplot(x, aes(ct, er)) + geom_line() + 
+  geom_line(data = y, aes(ct, er), colour = 'black', lwd = 1.5, alpha = 0.6)
+
+ggplot(x, aes(ct, j)) + geom_line() + 
+  geom_line(data = y, aes(ct, j), colour = 'black', lwd = 1.5, alpha = 0.6)
+
+ggplot(x, aes(ct, wind.2m)) + geom_line() + 
+  geom_line(data = y, aes(ct, wind.2m), colour = 'black', lwd = 1.5, alpha = 0.6)
+
+ggplot(x, aes(ct, air.temp)) + geom_line() + 
+  geom_line(data = y, aes(ct, air.temp), colour = 'black', lwd = 1.5, alpha = 0.6)
+
+ggplot(x, aes(ct, rain.rate)) + geom_line() + 
+  geom_line(data = y, aes(ct, rain.rate), colour = 'black', lwd = 1.5, alpha = 0.6)
+
+ggplot(x, aes(ct, r1)) + geom_line() + 
+  geom_line(data = y, aes(ct, r1), colour = 'black', lwd = 1.5, alpha = 0.6)
+
+ggplot(x, aes(ct, r2)) + geom_line() + 
+  geom_line(data = y, aes(ct, r2), colour = 'black', lwd = 1.5, alpha = 0.6, lty = 2)
+
+ggplot(x, aes(ct, r3)) + geom_line() + 
+  geom_line(data = y, aes(ct, r3), colour = 'black', lwd = 1.5, alpha = 0.6, lty = 2)
+
+ggplot(x, aes(ct, f0)) + geom_line() + 
+  geom_line(data = y, aes(ct, f0), colour = 'black', lwd = 1.5, alpha = 0.6, lty = 2)
+
+head(y)
+head(x)
+```
+
+
+
+
+

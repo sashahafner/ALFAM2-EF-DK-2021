@@ -1,0 +1,188 @@
+---
+title: Check ALFAM predictions
+author: Sasha D. Hafner
+output: pdf_document
+date: August 2020
+---
+
+# 1. Some bc plot with high emission
+Find broadcast plots with high predictions.
+
+```{r}
+pp <- unique(dpredl[!is.na(dpredl$er.pred) & dpredl$er.pred > 1 & dpredl$mod == 'ALFAM', 'pmid'])
+pp
+```
+```{r}
+x <- subset(dpredl, pmid == 488 & mod == 'ALFAM')
+x$er
+```
+
+```{r}
+plot(er ~ ct, data = x, type = 'l')
+plot(er.pred ~ ct, data = x, type = 'l')
+```
+
+```{r}
+x1 <- x[, c('ct', 'app.mthd.bsth', 'app.mthd.os', 'app.rate', 
+            'man.source', 'man.source.pig', 'incorp.none',
+            'man.dm', 'man.ph', 'man.tan', 'app.mthd', 
+            'wind.2m', 'air.temp', 'meas.tech.mm')]
+x1
+```
+
+```{r}
+pred1 <- ALFAM1mod(x1, time.name = 'ct')
+pred1
+```
+
+Try constant weather.
+
+```{r}
+x1c <- x1
+x1c$wind.2m <- 3
+x1c$air.temp <- 11
+```
+
+```{r}
+pred1c <- ALFAM1mod(x1c, time.name = 'ct')
+pred1c
+```
+
+Manual check for Nmax
+
+```{r}
+0.0495 * 1.0223^11 * 1.0417^3 * 1.108^9 * 0.828^2.2 * 0.996^19.7 * 11.3 * 0.578
+0.0495 * 1.0223^11 * 1.0417^3 * 1.108^9 * 0.828^2.2 * 0.996^19.7 * 0.578
+```
+```{r}
+exp(log(0.0495) + log(1.0223)*11 + log(1.0417)*3 + log(1.108)*9 + log(0.828)*2.2 + log(0.996)*19.7 + log(11.3) + log(0.578))
+c(log(0.0495), log(1.0223), log(1.0417), log(1.108), log(0.828), log(0.996), log(11.3), log(0.578))
+exp(-3.026 + 0.02205 * 11 + 0.04085 * 3 + 0.10256 * 9 - 0.1887 * 2.2 - 0.00401 * 19.7 + 2.425 - 0.548)
+```
+
+# 2. Max predicted bc emission
+Find max emission.
+
+```{r}
+dpredl[which.max(dpredl$er.pred), 'pmid']
+```
+
+```{r}
+x <- subset(dpredl, pmid == 1840 & mod == 'ALFAM')
+```
+
+```{r}
+plot(er ~ ct, data = x, type = 'l')
+plot(er.pred ~ ct, data = x, type = 'l')
+```
+
+```{r}
+x2 <- x[, c('ct', 'app.mthd.bsth', 'app.mthd.os', 'app.rate', 
+            'man.source', 'man.source.pig', 'incorp.none',
+            'man.dm', 'man.ph', 'man.tan', 'app.mthd', 
+            'wind.2m', 'air.temp', 'meas.tech.mm')]
+x2
+```
+
+```{r}
+pred2 <- ALFAM1mod(x2, time.name = 'ct')
+pred2
+```
+
+Try constant weather.
+
+```{r}
+x2c <- x2
+x2c$wind.2m <- 5
+x2c$air.temp <- 20
+```
+
+```{r}
+pred2c <- ALFAM1mod(x2c, time.name = 'ct')
+pred2c
+```
+
+# 3. More typical bsth
+
+```{r}
+dpredl[abs(dpredl$resid.er) < 0.05 & dpredl$mod == 'ALFAM' & dpredl$ct > 72, 'pmid'][1]
+```
+
+```{r}
+x <- subset(dpredl, pmid == 198 & mod == 'ALFAM')
+```
+
+```{r}
+plot(er ~ ct, data = x, type = 'l')
+plot(er.pred ~ ct, data = x, type = 'l')
+plot(resid.er ~ ct, data = x, type = 'l')
+```
+
+```{r}
+x3 <- x[, c('ct', 'app.mthd.bsth', 'app.mthd.os', 'app.rate', 
+            'man.source', 'man.source.pig', 'incorp.none',
+            'man.dm', 'man.ph', 'man.tan', 'app.mthd', 
+            'wind.2m', 'air.temp', 'meas.tech.mm')]
+x3
+```
+
+```{r}
+pred3 <- ALFAM1mod(x3, time.name = 'ct')
+pred3
+```
+
+Try constant weather.
+
+```{r}
+x3c <- x3
+x3c$wind.2m <- 3
+x3c$air.temp <- 9
+```
+
+```{r}
+pred3c <- ALFAM1mod(x3c, time.name = 'ct')
+pred3c
+```
+# 4. Some bc plot with low emission
+
+```{r}
+dpredl[dpredl$app.mthd == 'bc' & abs(dpredl$resid.er) < 0.05 & dpredl$mod == 'ALFAM' & dpredl$ct > 72, 'pmid'][1]
+```
+```{r}
+x <- subset(dpredl, pmid == 483 & mod == 'ALFAM')
+```
+
+```{r}
+plot(er ~ ct, data = x, type = 'l')
+plot(er.pred ~ ct, data = x, type = 'l')
+```
+
+```{r}
+x4 <- x[, c('ct', 'app.mthd.bsth', 'app.mthd.os', 'app.rate', 
+            'man.source', 'man.source.pig', 'incorp.none',
+            'man.dm', 'man.ph', 'man.tan', 'app.mthd', 
+            'wind.2m', 'air.temp')]
+x4
+```
+
+```{r}
+pred4 <- ALFAM1mod(x4, time.name = 'ct')
+pred4
+```
+
+Try constant weather.
+
+```{r}
+x4c <- x4
+x4c$wind.2m <- 2
+x4c$air.temp <- 20
+```
+
+
+```{r}
+pred4c <- ALFAM1mod(x4c, time.name = 'ct')
+pred4c
+```
+
+
+

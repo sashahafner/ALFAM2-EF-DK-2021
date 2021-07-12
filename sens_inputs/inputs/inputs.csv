@@ -1,0 +1,30 @@
+ID,Description,Reference,"Slurry type",,"Slurry DM","Slurry pH","Slurry TAN","Slurry treatment","Application rate","TAN application rate","Cereal height",Incorporation,"Incorporation time","Air temp.","Wind speed","Rain rate"
+,,,,,(%),,"(g/kg or g/L)",,(t/ha),(kg/ha),(cm),,(h),(°C),"(2 m, m/s)",(mm/h)
+sid,descrip,omit,man.source,man.source.pig,man.dm,man.ph,man.tan,man.treat1,app.rate,tan.app,cereal.hght,incorp,time.incorp,air.temp,wind.2m,rain.rate
+1,ref,0,cat,0,6,7.5,1.2,none,40,48,0,none,,13,2.7,0
+2,"low DM",0,cat,0,3,7.5,1.2,none,40,48,0,none,,13,2.7,0
+3,"high DM",0,cat,0,10,7.5,1.2,none,40,48,0,none,,13,2.7,0
+4,pig,0,pig,1,6,7.5,1.2,none,40,48,0,none,,13,2.7,0
+5,"low application",0,cat,0,6,7.5,1.2,none,5,6,0,none,,13,2.7,0
+6,"high application",0,cat,0,6,7.5,1.2,none,100,120,0,none,,13,2.7,0
+7,"shallow incorp",0,cat,0,6,7.5,1.2,none,40,48,0,shallow,3,13,2.7,0
+8,"deep incorp",0,cat,0,6,7.5,1.2,none,40,48,0,deep,3,13,2.7,0
+9,"shallow incorp quick",0,cat,0,6,7.5,1.2,none,40,48,0,shallow,0.167,13,2.7,0
+10,cold,0,cat,0,6,7.5,1.2,none,40,48,0,none,,0,2.7,0
+11,cool,0,cat,0,6,7.5,1.2,none,40,48,0,none,,7,2.7,0
+12,warm,0,cat,0,6,7.5,1.2,none,40,48,0,none,,20,2.7,0
+13,hot,0,cat,0,6,7.5,1.2,none,40,48,0,none,,35,2.7,0
+14,cooling,0,cat,0,6,7.5,1.2,none,40,48,0,none,,13,2.7,0
+15,warming,0,cat,0,6,7.5,1.2,none,40,48,0,none,,13,2.7,0
+16,still,0,cat,0,6,7.5,1.2,none,40,48,0,none,,13,0,0
+17,windy,0,cat,0,6,7.5,1.2,none,40,48,0,none,,13,10,0
+18,"light rain",0,cat,0,6,7.5,1.2,none,40,48,0,none,,13,2.7,1
+19,"moderate rain",0,cat,0,6,7.5,1.2,none,40,48,0,none,,13,2.7,5
+20,"heavy rain",0,cat,0,6,7.5,1.2,none,40,48,0,none,,13,2.7,15
+21,"pH 6.4",0,cat,0,6,6.4,1.2,none,40,48,0,none,,13,2.7,0
+22,"pH 6",0,cat,0,6,6,1.2,none,40,48,0,none,,13,2.7,0
+23,"tall cereal",0,cat,0,6,7.5,1.2,none,40,48,20,none,,13,2.7,0
+24,"low DM, high application, cold, still",0,cat,0,3,7.5,1.2,none,100,120,0,none,,0,0,0
+25,"high DM, low application, hot, windy",0,cat,0,10,7.5,1.2,none,5,6,0,none,,35,10,0
+26,"high DM, low application, hot, windy, pH 6",0,cat,0,10,6,1.2,none,5,6,0,none,,35,10,0
+27,best,0,cat,0,1,6,1.2,none,40,48,0,deep,0.167,0,2.7,0

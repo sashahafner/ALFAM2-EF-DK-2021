@@ -1,0 +1,846 @@
+
+> # Make subsets for modeling fitting
+> 
+> # Original counts
+> dim(d)
+[1] 30907   192
+
+> dim(ds)
+[1] 1899  161
+
+> # Drop plots with first dt > 24
+> longdt <- ds[ds$dt1 > 24, ]
+
+> d <- d[!d$pmid %in% longdt$pmid, ]
+
+> ds <- ds[!ds$pmid %in% longdt$pmid, ]
+
+> dim(d)
+[1] 30770   192
+
+> dim(ds)
+[1] 1802  161
+
+> # Find earliest time beyond 168 hr (but not longer than 200 hr) for each pmid
+> d <- as.data.frame(mutate(group_by(d, pmid), 
++ 			  ct.168 = sort(ct[ct >= 168 & ct < 200])[1],
++ 			  ct.72 = sort(ct[ct >= 72 & ct < 78])[1],
++ 			  ct.48 = sort(ct[ct >= 48 & ct < 72])[1],
++ 			  ct.24 = sort(ct[ct >= 24 & ct < 48])[1],
++ 			  ct.0 =  sort(ct[ct > 0 & ct < 24])[1],
++ 			  ct.max.200 = max(ct[ct < 200])[1],
++ 			  ct.max = max(ct))
++ )
+
+> # Set missing values (no ct > 72) to max ct below 78 hr
+> mean(is.na(d$ct.168))
+[1] 0.4754306
+
+> d$ct.168[is.na(d$ct.168)] <- d$ct.max.200[is.na(d$ct.168)]
+
+> mean(is.na(d$ct.168))
+[1] 0
+
+> mean(d$ct.168)
+[1] 136.176
+
+> median(d$ct.168)
+[1] 168
+
+> quantile(d$ct.168)
+      0%      25%      50%      75%     100% 
+  1.0167  95.2000 168.0000 168.0000 195.2000 
+
+> #-------------------------------------------------------------------------------------------------
+> # Subset 1
+> # Select pmid with data for all necessary variables
+> # Micromet only
+> # No acidification, no incorporation
+> # Manure pH not required
+> ds1 <- ds[!is.na(ds$e.24) &
++           !is.na(ds$app.mthd) &
++           !is.na(ds$man.dm) &
++           !is.na(ds$man.source) & 
++           !is.na(ds$air.temp.24) & 
++           !is.na(ds$wind.2m.24) & 
++           !is.na(ds$till) & 
++           !is.na(ds$incorp) & 
++           !is.na(ds$crop) & 
++           !ds$acid &
++           ds$incorp == 'none' &
++           ds$e.24 > 0 & 
++           ds$e.rel.24 < 1.0 &
++           ds$man.source %in% c('cat', 'pig') &
++           ds$man.dm <= 15 &
++           ds$app.mthd != 'pi' &
++           #ds$app.mthd != 'cs' &
++           ds$app.mthd != 'bss' &
++           ds$meas.tech2 == 'micro met' &
++           !ds$inst %in% c(102, 107, 108) & # Exclude AUN, old Swiss (IUL/FAT), and JTI
++           ds$pmid != 1526 & # See rows 1703 and 1728 and others in MU data. Check with Marco
++           ds$pmid != 1183 & # Closed slot negative emission
++           !grepl('Exclude data from analysis', ds$notes)
++           , ]
+
+> # These pmid will be retained (more trimming below)
+> pmid.keep <- ds1$pmid
+
+> # Drop obs with high 168 h emis (thinking of 1184 e.rel.72 1.10 for bsth!)
+> # More than 105% at 168 hr is too much
+> pmid.keep <- pmid.keep[!pmid.keep %in% unique(d[d$e.rel > 1.05 & d$ct == d$ct.168, 'pmid'])]
+
+> # Keep only those with > 10 plots
+> table(ds1$country)
+
+ CA  CH  DE  DK  FR  IE  IT  NL  NO  SE  UK  US 
+  7  45   1  89  11  49   1 223   0   0 109   0 
+
+> pmid.keep <- pmid.keep[pmid.keep %in% ds[ds$country %in% c('CH', 'DK', 'FR', 'IE', 'NL', 'UK'), 'pmid']]
+
+> # Main subset (trimmed below also)
+> d1 <- droplevels(d[d$pmid %in% pmid.keep & d$ct <= d$ct.168 & d$ct > 0, ])
+
+> ds1 <- droplevels(ds[ds$pmid %in% pmid.keep, ])
+
+> quantile(d1$ct.168, na.rm = TRUE)
+    0%    25%    50%    75%   100% 
+ 24.00  95.20 145.95 168.00 176.27 
+
+> range(d1$ct.168, na.rm = TRUE)
+[1]  24.00 176.27
+
+> # How many dropped?
+> dim(d)
+[1] 30770   199
+
+> dim(d1)
+[1] 6752  199
+
+> dim(ds)
+[1] 1802  161
+
+> dim(ds1)
+[1] 519 161
+
+> # Check number of plots per country
+> table(ds$country)
+
+ CA  CH  DE  DK  FR  IE  IT  NL  NO  SE  UK  US 
+219 168 197 297  25  68  83 282   9   1 451   2 
+
+> table(ds1$country)
+
+ CH  DK  FR  IE  NL  UK 
+ 45  87  11  49 218 109 
+
+> table(ds1$country, ds1$app.mthd)
+    
+     bsth  bc  ts  os  cs
+  CH   12  27   5   1   0
+  DK   53   9   0  17   8
+  FR    6   4   1   0   0
+  IE   18   8  23   0   0
+  NL    3 100  33  75   7
+  UK   63   0  46   0   0
+
+> table(ds1$inst, ds1$app.mthd)
+     
+      bsth bc ts os cs
+  104   19  9  0  0  0
+  106    3 43 29 32  4
+  202   63  0 46  0  0
+  204   10  0  0  7  0
+  205   24  0  0 10  8
+  207   12 27  5  1  0
+  208    6  4  1  0  0
+  210    0  3  0  0  0
+  212   18  8 23  0  0
+  214    0 54  4 43  3
+
+> table(ds1$country, ds1$man.source)
+    
+     cat pig
+  CH  41   4
+  DK  21  66
+  FR   7   4
+  IE  31  18
+  NL 177  41
+  UK  91  18
+
+> ### NTS!!!
+> ### For weighting, decide we need at least 5 obs per application mthd per country
+> ### Drop those that are too low
+> ##length(pmid.keep)
+> ##pmid.keep <- pmid.keep[!pmid.keep %in% d[(d$country == 'CH' & d$app.mthd == 'os') |
+> ##                                         (d$country == 'FR' & d$app.mthd == 'ts') |
+> ##                                         (d$country == 'NL' & d$app.mthd == 'bsth')
+> ##                                         , 'pmid']]
+> ##length(pmid.keep)
+> ### Lost 5 plots
+> 
+> # Look for missing values
+> dfsumm(d1[, c('e.int', 'app.mthd', 'man.dm', 'man.source', 'air.temp', 
++               'wind.2m', 'lwind', 'rain.rate', 'rain.cum', 'till', 'incorp', 'crop')])
+
+ 6752 rows and 12 columns
+ 6708 unique rows
+                     e.int app.mthd  man.dm man.source air.temp wind.2m   lwind rain.rate rain.cum     till incorp
+Class              numeric   factor numeric     factor  numeric numeric numeric   numeric  numeric  numeric factor
+Minimum              -2.99       bc       1        cat     -1.9  0.0423   -1.37         0        0        0   none
+Maximum               43.3       ts    13.6        pig     34.1    28.4    1.45       7.1     55.9        1   none
+Mean                  1.28     bsth     5.7        cat     12.8    2.97   0.377    0.0475     2.87 0.000296   none
+Unique (excld. NA)    4567        5     221          2      986    2048    2048       566      775        2      1
+Missing values           0        0       0          0        0       0       0         0        0        0      0
+Sorted               FALSE    FALSE   FALSE      FALSE    FALSE   FALSE   FALSE     FALSE    FALSE    FALSE   TRUE
+                        crop
+Class                 factor
+Minimum            bare soil
+Maximum              stubble
+Mean                  cereal
+Unique (excld. NA)         5
+Missing values             0
+Sorted                 FALSE
+
+> # None missing
+> 
+> # And drop all pmids that have one or more missing e.int
+> pmid.keep <- pmid.keep[!pmid.keep %in% d1[is.na(d1$e.int), 'pmid']]
+
+> length(pmid.keep)
+[1] 519
+
+> dim(d1)
+[1] 6752  199
+
+> d1 <- d1[d1$pmid %in% pmid.keep, ]
+
+> ds1 <- ds1[ds1$pmid %in% pmid.keep, ]
+
+> # How many dropped?
+> dim(d)
+[1] 30770   199
+
+> dim(d1)
+[1] 6752  199
+
+> dim(ds)
+[1] 1802  161
+
+> dim(ds1)
+[1] 519 161
+
+> # Save pmid for plotting subsets
+> pmid.cal1 <- pmid.keep
+
+> write.csv(pmid.cal1, '../output/pmid_cal1.csv', row.names = FALSE)
+
+> #-------------------------------------------------------------------------------------------------
+> # Subset 2
+> # No acidification 
+> # No incorporation
+> # Manure pH required
+> ds2 <- ds[!is.na(ds$e.24) &
++           !is.na(ds$app.mthd) &
++           !is.na(ds$man.dm) &
++           !is.na(ds$man.source) & 
++           !is.na(ds$air.temp.24) & 
++           !is.na(ds$wind.2m.24) & 
++           !is.na(ds$till) & 
++           !is.na(ds$incorp) & 
++           !is.na(ds$crop) & 
++           !is.na(ds$man.ph) & 
++           !ds$acid &
++           ds$incorp == 'none' &
++           ds$e.24 > 0 & 
++           ds$e.rel.24 < 1.0 &
++           ds$man.source %in% c('cat', 'pig') &
++           ds$man.dm <= 15 &
++           ds$app.mthd != 'pi' &
++           ds$app.mthd != 'cs' &
++           ds$app.mthd != 'bss' &
++           ds$meas.tech2 == 'micro met' &
++           !ds$inst %in% c(102, 107, 108) & # Exclude AUN, old Swiss (IUL/FAT), and JTI
++           ds$pmid != 1526 & # See rows 1703 and 1728 and others in MU data. Check with Marco
++           ds$pmid != 1183 & # Closed slot negative emission
++           !grepl('Exclude data from analysis', ds$notes)
++           , ]
+
+> # These pmid will be retained (more trimming below)
+> pmid.keep <- ds2$pmid
+
+> # Drop obs with high 168 h emis (thinking of 1184 e.rel.72 1.10 for bsth!)
+> # More than 105% at 168 hr is too much
+> pmid.keep <- pmid.keep[!pmid.keep %in% unique(d[d$e.rel > 1.05 & d$ct == d$ct.168, 'pmid'])]
+
+> # Keep only those with > 10 plots (drop CA, DE, IT)
+> table(ds2$country)
+
+ CA  CH  DE  DK  FR  IE  IT  NL  NO  SE  UK  US 
+  7  45   1  80   7  49   1 164   0   0 109   0 
+
+> pmid.keep <- pmid.keep[pmid.keep %in% ds[ds$country %in% c('CH', 'DK', 'FR', 'IE', 'NL', 'UK'), 'pmid']]
+
+> # Main subset (trimmed below also)
+> d$pmid.d2 <- d$pmid %in% pmid.keep
+
+> d2 <- droplevels(d[d$pmid %in% pmid.keep & d$ct <= d$ct.168 & d$ct > 0, ])
+
+> ds2 <- droplevels(ds[ds$pmid %in% pmid.keep, ])
+
+> quantile(d2$ct.168, na.rm = TRUE)
+    0%    25%    50%    75%   100% 
+ 24.00  95.00 145.40 168.00 176.27 
+
+> range(d2$ct.168, na.rm = TRUE)
+[1]  24.00 176.27
+
+> # How many dropped?
+> dim(d)
+[1] 30770   200
+
+> dim(d2)
+[1] 5514  200
+
+> dim(ds)
+[1] 1802  161
+
+> dim(ds2)
+[1] 449 161
+
+> # Check number of plots per country
+> table(ds$country)
+
+ CA  CH  DE  DK  FR  IE  IT  NL  NO  SE  UK  US 
+219 168 197 297  25  68  83 282   9   1 451   2 
+
+> table(ds2$country)
+
+ CH  DK  FR  IE  NL  UK 
+ 45  79   7  49 160 109 
+
+> table(ds2$country, ds2$app.mthd)
+    
+     bsth bc ts os
+  CH   12 27  5  1
+  DK   53  9  0 17
+  FR    2  4  1  0
+  IE   18  8 23  0
+  NL    3 69 22 66
+  UK   63  0 46  0
+
+> length(pmid.keep)
+[1] 449
+
+> # Look for missing values
+> dfsumm(d2[, c('e.int', 'app.mthd', 'man.dm', 'man.source', 'air.temp', 
++               'wind.2m', 'lwind', 'rain.rate', 'rain.cum', 'till', 'incorp', 'crop')])
+
+ 5514 rows and 12 columns
+ 5488 unique rows
+                     e.int app.mthd  man.dm man.source air.temp wind.2m   lwind rain.rate rain.cum     till incorp
+Class              numeric   factor numeric     factor  numeric numeric numeric   numeric  numeric  numeric factor
+Minimum              -2.99       bc       1        cat     -1.9  0.0423   -1.37         0        0        0   none
+Maximum                 23       ts    11.9        pig     32.1    28.4    1.45       4.4     55.9        1   none
+Mean                  1.19     bsth    5.62        cat     12.9    3.05    0.39    0.0446     1.88 0.000363   none
+Unique (excld. NA)    4017        4     199          2      979    2008    2008       558      729        2      1
+Missing values           0        0       0          0        0       0       0         0        0        0      0
+Sorted               FALSE    FALSE   FALSE      FALSE    FALSE   FALSE   FALSE     FALSE    FALSE    FALSE   TRUE
+                        crop
+Class                 factor
+Minimum            bare soil
+Maximum              stubble
+Mean                  cereal
+Unique (excld. NA)         5
+Missing values             0
+Sorted                 FALSE
+
+> # None missing
+> 
+> # And drop all pmids that have one or more missing e.int
+> pmid.keep <- pmid.keep[!pmid.keep %in% d2[is.na(d2$e.int), 'pmid']]
+
+> length(pmid.keep)
+[1] 449
+
+> dim(d2)
+[1] 5514  200
+
+> d2 <- d2[d2$pmid %in% pmid.keep, ]
+
+> ds2 <- ds2[ds2$pmid %in% pmid.keep, ]
+
+> # How many dropped?
+> dim(d)
+[1] 30770   200
+
+> dim(d2)
+[1] 5514  200
+
+> dim(ds)
+[1] 1802  161
+
+> dim(ds2)
+[1] 449 161
+
+> # Save pmid for plotting subsets
+> pmid.cal2 <- pmid.keep
+
+> write.csv(pmid.cal2, '../output/pmid_cal2.csv', row.names = FALSE)
+
+> #-------------------------------------------------------------------------------------------------
+> # Subset 2cs
+> # As with 2 but for closed slot *only*
+> # No acidification 
+> # No incorporation
+> # Manure pH required
+> # Drop "Unter" experiment closed slot results (see discussion on this in 21 May 2021 minutes)
+> ds2cs <- ds[!is.na(ds$e.24) &
++             !is.na(ds$app.mthd) &
++             !is.na(ds$man.dm) &
++             !is.na(ds$man.source) & 
++             !is.na(ds$air.temp.24) & 
++             !is.na(ds$wind.2m.24) & 
++             !is.na(ds$till) & 
++             !is.na(ds$incorp) & 
++             !is.na(ds$crop) & 
++             !is.na(ds$man.ph) & 
++             !ds$acid &
++             ds$incorp == 'none' &
++             ds$e.24 > 0 & 
++             ds$e.rel.24 < 1.0 &
++             ds$man.source %in% c('cat', 'pig') &
++             ds$man.dm <= 15 &
++             ds$app.mthd == 'cs' &
++             ds$meas.tech2 == 'micro met' &
++             !ds$inst %in% c(102, 107, 108) & # Exclude AUN, old Swiss (IUL/FAT), and JTI
++             ds$pmid != 1526 & # See rows 1703 and 1728 and others in MU data. Check with Marco
++             ds$pmid != 1183 & # Closed slot negative emission
++             !(grepl('^Unter', ds$exper) & ds$app.mthd == 'cs') &
++             !grepl('Exclude data from analysis', ds$notes)
++             , ]
+
+> # Add in SDU DTM results 
+> cspart <- ds[ds$inst == 211 & ds$app.mthd == 'cs', ]
+
+> ds2cs <- rbind(ds2cs, cspart)
+
+> # These pmid will be retained (more trimming below)
+> pmid.keep <- ds2cs$pmid
+
+> # Drop obs with high 168 h emis (thinking of 1184 e.rel.72 1.10 for bsth!)
+> # More than 105% at 168 hr is too much
+> pmid.keep <- pmid.keep[!pmid.keep %in% unique(d[d$e.rel > 1.05 & d$ct == d$ct.168, 'pmid'])]
+
+> # Main subset (trimmed below also)
+> d$pmid.d2cs <- d$pmid %in% pmid.keep
+
+> d2cs <- droplevels(d[d$pmid %in% pmid.keep & d$ct <= d$ct.168 & d$ct > 0, ])
+
+> ds2cs <- droplevels(ds[ds$pmid %in% pmid.keep, ])
+
+> quantile(d2cs$ct.168, na.rm = TRUE)
+    0%    25%    50%    75%   100% 
+46.533 46.750 93.200 93.500 95.200 
+
+> range(d2cs$ct.168, na.rm = TRUE)
+[1] 46.533 95.200
+
+> # How many dropped?
+> dim(d)
+[1] 30770   201
+
+> dim(d2cs)
+[1]  56 201
+
+> dim(ds)
+[1] 1802  161
+
+> dim(ds2cs)
+[1]   8 161
+
+> # Check number of plots per country
+> table(ds$country)
+
+ CA  CH  DE  DK  FR  IE  IT  NL  NO  SE  UK  US 
+219 168 197 297  25  68  83 282   9   1 451   2 
+
+> table(ds2cs$country)
+
+DK NL 
+ 4  4 
+
+> table(ds2cs$country, ds2cs$app.mthd)
+    
+     cs
+  DK  4
+  NL  4
+
+> length(pmid.keep)
+[1] 8
+
+> # Look for missing values
+> dfsumm(d2cs[, c('e.int', 'app.mthd', 'man.dm', 'man.source', 'air.temp', 
++               'wind.2m', 'lwind', 'rain.rate', 'rain.cum', 'till', 'incorp', 'crop')])
+
+ 56 rows and 12 columns
+ 56 unique rows
+                     e.int app.mthd  man.dm man.source air.temp wind.2m   lwind rain.rate rain.cum    till incorp
+Class              numeric   factor numeric     factor  numeric numeric numeric   numeric  numeric numeric factor
+Minimum                  0       cs     6.4        cat     3.72     0.8 -0.0969         0        0       0   none
+Maximum                0.5       cs    10.5        pig     25.7     6.5   0.813      1.54       23       0   none
+Mean                 0.106       cs    8.17        cat     13.8    3.03   0.427       0.1     2.22       0   none
+Unique (excld. NA)      33        1       5          2       49      39      39         9       11       1      1
+Missing values           0        0       0          0        0       0       0         0        0       0      0
+Sorted               FALSE     TRUE   FALSE      FALSE    FALSE   FALSE   FALSE     FALSE    FALSE    TRUE   TRUE
+                      crop
+Class               factor
+Minimum              grass
+Maximum            stubble
+Mean                 grass
+Unique (excld. NA)       2
+Missing values           0
+Sorted                TRUE
+
+> # None missing
+> 
+> # And drop all pmids that have one or more missing e.int
+> pmid.keep <- pmid.keep[!pmid.keep %in% d2cs[is.na(d2cs$e.int), 'pmid']]
+
+> length(pmid.keep)
+[1] 8
+
+> dim(d2cs)
+[1]  56 201
+
+> d2cs <- d2cs[d2cs$pmid %in% pmid.keep, ]
+
+> ds2cs <- ds2cs[ds2cs$pmid %in% pmid.keep, ]
+
+> # How many dropped?
+> dim(d)
+[1] 30770   201
+
+> dim(d2cs)
+[1]  56 201
+
+> dim(ds)
+[1] 1802  161
+
+> dim(ds2cs)
+[1]   8 161
+
+> # Save pmid for plotting subsets
+> pmid.cal2cs <- pmid.keep
+
+> write.csv(pmid.cal2cs, '../output/pmid_cal2cs.csv', row.names = FALSE)
+
+> #-------------------------------------------------------------------------------------------------
+> # 3rd subset, acidification only
+> # Acidification subset
+> # Do not need all predictor variables
+> # Subset based on most above criteria plus within these acid experiments
+> acid.exper <- unique(ds[ds$acid, c('inst', 'exper', 'exper.code')])
+
+> acid.exper.code <- acid.exper$exper.code
+
+> ds3 <- ds[!is.na(ds$e.24) & 
++           !is.na(ds$app.mthd) & 
++           !is.na(ds$incorp) & 
++           !is.na(ds$crop) & 
++           ds$e.24 > 0 & 
++           ds$e.rel.24 < 2 &
++           ds$man.dm <= 15 &
++           ds$app.mthd != 'pi' &
++           ds$app.mthd != 'cs' &
++           ds$meas.tech2 != 'chamber' &
++           ds$inst != 108 & 
++           ds$inst != 102 &
++           ds$inst != 211 & # Drop SDU
++           ds$pmid != 1526 & # See rows 1703 and 1728 and others in MU data. Check with Marco
++           ds$app.mthd != 'os' &
++           ds$exper.code %in%  acid.exper.code
++          , ]
+
+> ds3 <- droplevels(ds3)
+
+> pmid.keep <- ds3$pmid
+
+> table(ds3$country)
+
+DK NL 
+40 16 
+
+> table(ds3$inst)
+
+205 210 
+ 40  16 
+
+> # Limit to 168 hours
+> d3 <- d[d$pmid %in% pmid.keep & d$ct <= d$ct.168 & d$ct >= 0, ]
+
+> # Look for missing values
+> dfsumm(d3[, c('e.int', 'app.mthd', 'man.dm', 'man.source', 'air.temp', 
++               'wind.2m', 'till', 'incorp', 'crop')])
+
+ 379 rows and 9 columns
+ 375 unique rows
+                     e.int app.mthd  man.dm man.source air.temp wind.2m    till  incorp      crop
+Class              numeric   factor numeric     factor  numeric numeric numeric  factor    factor
+Minimum             -0.362       bc     1.9        cat      2.7   0.928       0    deep bare soil
+Maximum               32.8       ts    10.8     sludge     25.8    6.02       0 shallow   stubble
+Mean                  2.71      bss    6.88       mink     12.8    3.09       0    none     grass
+Unique (excld. NA)     364        2      22          2       94      93       1       1         2
+Missing values           0        0       0          0       64      64       0       0         0
+Sorted               FALSE    FALSE   FALSE      FALSE    FALSE   FALSE    TRUE    TRUE      TRUE
+
+> # Missing air temperature and wind, but does not matter here
+> 
+> table(ds3$exper, ds3$inst)
+         
+          205 210
+  IHF_13    0   4
+  IHF_6     0   2
+  IHF_7     0   2
+  SyreN    40   0
+  WIND_10   0   2
+  WIND_4    0   2
+  WIND_6    0   2
+  WIND_8    0   2
+
+> table(ds3$inst, ds3$date.start)
+     
+      1990-06-12 1990-06-26 1991-04-16 1991-05-14 1991-06-11 1991-07-09 1992-05-19 2010-04-22 2010-05-04 2010-05-18
+  205          0          0          0          0          0          0          0          8          8          8
+  210          2          2          2          2          2          2          4          0          0          0
+     
+      2010-06-02 2010-06-15
+  205          8          8
+  210          0          0
+
+> pmid.cal3 <- pmid.keep
+
+> write.csv(pmid.cal3, '../output/pmid_cal3.csv', row.names = FALSE)
+
+> #-------------------------------------------------------------------------------------------------
+> # 4th subset, incorporation experiments
+> incorp.exper <- unique(ds[ds$incorp != 'none', c('inst', 'exper', 'exper.code')])
+
+> incorp.exper.code <- incorp.exper$exper.code
+
+> d4 <- d[d$exper.code %in% incorp.exper.code & d$app.mthd != 'cs', ]
+
+> # Also drop some with high DM (Hansen's 2004 work)
+> # Exclude AUN, old Swiss (IUL/FAT), and JTI
+> ds4 <- droplevels(ds[ds$exper.code %in% incorp.exper.code & ds$app.mthd != 'cs' & ds$man.dm <= 15 & !ds$inst %in% c(102, 107, 108), ])
+
+> # Problem with missing app.mthd
+> ds4 <- ds4[!is.na(ds4$app.mthd), ]
+
+> table(ds4$exper.code, ds4$incorp, exclude = NULL)
+                     
+                      none shallow deep
+  208 DERVAL(44)_2011    2       2    0
+  208 LACHAP(44)_2011    2       2    0
+  208 LI_1994            2       2    0
+  208 NEU-2008           0       1    0
+  208 NEU-2009           0       1    0
+  209 INJ-09             0       0    1
+  209 SI-09              0       2    0
+  209 SI-10              0       0    1
+  209 SI-11              0       2    0
+  209 SIC-11             0       1    0
+  211 B1                 4       8    0
+  214 B1990-15           1       1    0
+  214 B1990-35           1       1    0
+  214 B1990-37           1       2    0
+  214 B1990-38           2       4    2
+  214 B1991-13           1       1    0
+  214 B1991-37           1       3    0
+  214 B1992-10           1       0    1
+  214 B1992-14           1       3    0
+  214 B1992-37           1       2    0
+  214 B1992-38           1       2    0
+  214 B1992-39           1       2    0
+  214 B1993-15           2       2    0
+  214 B1998-39           1       1    0
+  214 B1998-40           1       1    0
+
+> # Drop some with no comparison to 'none'
+> incorp.exper.code <- incorp.exper.code[incorp.exper.code %in% unique(ds4[ds4$incorp == 'none', 'exper.code'])]
+
+> d4 <- subset(d4, exper.code %in% incorp.exper.code)
+
+> ds4 <- droplevels(subset(ds4, exper.code %in% incorp.exper.code))
+
+> table(ds4$exper.code, ds4$incorp)
+                     
+                      none shallow deep
+  208 DERVAL(44)_2011    2       2    0
+  208 LACHAP(44)_2011    2       2    0
+  208 LI_1994            2       2    0
+  211 B1                 4       8    0
+  214 B1990-15           1       1    0
+  214 B1990-35           1       1    0
+  214 B1990-37           1       2    0
+  214 B1990-38           2       4    2
+  214 B1991-13           1       1    0
+  214 B1991-37           1       3    0
+  214 B1992-10           1       0    1
+  214 B1992-14           1       3    0
+  214 B1992-37           1       2    0
+  214 B1992-38           1       2    0
+  214 B1992-39           1       2    0
+  214 B1993-15           2       2    0
+  214 B1998-39           1       1    0
+  214 B1998-40           1       1    0
+
+> table(d4$exper.code, d4$incorp)
+                     
+                      deep none shallow
+  208 DERVAL(44)_2011    0  970     970
+  208 LACHAP(44)_2011    0 1016    1016
+  208 LI_1994            0 1406    1118
+  211 B1                 0   23      40
+  214 B1990-15           0    9       9
+  214 B1990-35           0    9       9
+  214 B1990-37           0    9      18
+  214 B1990-38          16   15      29
+  214 B1991-13           0    9       9
+  214 B1991-37           0    9      27
+  214 B1992-10           9    9       0
+  214 B1992-14           0    9      27
+  214 B1992-37           0    9      18
+  214 B1992-38           0    9      18
+  214 B1992-39           0    9      18
+  214 B1993-15           0   18      18
+  214 B1998-39           0    9       9
+  214 B1998-40           0    9       9
+
+> pmid.cal4 <- unique(ds4$pmid)
+
+> write.csv(pmid.cal4, '../output/pmid_cal4.csv', row.names = FALSE)
+
+> #-------------------------------------------------------------------------------------------------
+> # 5th subset, like 3rd acidification only but include SDU chamber results (inst 211)
+> acid.exper <- unique(ds[ds$acid, c('inst', 'exper', 'exper.code')])
+
+> acid.exper.code <- acid.exper$exper.code
+
+> ds5 <- ds[!is.na(ds$e.24) & 
++           !is.na(ds$app.mthd) & 
++           !is.na(ds$incorp) & 
++           !is.na(ds$crop) & 
++           ds$app.mthd != 'cs' &
++           ds$e.24 > 0 & 
++           ds$e.rel.24 < 2 &
++           ds$man.dm <= 15 &
++           ds$app.mthd != 'pi' &
++           ds$app.mthd != 'cs' &
++           ds$inst != 108 & 
++           ds$inst != 102 &
++           ds$pmid != 1526 & # See rows 1703 and 1728 and others in MU data. Check with Marco
++           ds$app.mthd != 'os' &
++           ds$exper.code %in%  acid.exper.code
++          , ]
+
+> ds5 <- droplevels(ds5)
+
+> pmid.keep <- ds5$pmid
+
+> table(ds5$country)
+
+ DK  NL 
+146  16 
+
+> table(ds5$inst)
+
+205 210 211 
+ 40  16 106 
+
+> # Limit to 168 hours
+> d5 <- d[d$pmid %in% pmid.keep & d$ct <= d$ct.168 & d$ct >= 0, ]
+
+> # Look for missing values
+> dfsumm(d5[, c('e.int', 'app.mthd', 'man.dm', 'man.source', 'air.temp', 
++               'wind.2m', 'till', 'incorp', 'crop')])
+
+ 1061 rows and 9 columns
+ 1051 unique rows
+                     e.int app.mthd  man.dm man.source air.temp wind.2m    till  incorp      crop
+Class              numeric   factor numeric     factor  numeric numeric numeric  factor    factor
+Minimum             -0.362       bc     1.4        cat      0.2   0.928       0    deep bare soil
+Maximum               32.8       ts    10.8     sludge     25.8    7.65       1 shallow   stubble
+Mean                  1.85     bsth    5.08       mink     10.1    3.71  0.0528    none    cereal
+Unique (excld. NA)     980        2      31          4      264     244       2       2         3
+Missing values           0        0       0          0       64      64       0       0         0
+Sorted               FALSE    FALSE   FALSE      FALSE    FALSE   FALSE   FALSE   FALSE     FALSE
+
+> table(ds5$exper, ds5$inst)
+         
+          205 210 211
+  B1        0   0  12
+  B2        0   0  10
+  IHF_13    0   4   0
+  IHF_6     0   2   0
+  IHF_7     0   2   0
+  SyreN    40   0   0
+  W1        0   0  42
+  W2        0   0  42
+  WIND_10   0   2   0
+  WIND_4    0   2   0
+  WIND_6    0   2   0
+  WIND_8    0   2   0
+
+> table(ds5$inst, ds5$date.start)
+     
+      1990-06-12 1990-06-26 1991-04-16 1991-05-14 1991-06-11 1991-07-09 1992-05-19 2010-04-22 2010-05-04 2010-05-18
+  205          0          0          0          0          0          0          0          8          8          8
+  210          2          2          2          2          2          2          4          0          0          0
+  211          0          0          0          0          0          0          0          0          0          0
+     
+      2010-06-02 2010-06-15 2014-04-01 2014-04-03 2014-04-30 2014-05-01
+  205          8          8          0          0          0          0
+  210          0          0          0          0          0          0
+  211          0          0         12         42         41         11
+
+> pmid.cal5 <- pmid.keep
+
+> #-------------------------------------------------------------------------------------------------
+> 
+> # DK subset
+> ddk <- subset(d2, country == 'DK' & incorp == 'none')
+
+> dim(ddk)
+[1] 474 200
+
+> dsdk <- subset(ds2, country  == 'DK' & incorp == 'none')
+
+> #-------------------------------------------------------------------------------------------------
+> 
+> # Prediction subset, for model evaluation, excludes chamber results
+> dpred <- subset(d, pmid %in% unique(c(pmid.cal2, pmid.cal3, pmid.cal4)))
+
+> dspred <- subset(ds, pmid %in% unique(c(pmid.cal2, pmid.cal3, pmid.cal4)))
+
+> # Cal subset includes all plots used for calibration
+> dcal <- subset(d, pmid %in% unique(c(pmid.cal2, pmid.cal3, pmid.cal5)))
+
+> dscal <- subset(ds, pmid %in% unique(c(pmid.cal2, pmid.cal3, pmid.cal5, pmid.cal2cs)))
+
+> #-------------------------------------------------------------------------------------------------
+> # Add weights to all subsets
+> d1 <- as.data.frame(mutate(group_by(d1, pmid), weightp = 1/sum(!is.na(e.int))))
+
+> d1 <- as.data.frame(mutate(group_by(d1, country), weightc = 1/sum(!is.na(e.int))))
+
+> d1 <- as.data.frame(mutate(group_by(d1, country, app.mthd), weightca = 1/sum(!is.na(e.int))))
+
+> d1 <- as.data.frame(mutate(group_by(d1, country, app.mthd, man.source), weightcas = 1/sum(!is.na(e.int))))
+
+> d2 <- as.data.frame(mutate(group_by(d2, pmid), weightp = 1/sum(!is.na(e.int))))
+
+> d2 <- as.data.frame(mutate(group_by(d2, country), weightc = 1/sum(!is.na(e.int))))
+
+> d2 <- as.data.frame(mutate(group_by(d2, country, app.mthd), weightca = 1/sum(!is.na(e.int))))
+
+> d2 <- as.data.frame(mutate(group_by(d2, country, app.mthd, man.source), weightcas = 1/sum(!is.na(e.int))))

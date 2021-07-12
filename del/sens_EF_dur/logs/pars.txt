@@ -1,0 +1,12 @@
+             int.f0      app.mthd.os.f0     app.rate.nos.f0           man.dm.f0 
+       -0.614028290        -1.858073878        -0.009573025         0.392065396 
+  man.source.pig.f0              int.r1      app.mthd.bc.r1           man.dm.r1 
+       -0.487836883        -1.086074294         0.837869687        -0.111977710 
+        air.temp.r1          wind.2m.r1 bsth.cereal.hght.r1              int.r2 
+        0.082679225         0.146638859        -0.011020863        -1.116328728 
+       rain.rate.r2              int.r3         air.temp.r3      app.mthd.os.r3 
+        0.431218377        -2.786331689         0.008930925        -0.259421036 
+        rain.cum.r3      incorp.deep.r3   incorp.shallow.r3      incorp.deep.f4 
+       -0.011986982        -1.330775875        -0.575027977        -3.277037657 
+  incorp.shallow.f4           man.ph.r1           man.ph.r3 
+       -0.754842646         0.600000000         0.300000000 

@@ -1,0 +1,34 @@
+---
+title: 'Model call record'
+output: pdf_document
+classoption: landscape
+author: Sasha D. Hafner
+date: 2020
+---
+
+Calculates emission factors
+
+Run model 
+
+With set 2 (2f) parameters
+
+```{r}
+preds <- ALFAM2mod(dat, pars = pars, app.name = 'tan.app', time.name = 'ct', time.incorp = 't.incorp', group = 'id', warn = TRUE)
+```
+With default values
+```{r}
+preds.def <- ALFAM2mod(dat, app.name = 'tan.app', time.name = 'ct', time.incorp = 't.incorp', group = 'id', warn = TRUE)
+```
+
+Add results to main df
+```{r}
+dat$emis <- signif(preds$e, 3)
+dat$EF <- signif(preds$er, 3)
+head(preds)
+head(dat)
+pars
+
+dat$emis.def <- signif(preds.def$e, 3)
+dat$EF.def <- signif(preds.def$er, 3)
+```
+

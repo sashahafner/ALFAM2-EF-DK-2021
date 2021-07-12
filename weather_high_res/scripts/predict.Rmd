@@ -1,0 +1,72 @@
+---
+title: 'Model call record'
+output: pdf_document
+classoption: landscape
+author: Sasha D. Hafner
+date: June 2021
+---
+Check package version.
+
+```{r}
+packageVersion('ALFAM2')
+```
+
+Parameter values.
+
+```{r}
+pars
+```
+
+Make ALFAM2 predictions
+
+Hourly preds
+
+```{r}
+preds <- ALFAM2mod(dath, pars = pars, app.name = 'tan.app', time.name = 'ct', group = 'sim') 
+dath <- cbind(dath, preds[, -1:-3])
+```
+
+Means of hourly
+```{r}
+dathm <- as.data.frame(summarise(group_by(dath, yr, ct),
+                                 er = mean(er),
+                                 sim = 0))
+```
+
+With night application
+```{r}
+preds <- ALFAM2mod(dathn, pars = pars, app.name = 'tan.app', time.name = 'ct', group = 'sim') 
+dathn <- cbind(dathn, preds[, -1:-3])
+```
+
+Means of hourly, night application
+```{r}
+dathnm <- as.data.frame(summarise(group_by(dathn, yr, ct),
+                                 er = mean(er),
+                                 sim = 0))
+```
+
+Without rain
+```{r}
+preds <- ALFAM2mod(dathnr, pars = pars, app.name = 'tan.app', time.name = 'ct', group = 'sim')
+dathnr <- cbind(dathnr, preds[, -1:-3])
+```
+
+Means of hourly, without rain
+```{r}
+dathnrm <- as.data.frame(summarise(group_by(dathnr, yr, ct), er = mean(er), sim = 0))
+```
+
+Mean preds
+```{r}
+preds <- ALFAM2mod(datm, pars = pars, app.name = 'tan.app', time.name = 'ct', group = 'sim')
+datm <- cbind(datm, preds[, -1:-3])
+```
+
+Mean with fudge factors
+```{r}
+preds <- ALFAM2mod(datmf, pars = pars, app.name = 'tan.app', time.name = 'ct', group = 'sim')
+datmf <- cbind(datmf, preds[, -1:-3])
+```
+
+

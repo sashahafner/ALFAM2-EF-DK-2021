@@ -1,0 +1,160 @@
+---
+title: Exploration of subsets
+author: Sasha D. Hafner
+output: pdf_document
+date: June 2020
+---
+
+```{r}
+table(ds1$country, ds1$incorp)
+dim(ds1)
+```
+
+Main calibration set:
+```{r}
+table(ds2$country, ds2$app.mthd)
+dim(ds2)
+dim(d2)
+```
+
+For closed slot:
+```{r}
+table(ds2cs$country, ds2cs$app.mthd)
+table(ds2cs$country, ds2cs$meas.tech2)
+dim(ds2cs)
+dim(d2cs)
+```
+
+For pH effects:
+```{r}
+table(ds5$country, ds5$app.mthd)
+dim(ds5)
+```
+
+For incorporation effects:
+```{r}
+table(ds4$country, ds4$app.mthd:ds4$incorp)
+dim(ds4)
+```
+
+For all calibration data.
+```{r}
+table(dscal$meas.tech2)
+table(dscal$country, dscal$meas.tech2)
+table(dscal$inst, dscal$meas.tech2)
+dim(dscal)
+```
+
+```{r}
+ggplot(ds3, aes(man.ph, e.rel.72, colour = country, shape = man.source)) +
+  geom_point() +
+  geom_smooth(method = lm) +
+  facet_wrap(. ~ app.mthd)
+```
+
+```{r}
+ggplot(ds3, aes(man.ph, e.rel.72, colour = country, shape = man.source)) +
+  geom_point() +
+  geom_smooth(method = lm) +
+  facet_wrap(. ~ exper)
+```
+
+```{r}
+ggplot(d3, aes(ct, e.rel, colour = man.ph, lty = man.source, group = pmid)) +
+  geom_point() +
+  geom_line() +
+  facet_wrap(. ~ exper)
+```
+
+Include SDU data.
+
+```{r}
+ggplot(ds5, aes(man.ph, e.rel.72, colour = man.source, lty = factor(inst), shape = factor(inst))) +
+  geom_point() +
+  geom_smooth(method = lm, se = FALSE) +
+  facet_grid(. ~ app.mthd)
+
+```
+
+```{r}
+ggplot(ds5, aes(man.ph, e.rel.72, colour = man.source, lty = factor(inst), shape = factor(inst))) +
+  geom_point() +
+  geom_smooth(method = lm, se = FALSE) +
+  facet_wrap(~factor(inst))
+
+```
+
+Look at interval duration info.
+
+```{r}
+names(d2)
+d2i <- as.data.frame(summarise(group_by(d2, inst, country, man.source, app.mthd, pmid), dt.mx = max(dt[ct <= 24]), dt.min = min(dt[ct <= 24]), 
+                               dt.mean = mean(dt[ct <= 24]), dt.med = median(dt[ct <= 24])))
+```
+
+```{r}
+ggplot(d2i, aes(country, dt.mean, fill = app.mthd)) +
+  geom_boxplot()
+
+ggplot(d2i, aes(country, dt.min, fill = app.mthd)) +
+  geom_boxplot()
+
+ggplot(d2, aes(ct, dt, colour = country, group = pmid)) +
+  xlim(0, 10) +
+  ylim(0, 7) +
+  geom_point() +
+  geom_line(alpha = 0.2)
+```
+
+Application methods--closed slot
+
+```{r}
+ggplot(ds1, aes(app.mthd, e.rel.final, fill = country)) +
+  geom_boxplot() +
+  facet_wrap(~ man.source)
+```
+
+```{r}
+ggplot(subset(ds1, app.mthd == 'cs'), aes(country, e.rel.final, fill = country)) +
+  geom_boxplot() +
+  facet_wrap(~ man.source)
+```
+
+```{r}
+ggplot(subset(d1, app.mthd %in% c('os', 'cs') & country != 'CH'), aes(ct, er, colour = app.mthd, group = pmid)) +
+  geom_line() +
+  facet_grid(country ~ man.source)
+```
+
+```{r}
+ggplot(xx <- subset(ds1, app.mthd == 'cs'), aes(interaction(country, exper, man.source), e.rel.final, colour = man.source)) +
+  geom_point() +
+  theme(axis.text.x = element_text(angle = 90))
+  #geom_jitter(height = 0)
+unique(xx$notes)
+unique(xx[, c('country', 'file')])
+```
+
+```{r}
+ggplot(xx <- subset(ds2, app.mthd == 'cs'), aes(interaction(country, exper, man.source), e.rel.final, colour = man.source)) +
+  geom_point() +
+  theme(axis.text.x = element_text(angle = 90))
+  #geom_jitter(height = 0)
+unique(xx$notes)
+unique(xx[, c('country', 'file')])
+```
+
+```{r}
+table(ds1$exper, ds1$app.mthd)
+table(ds1$country, ds1$app.mthd)
+```
+
+```{r}
+plot(e.rel.final ~ factor(pmid), data = subset(ds1, app.mthd == 'cs'))
+```
+
+Problem is 1183.  
+
+
+
+

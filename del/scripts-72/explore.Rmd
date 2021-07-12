@@ -1,0 +1,28 @@
+---
+title: 'Emission error'
+output: pdf_document
+classoption: landscape
+author: Sasha D. Hafner
+date: December 2020
+---
+
+
+```{r}
+hist(dsr$r72, breaks = 30)
+quantile(dsr$r72)
+quantile(dsr$rr72)
+quantile(dsr$r168)
+quantile(dsr$rr168)
+
+dfsumm(dsr)
+hist(ds$ct.max, breaks = 20)
+quantile(ds$ct.max)
+
+# Calculate more from ds
+ds$inc.p72 <- 100 * (ds$e.rel.final / ds$e.rel.72 - 1)
+
+quantile(subset(ds, ct.max > 168)$inc.p72, na.rm = TRUE)
+
+names(ds)
+```
+

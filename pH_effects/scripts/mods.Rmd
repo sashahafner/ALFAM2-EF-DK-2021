@@ -1,0 +1,113 @@
+---
+title: Statistical models for pH
+author: Sasha D. Hafner
+output: pdf_document
+date: 2021
+---
+
+Sort out missing data.
+
+```{r}
+dfsumm(ds[, c('e.rel.24', 'app.method', 'man.source', 'man.dm', 'man.ph', 'air.temp.24', 'wind.2m.24')])
+dfsumm(ds2[, c('e.rel.24', 'app.method', 'man.source', 'man.dm', 'man.ph', 'air.temp.24', 'wind.2m.24')])
+dfsumm(ds3[, c('e.rel.24', 'app.method', 'man.source', 'man.dm', 'man.ph', 'air.temp.24', 'wind.2m.24')])
+ds2 <- subset(ds2, !is.na(air.temp.24) & !is.na(wind.2m.24))
+ds3 <- subset(ds3, !is.na(air.temp.24) & !is.na(wind.2m.24))
+ds2$e.rel.24[is.na(ds2$e.rel.24)] <- ds2$e.rel.final[is.na(ds2$e.rel.24)]
+ds2$inst <- factor(ds2$inst)
+ds3$inst <- factor(ds3$inst)
+```
+
+Linear model, all data, no institute effects.
+
+```{r}
+m0a <- lm(e.rel.24 ~ app.method + man.source + man.dm + man.ph + air.temp.24 + wind.2m.24, data = ds)
+summary(m0a)
+drop1(m0a, test = 'F')
+```
+
+Include institution with mixed-effects model.
+
+```{r}
+m0c <- lmer(e.rel.24 ~ app.method + man.source + man.dm + man.ph + air.temp.24 + wind.2m.24 + (1|inst) , data = ds)
+summary(m0c)
+```
+
+Subset 2, used for model calibration.
+Linear model, no institute effects.
+
+```{r}
+m2a <- lm(e.rel.24 ~ app.method + man.source + man.dm + man.ph + air.temp.24 + wind.2m.24, data = ds2)
+summary(m2a)
+drop1(m2a, test = 'F')
+ds2$e.rel.24.pred <- predict(m2a)
+summary(update(m2a, ~ . - man.ph))
+```
+
+With institute effects, linear model though
+
+```{r}
+m2b <- lm(e.rel.24 ~ app.method + man.source + man.dm + man.ph + air.temp.24 + wind.2m.24 + factor(inst), data = ds2)
+summary(m2b)
+drop1(m2b, test = 'F')
+```
+
+Include institution with mixed-effects model.
+
+```{r}
+m2c <- lmer(e.rel.24 ~ app.method + man.source + man.dm + man.ph + air.temp.24 + wind.2m.24 + (1|inst) , data = ds2)
+summary(m2c)
+drop1(m2c, test = 'Chisq')
+```
+
+```{r}
+ggplot(ds2, aes(man.ph, e.rel.24, colour = inst)) +
+  geom_point() +
+  facet_grid(man.source ~ app.method) +
+  geom_smooth(method = lm, se = FALSE)
+```
+
+```{r}
+ggplot(ds2, aes(man.ph, e.rel.24.pred, colour = inst)) +
+  geom_point() +
+  facet_grid(man.source ~ app.method) +
+  geom_smooth(method = lm, se = FALSE)
+```
+
+Acidification trials.
+
+```{r}
+m3a <- lm(e.rel.24 ~ app.method + man.source + man.dm + man.ph + air.temp.24 + wind.2m.24, data = ds3)
+summary(m3a)
+drop1(m3a, test = 'F')
+ds3$e.rel.24.pred <- predict(m3a)
+```
+
+Institute in linear model.
+
+```{r}
+m3b <- lm(e.rel.24 ~ man.source + man.dm + man.ph + air.temp.24 + wind.2m.24 + factor(inst), data = ds3)
+summary(m3b)
+drop1(m3b, test = 'F')
+```
+
+```{r}
+ggplot(ds3, aes(man.ph, e.rel.24, colour = interaction(inst, app.method))) +
+  geom_point() +
+  geom_smooth(method = lm, se = FALSE)
+```
+
+```{r}
+ggplot(ds3, aes(man.ph, e.rel.24.pred, colour = interaction(inst, app.method))) +
+  geom_point() +
+  geom_smooth(method = lm, se = FALSE)
+```
+
+Mixed-effects model.
+
+```{r}
+m3c <- lmer(e.rel.24 ~ app.method + man.source + man.dm + man.ph + air.temp.24 + wind.2m.24 + (1|inst) , data = ds3)
+summary(m3c)
+drop1(m3c, test = 'Chisq')
+```
+
