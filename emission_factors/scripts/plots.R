@@ -37,7 +37,7 @@ ggplot(d, aes(app.timing, EFp, shape = incorp.nm, colour = factor(app.mthd))) +
   ylim(0, max(d$EFp)) +
   labs(x = 'Application period', y = 'Emission factor (% applied TAN)',
        shape = 'Incorporation (shape)', colour = 'Application method\n(color)') + 
-  scale_shape_manual(values = c(1, 17)) +
+  scale_shape_manual(values = c(19, 24)) +
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1),
         legend.position = 'right')
 ggsave('../plots/emis_factors.png', height = 4.8, width = 6.9)
