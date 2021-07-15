@@ -16,6 +16,7 @@ sink('../logs/subsets.txt')
   source('subsets.R', echo = TRUE, max.deparse.length = Inf)
 sink()
 
+source('count_tables.R')
 render('explore.Rmd', output_dir = '../reports')
 
 sink('../logs/calibration.txt')

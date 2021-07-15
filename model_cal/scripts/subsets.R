@@ -294,53 +294,6 @@ dim(ds2cs)
 pmid.cal2cs <- pmid.keep
 write.csv(pmid.cal2cs, '../output/pmid_cal2cs.csv', row.names = FALSE)
 
-
-#-------------------------------------------------------------------------------------------------
-# 3rd subset, acidification only
-# Acidification subset
-# Do not need all predictor variables
-# Subset based on most above criteria plus within these acid experiments
-acid.exper <- unique(ds[ds$acid, c('inst', 'exper', 'exper.code')])
-acid.exper.code <- acid.exper$exper.code
-ds3 <- ds[!is.na(ds$e.24) & 
-          !is.na(ds$app.mthd) & 
-          !is.na(ds$incorp) & 
-          !is.na(ds$crop) & 
-          ds$e.24 > 0 & 
-          ds$e.rel.24 < 2 &
-          ds$man.dm <= 15 &
-          ds$app.mthd != 'pi' &
-          ds$app.mthd != 'cs' &
-          ds$meas.tech2 != 'chamber' &
-          ds$inst != 108 & 
-          ds$inst != 102 &
-          ds$inst != 211 & # Drop SDU
-          ds$pmid != 1526 & # See rows 1703 and 1728 and others in MU data. Check with Marco
-          ds$app.mthd != 'os' &
-          ds$exper.code %in%  acid.exper.code
-         , ]
-
-ds3 <- droplevels(ds3)
-pmid.keep <- ds3$pmid
-
-table(ds3$country)
-table(ds3$inst)
-
-# Limit to 168 hours
-d3 <- d[d$pmid %in% pmid.keep & d$ct <= d$ct.168 & d$ct >= 0, ]
-
-# Look for missing values
-dfsumm(d3[, c('e.int', 'app.mthd', 'man.dm', 'man.source', 'air.temp', 
-              'wind.2m', 'till', 'incorp', 'crop')])
-
-# Missing air temperature and wind, but does not matter here
-
-table(ds3$exper, ds3$inst)
-table(ds3$inst, ds3$date.start)
-
-pmid.cal3 <- pmid.keep
-write.csv(pmid.cal3, '../output/pmid_cal3.csv', row.names = FALSE)
-
 #-------------------------------------------------------------------------------------------------
 # 4th subset, incorporation experiments
 incorp.exper <- unique(ds[ds$incorp != 'none', c('inst', 'exper', 'exper.code')])
@@ -364,61 +317,6 @@ table(d4$exper.code, d4$incorp)
 
 pmid.cal4 <- unique(ds4$pmid)
 write.csv(pmid.cal4, '../output/pmid_cal4.csv', row.names = FALSE)
-
-#-------------------------------------------------------------------------------------------------
-# 5th subset, like 3rd acidification only but include SDU chamber results (inst 211)
-acid.exper <- unique(ds[ds$acid, c('inst', 'exper', 'exper.code')])
-acid.exper.code <- acid.exper$exper.code
-ds5 <- ds[!is.na(ds$e.24) & 
-          !is.na(ds$app.mthd) & 
-          !is.na(ds$incorp) & 
-          !is.na(ds$crop) & 
-          ds$app.mthd != 'cs' &
-          ds$e.24 > 0 & 
-          ds$e.rel.24 < 2 &
-          ds$man.dm <= 15 &
-          ds$app.mthd != 'pi' &
-          ds$app.mthd != 'cs' &
-          ds$inst != 108 & 
-          ds$inst != 102 &
-          ds$pmid != 1526 & # See rows 1703 and 1728 and others in MU data. Check with Marco
-          ds$app.mthd != 'os' &
-          ds$exper.code %in%  acid.exper.code
-         , ]
-
-ds5 <- droplevels(ds5)
-pmid.keep <- ds5$pmid
-
-table(ds5$country)
-table(ds5$inst)
-
-# Limit to 168 hours
-d5 <- d[d$pmid %in% pmid.keep & d$ct <= d$ct.168 & d$ct >= 0, ]
-
-# Look for missing values
-dfsumm(d5[, c('e.int', 'app.mthd', 'man.dm', 'man.source', 'air.temp', 
-              'wind.2m', 'till', 'incorp', 'crop')])
-
-table(ds5$exper, ds5$inst)
-table(ds5$inst, ds5$date.start)
-pmid.cal5 <- pmid.keep
-
-#-------------------------------------------------------------------------------------------------
-
-# DK subset
-ddk <- subset(d2, country == 'DK' & incorp == 'none')
-dim(ddk)
-dsdk <- subset(ds2, country  == 'DK' & incorp == 'none')
-
-#-------------------------------------------------------------------------------------------------
-
-# Prediction subset, for model evaluation, excludes chamber results
-dpred <- subset(d, pmid %in% unique(c(pmid.cal2, pmid.cal3, pmid.cal4)))
-dspred <- subset(ds, pmid %in% unique(c(pmid.cal2, pmid.cal3, pmid.cal4)))
-
-# Cal subset includes all plots used for calibration
-dcal <- subset(d, pmid %in% unique(c(pmid.cal2, pmid.cal3, pmid.cal5)))
-dscal <- subset(ds, pmid %in% unique(c(pmid.cal2, pmid.cal3, pmid.cal5, pmid.cal2cs)))
 
 #-------------------------------------------------------------------------------------------------
 # Add weights to all subsets
