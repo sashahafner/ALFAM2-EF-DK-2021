@@ -17,6 +17,4 @@ preds <- ALFAM2mod(d234, pars = pars, app.name = 'tan.app', time.name = 'ct', ti
 names(preds) <- paste0(names(preds), '.pred')
 d.pred <- cbind(d234, preds[, -1:-3])
 d.pred$error.er <- d.pred$er.pred - d.pred$er
-d.pred.168 <- subset(d.pred, ct == ct.168)
-d.pred2.168 <- subset(d.pred.168, ct == ct.168 & pmid %in% pmid.cal2)
 ```
