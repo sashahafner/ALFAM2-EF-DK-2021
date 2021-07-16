@@ -15,9 +15,32 @@ dd$er[dd$er > 1] <- 1
 d.pred <- rbind(d.pred, dd)
 
 # ALFAM1 predictions
-dpred$meas.tech.mm <- TRUE
-dd <- ALFAM1mod(dpred, time.name = 'ct', group = 'pmid')
+da1 <- rbindf(d2, d2cs)
+da1$meas.tech.mm <- TRUE
+dd <- ALFAM1mod(da1, time.name = 'ct', group = 'pmid')
 dd$par.set <- 'ALFAM1'
+dd$er[da1$app.mthd == 'cs'] <- NA
+d.pred <- rbindf(d.pred, dd)
+
+# ALFAM1 predictions but as in EF calcs (trailing hose * reductions)
+da1 <- rbindf(d2, d2cs)
+da1$meas.tech.mm <- TRUE
+da1$app.mthd.bsth <- TRUE
+da1$app.mthd.ts <- FALSE 
+da1$app.mthd.os <- FALSE 
+da1$app.mthd.cs <- FALSE 
+da1$app.mthd.pi <- FALSE 
+
+dd <- ALFAM1mod(da1, time.name = 'ct', group = 'pmid')
+dd$par.set <- 'EF 2008'
+
+# Multiply by fixed reductions or increases
+dd$er[da1$app.mthd == 'bc'] <- 1.7 * dd$er[da1$app.mthd == 'bc']
+dd$er[da1$app.mthd == 'os'] <- 0.75 * dd$er[da1$app.mthd == 'os']
+dd$er[da1$app.mthd == 'ts'] <- NA
+dd$er[da1$app.mthd == 'cs'] <- 0.05 * dd$er[da1$app.mthd == 'cs']
+dd$er[da1$app.mthd == 'pi'] <- NA
+
 d.pred <- rbindf(d.pred, dd)
 
 # Merge with measurements

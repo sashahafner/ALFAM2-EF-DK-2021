@@ -4,7 +4,7 @@
 rm(list = ls())
 
 # Load previous calibration results if needed
-#load('../R images/cal.RData')
+#load('../R_images/cal.RData')
 
 # Packages and functions
 source('packages.R')

@@ -9,7 +9,7 @@ d.pred.168$app.mthd.nm <- factor(d.pred.168$app.mthd, levels = c('bc', 'bsth', '
                               labels = c('Broadcast', 'Trailing hose', 'Trailing shoe', 'Open slot injection', 'Closed slot injection'))
 d.pred.168$man.source.nm <- factor(d.pred.168$man.source, levels = c('cat', 'pig'), labels = c('Cattle', 'Pig'))
 
-d.pred.168$par.set.nm <- factor(d.pred.168$par.set, levels = c('ALFAM1', '1', 'i', 'j', 'k'), labels = c('ALFAM(1)', 'ALFAM2 set 1', 'ALFAM2 set 2', 'ALFAM2 set 3 (unwght.)', 'ALFAM2 set 4 (no pH)'))
+d.pred.168$par.set.nm <- factor(d.pred.168$par.set, levels = c('ALFAM1', 'EF 2008', '1', 'i', 'j', 'k'), labels = c('ALFAM(1)', 'ALFAM(1)+RR (2008)', 'ALFAM2 set 1', 'ALFAM2 set 2', 'ALFAM2 set 3 (unwght.)', 'ALFAM2 set 4 (no pH)'))
 
 fsumm.ct2$app.mthd.nm <- factor(fsumm.ct2$app.mthd, levels = c('bc', 'bsth', 'ts', 'os', 'cs'), 
                              labels = c('Broadcast', 'Trailing hose', 'Trailing shoe', 'Open slot injection', 'Closed slot injection'))
@@ -55,7 +55,7 @@ ggplot(dd, aes(country, 100 * error.er, fill = par.set.nm)) +
        fill = 'Model and parameter set:')
 ggsave('../plots/error_box2.png', height = 6, width = 7)
 
-dd <- subset(d.pred.168, par.set %in% c('i', 'ALFAM1'))
+dd <- subset(d.pred.168, par.set %in% c('i', 'ALFAM1', 'EF 2008'))
 ggplot(dd, aes(country, 100 * error.er, fill = par.set.nm)) + 
   geom_hline(yintercept = 0, lty = 2, colour = 'gray45') +
   geom_boxplot() +
@@ -63,7 +63,7 @@ ggplot(dd, aes(country, 100 * error.er, fill = par.set.nm)) +
   theme(legend.position = 'top') +
   labs(x = 'Country', y = 'Model error in 168 h cum. emission (% applied TAN)',
        fill = 'Model and parameter set:')
-ggsave('../plots/error_box3.png', height = 6, width = 7)
+ggsave('../plots/error_box6.png', height = 6, width = 7)
 
 dd <- subset(d.pred.168, par.set %in% c('1', 'i', 'j', 'k', 'ALFAM1'))
 ggplot(dd, aes(country, 100 * error.er, fill = par.set.nm)) + 

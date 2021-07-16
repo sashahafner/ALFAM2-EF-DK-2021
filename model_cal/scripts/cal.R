@@ -521,7 +521,7 @@ print(m)
 # Export pars
 write.csv(pp, paste0('../output/pars_', i, '.csv'))
 
-# Run model for all observations using parameter estimates
+# Run model for all observations using parameter estimates (for both d2 and d2cs here for model i)
 mods2[[i]][['pred']] <- pr <- ALFAM2mod(rbindf(d2, d2cs), app.name = 'tan.app', time.name = 'ct', time.incorp = 'time.incorp', 
                 group = 'pmid', pars = pp, parallel = FALSE)
 
