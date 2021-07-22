@@ -4,14 +4,15 @@
 write.csv(dat, '../output/EF.csv', row.names = FALSE)
 
 # EF results for report Appendix 1
-efd <- dat[, c('id', 'decade', 'app.timing', 'app.mthd', 'crop', 'crop.hght', 'incorp.timing', 'man.source', 'man.trt', 'air.temp', 'wind.2m', 'EFp')]
+efd <- dat[, c('id', 'decade', 'app.timing', 'app.mthd', 'crop', 'crop.hght', 'incorp.timing', 'man.source', 'man.dm', 'man.ph', 'man.trt', 'air.temp', 'wind.2m', 'rain.rate', 'EFp')]
 efd <- rounddf(efd, 3, func = signif)
 efd <- efd[order(efd$id), ]
-efd <- rename(efd, ID = id, Decade = decade, `Application period` = app.timing,
-              `Application method` = app.mthd, Crop = crop, `Crop height (cm)` = crop.hght, 
-              `Incorporation time (h)` = incorp.timing, `Manure source` = man.source, 
-              `Manure treatment` = man.trt, `Air temperature (deg. C)` = air.temp,
-              `Wind speed (m/s)` = wind.2m, `Emission factor (% of applied TAN)` = EFp)
+efd$incorp.timing[efd$app.mthd %in% c('Closed slot injection', 'Open slot injection')] <- 'Not relevant'
+#efd <- rename(efd, ID = id, Decade = decade, `Application period` = app.timing,
+#              `Application method` = app.mthd, Crop = crop, `Crop height (cm)` = crop.hght, 
+#              `Incorporation time (h)` = incorp.timing, `Manure source` = man.source, 
+#              `Manure treatment` = man.trt, `Air temperature (deg. C)` = air.temp,
+#              `Wind speed (m/s)` = wind.2m, `Emission factor (% of applied TAN)` = EFp)
 write.csv(efd, '../output/Appendix_01.csv', row.names = FALSE)
 
 # EF tables
