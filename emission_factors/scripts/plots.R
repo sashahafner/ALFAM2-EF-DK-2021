@@ -8,7 +8,7 @@ d2 <- droplevels(subset(dat, man.trt == 'None' &
                        (incorp == 'None' | t.incorp ==  4) & 
                        decade == 2010))
 
-dd <- droplevels(subset(dat, incorp %in% c('None', 'Shallow') & man.trt == 'None' & 
+dd <- droplevels(subset(dat, incorp %in% c('None', 'Shallow', 'Deep') & man.trt == 'None' & 
                        (incorp == 'None' | t.incorp ==  4) &
                        decade == 2010))
 
@@ -37,19 +37,20 @@ ggplot(d, aes(app.timing, EFp, shape = incorp.nm, colour = factor(app.mthd))) +
   ylim(0, max(d$EFp)) +
   labs(x = 'Application period', y = 'Emission factor (% applied TAN)',
        shape = 'Incorporation (shape)', colour = 'Application method\n(color)') + 
-  scale_shape_manual(values = c(19, 24)) +
+  scale_shape_manual(values = c(19, 24, 1)) +
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1),
         legend.position = 'right')
 ggsave('../plots/emis_factors.png', height = 4.8, width = 6.9)
 
-ggplot(dat, aes(app.timing, EF, shape = man.source, colour = factor(app.mthd))) +
+ggplot(dat, aes(app.timing, EFp, shape = man.source, colour = factor(app.mthd))) +
   geom_jitter(height = 0) +
   facet_grid(man.trt.nm ~ incorp.nm) +
-  labs(x = 'Application period', y = 'Emission factor (frac. applied TAN)',
-       shape = 'Slurry type (shape)', colour = 'Application method\n(color)') + 
+  labs(x = 'Application period', y = 'Emission factor (% applied TAN)',
+       #shape = 'Slurry type (shape)', colour = 'Application method\n(color)') + 
+       shape = '', colour = '') + 
   scale_shape_manual(values = c(1, 3, 17)) +
   theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust=1),
-        legend.position = 'right')
+        legend.position = 'top')
 ggsave('../plots/emis_factors_all.png', height = 8.7, width = 7.5)
 
 # Change over time

@@ -13,6 +13,19 @@ dat$incorp[is.na(dat$incorp)] <- 'None'
 dat$incorp.deep <- !is.na(dat$incorp) & dat$incorp == 'Deep'
 dat$incorp.shallow <- !is.na(dat$incorp) & dat$incorp == 'Shallow'
 
+# Add description for tables
+dat$incorp.descrip <- paste(dat$incorp, dat$incorp.timing)
+dat$incorp.descrip[dat$app.mthd %in% c('Closed slot injection', 'Open slot injection')] <- 'Not relevant'
+dat$incorp.descrip[grepl('^None', dat$incorp.descrip)] <- 'None'
+dat$incorp.descrip <- gsub('\\.0$', ' hr', dat$incorp.descrip)
+dat$incorp.descrip <- gsub('hours', ' hr', dat$incorp.descrip)
+dat$incorp.descrip <- factor(dat$incorp.descrip, levels = c('None', 
+                                                            'Shallow 24 hr', 'Shallow > 12 hr', 'Shallow 12 hr', 'Shallow < 12 hr', 
+                                                            'Shallow 6 hr', 'Shallow 4 hr',
+                                                            'Deep 24 hr', 'Deep > 12 hr', 'Deep 12 hr', 'Deep < 12 hr', 
+                                                            'Deep 6 hr', 'Deep 4 hr'))
+table(dat$incorp.descrip)
+
 # Add crop and application data
 dat <- merge(dat, crops, by = c('app.mthd', 'crop.status', 'app.timing', 'app.mthd.d', 'app.timing.d'), all = TRUE)
 dat$cereal.hght[is.na(dat$cereal.hght)] <- 0
@@ -78,6 +91,6 @@ dat$ct <- 168
 
 # Add detailed key and sort
 dat$id1 <- dat$id
-dat$id <- sprintf('%04d', dat$id)
+dat$id <- sprintf('%03d', dat$id)
 dat$id <- paste0(dat$id, '-', dat$decade)
 dat <- dat[order(dat$decade, dat$id), ]
