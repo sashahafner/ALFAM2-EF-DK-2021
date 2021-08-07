@@ -6,14 +6,23 @@ write.csv(dat, '../output/EF.csv', row.names = FALSE)
 # EF results for report Appendix 1
 efd <- dat[, c('id', 'decade', 'app.timing', 'app.mthd', 'crop', 'crop.hght', 'incorp.descrip', 'man.source', 'man.dm', 'man.ph', 'man.trt', 'air.temp', 'wind.2m', 'rain.rate', 'EFp')]
 efd <- rounddf(efd, 3, func = signif)
-efd <- efd[order(-efd$decade, efd$app.timing, efd$app.mthd, efd$man.source, dat$incorp.timing), ]
-#efd <- rename(efd, ID = id, Decade = decade, `Application period` = app.timing,
-#              `Application method` = app.mthd, Crop = crop, `Crop height (cm)` = crop.hght, 
-#              `Incorporation time (h)` = incorp.timing, `Manure source` = man.source, 
-#              `Manure treatment` = man.trt, `Air temperature (deg. C)` = air.temp,
-#              `Wind speed (m/s)` = wind.2m, `Emission factor (% of applied TAN)` = EFp)
+efd <- efd[order(-efd$decade, efd$app.timing, efd$app.mthd, efd$man.source, dat$incorp, -dat$t.incorp), ]
+
+# Split into untreated, field acidified, barn acidified
+efd <- rename(efd, ID = id, Decade = decade, `Application period` = app.timing,
+              `Application method` = app.mthd, Crop = crop, `Crop height (cm)` = crop.hght, 
+              `Incorporation` = incorp.descrip, `Manure source` = man.source, 
+              `Manure DM (%)` = man.dm, `Manure pH` = man.ph, 
+              `Manure treatment` = man.trt, `Air temperature (deg. C)` = air.temp,
+              `Wind speed (m/s)` = wind.2m, `Rainfall rate (mm/h)` = rain.rate, 
+              `Emission factor (% of applied TAN)` = EFp)
+efdu <- subset(efd, `Manure treatment` == 'None')
+efdb <- subset(efd, `Manure treatment` == 'Barn acidified')
+efdf <- subset(efd, `Manure treatment` == 'Field acidified')
 write.csv(efd, '../output/Appendix_01.csv', row.names = FALSE)
-table(efd$incorp.descrip)
+write.csv(efdu, '../output/Appendix_01_untreated.csv', row.names = FALSE)
+write.csv(efdb, '../output/Appendix_01_barn.csv', row.names = FALSE)
+write.csv(efdf, '../output/Appendix_01_field.csv', row.names = FALSE)
 
 # EF tables
 t5 <- subset(dat, crop %in% c('None') & app.mthd %in% c('Closed slot injection') &

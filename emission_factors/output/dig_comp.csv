@@ -1,58 +1,58 @@
 "decade","app.timing","app.mthd","crop.status","incorp","incorp.timing","Cattle","Pig","Digestate","rrc","rrp"
-2010,"March","Trailing hose","-","Deep","12.0",6.8,4.9,16,135,227
-2010,"March","Trailing hose","-","Deep","24.0",11,7,20,81.8,186
-2010,"March","Trailing hose","-","Deep","4.0",3.1,2.4,8.7,181,262
-2010,"March","Trailing hose","-","Deep","6.0",4.1,3.2,11,168,244
 2010,"March","Trailing hose","-","Shallow","12.0",11,7.1,19,72.7,168
 2010,"March","Trailing hose","-","Shallow","24.0",14,8.6,22,57.1,156
 2010,"March","Trailing hose","-","Shallow","4.0",8.1,5.3,14,72.8,164
 2010,"March","Trailing hose","-","Shallow","6.0",8.8,5.8,16,81.8,176
+2010,"March","Trailing hose","-","Deep","12.0",6.8,4.9,16,135,227
+2010,"March","Trailing hose","-","Deep","24.0",11,7,20,81.8,186
+2010,"March","Trailing hose","-","Deep","4.0",3.1,2.4,8.7,181,262
+2010,"March","Trailing hose","-","Deep","6.0",4.1,3.2,11,168,244
 2010,"March","Trailing hose","+","None","None",22,14,28,27.3,100
 2010,"March","Open slot injection","+","None","None",12,9.7,16,33.3,64.9
 2010,"March","Closed slot injection","-","None","None",1.6,1.8,2.6,62.5,44.4
-2010,"April","Trailing hose","-","Deep","12.0",10,6.5,20,100,208
-2010,"April","Trailing hose","-","Deep","24.0",16,8.3,21,31.2,153
-2010,"April","Trailing hose","-","Deep","4.0",4.7,3.5,13,177,271
-2010,"April","Trailing hose","-","Deep","6.0",6.4,4.5,15,134,233
 2010,"April","Trailing hose","-","Shallow","12.0",15,8.5,22,46.7,159
 2010,"April","Trailing hose","-","Shallow","24.0",19,9.8,23,21.1,135
 2010,"April","Trailing hose","-","Shallow","4.0",10,6.2,17,70,174
 2010,"April","Trailing hose","-","Shallow","6.0",12,7,19,58.3,171
+2010,"April","Trailing hose","-","Deep","12.0",10,6.5,20,100,208
+2010,"April","Trailing hose","-","Deep","24.0",16,8.3,21,31.2,153
+2010,"April","Trailing hose","-","Deep","4.0",4.7,3.5,13,177,271
+2010,"April","Trailing hose","-","Deep","6.0",6.4,4.5,15,134,233
 2010,"April","Trailing hose","+","None","None",27,15,29,7.41,93.3
 2010,"April","Open slot injection","+","None","None",14,9.8,17,21.4,73.5
 2010,"April","Closed slot injection","-","None","None",1.6,1.8,2.6,62.5,44.4
 2010,"May","Trailing hose","+","None","None",30,15,30,0,100
 2010,"Spring-summer","Broadcast","+","None","None",48,33,50,4.17,51.5
-2010,"Summer","Trailing hose","-","Deep","12.0",22,8.9,22,0,147
-2010,"Summer","Trailing hose","-","Deep","24.0",27,9.6,23,-14.8,140
-2010,"Summer","Trailing hose","-","Deep","4.0",11,6.7,20,81.8,199
-2010,"Summer","Trailing hose","-","Deep","6.0",15,7.8,21,40,169
 2010,"Summer","Trailing hose","-","Shallow","12.0",25,10,24,-4,140
 2010,"Summer","Trailing hose","-","Shallow","24.0",29,11,24,-17.2,118
 2010,"Summer","Trailing hose","-","Shallow","4.0",17,8.8,23,35.3,161
 2010,"Summer","Trailing hose","-","Shallow","6.0",20,9.6,23,15,140
+2010,"Summer","Trailing hose","-","Deep","12.0",22,8.9,22,0,147
+2010,"Summer","Trailing hose","-","Deep","24.0",27,9.6,23,-14.8,140
+2010,"Summer","Trailing hose","-","Deep","4.0",11,6.7,20,81.8,199
+2010,"Summer","Trailing hose","-","Deep","6.0",15,7.8,21,40,169
 2010,"Summer","Trailing hose","+","None","None",33,16,30,-9.09,87.5
 2010,"Summer, before winter rapeseed","Closed slot injection","-","None","None",1.6,1.8,2.6,62.5,44.4
 2010,"Summer, grass","Open slot injection","+","None","None",15,10,17,13.3,70
-2010,"Late summer-autumn","Broadcast","-","Deep","< 12 hours",34,12,26,-23.5,117
-2010,"Late summer-autumn","Broadcast","-","Deep","> 12 hours",34,12,26,-23.5,117
 2010,"Late summer-autumn","Broadcast","-","None","None",48,33,50,4.17,51.5
 2010,"Late summer-autumn","Broadcast","-","Shallow","< 12 hours",37,17,32,-13.5,88.2
 2010,"Late summer-autumn","Broadcast","-","Shallow","> 12 hours",37,17,32,-13.5,88.2
+2010,"Late summer-autumn","Broadcast","-","Deep","< 12 hours",34,12,26,-23.5,117
+2010,"Late summer-autumn","Broadcast","-","Deep","> 12 hours",34,12,26,-23.5,117
 2010,"Late summer-autumn","Broadcast","+","None","None",48,33,50,4.17,51.5
-2010,"Autumn","Trailing hose","-","Deep","12.0",19,8.6,22,15.8,156
-2010,"Autumn","Trailing hose","-","Deep","24.0",25,9.4,23,-8,145
-2010,"Autumn","Trailing hose","-","Deep","4.0",9.2,5.8,19,107,228
-2010,"Autumn","Trailing hose","-","Deep","6.0",12,7,21,75,200
 2010,"Autumn","Trailing hose","-","Shallow","12.0",22,10,24,9.09,140
 2010,"Autumn","Trailing hose","-","Shallow","24.0",26,11,24,-7.69,118
 2010,"Autumn","Trailing hose","-","Shallow","4.0",15,8.1,21,40,159
 2010,"Autumn","Trailing hose","-","Shallow","6.0",17,9,23,35.3,156
+2010,"Autumn","Trailing hose","-","Deep","12.0",19,8.6,22,15.8,156
+2010,"Autumn","Trailing hose","-","Deep","24.0",25,9.4,23,-8,145
+2010,"Autumn","Trailing hose","-","Deep","4.0",9.2,5.8,19,107,228
+2010,"Autumn","Trailing hose","-","Deep","6.0",12,7,21,75,200
 2010,"Autumn","Trailing hose","+","None","None",32,15,30,-6.25,100
 2010,"Autumn","Open slot injection","+","None","None",15,10,17,13.3,70
 2010,"Autumn","Closed slot injection","-","None","None",1.6,1.8,2.6,62.5,44.4
-2010,"Winter-spring","Broadcast","-","Deep","< 12 hours",32,12,25,-21.9,108
-2010,"Winter-spring","Broadcast","-","Deep","> 12 hours",32,12,25,-21.9,108
 2010,"Winter-spring","Broadcast","-","Shallow","< 12 hours",36,17,32,-11.1,88.2
 2010,"Winter-spring","Broadcast","-","Shallow","> 12 hours",36,17,32,-11.1,88.2
+2010,"Winter-spring","Broadcast","-","Deep","< 12 hours",32,12,25,-21.9,108
+2010,"Winter-spring","Broadcast","-","Deep","> 12 hours",32,12,25,-21.9,108
 2010,"Winter-spring","Broadcast","-/+","None","None",47,33,50,6.38,51.5

@@ -1,0 +1,425 @@
+"ID","Decade","Application period","Application method","Crop","Crop height (cm)","Incorporation","Manure source","Manure DM (%)","Manure pH","Manure treatment","Air temperature (deg. C)","Wind speed (m/s)","Rainfall rate (mm/h)","Emission factor (% of applied TAN)"
+"186-2010",2010,"March","Trailing hose","Winter cereal",15,"None","Cattle",6.5,6.4,"Field acidified",4.9,4.02,0.09,14
+"199-2010",2010,"March","Trailing hose","None",0,"None","Cattle",6.5,6.4,"Field acidified",4.9,4.02,0.09,14
+"344-2010",2010,"March","Trailing hose","None",0,"Shallow 24 hr","Cattle",6.5,6.4,"Field acidified",4.9,4.02,0.09,7.4
+"345-2010",2010,"March","Trailing hose","None",0,"Shallow 12 hr","Cattle",6.5,6.4,"Field acidified",4.9,4.02,0.09,5.9
+"346-2010",2010,"March","Trailing hose","None",0,"Shallow 6 hr","Cattle",6.5,6.4,"Field acidified",4.9,4.02,0.09,5
+"347-2010",2010,"March","Trailing hose","None",0,"Shallow 4 hr","Cattle",6.5,6.4,"Field acidified",4.9,4.02,0.09,4.7
+"178-2010",2010,"March","Trailing hose","None",0,"Deep 24 hr","Cattle",6.5,6.4,"Field acidified",4.9,4.02,0.09,5.2
+"179-2010",2010,"March","Trailing hose","None",0,"Deep 12 hr","Cattle",6.5,6.4,"Field acidified",4.9,4.02,0.09,3.2
+"180-2010",2010,"March","Trailing hose","None",0,"Deep 6 hr","Cattle",6.5,6.4,"Field acidified",4.9,4.02,0.09,1.9
+"181-2010",2010,"March","Trailing hose","None",0,"Deep 4 hr","Cattle",6.5,6.4,"Field acidified",4.9,4.02,0.09,1.5
+"219-2010",2010,"March","Trailing hose","Winter cereal",15,"None","Pig",3.9,6.4,"Field acidified",4.9,4.02,0.09,9.2
+"232-2010",2010,"March","Trailing hose","None",0,"None","Pig",3.9,6.4,"Field acidified",4.9,4.02,0.09,9.2
+"364-2010",2010,"March","Trailing hose","None",0,"Shallow 24 hr","Pig",3.9,6.4,"Field acidified",4.9,4.02,0.09,4.8
+"365-2010",2010,"March","Trailing hose","None",0,"Shallow 12 hr","Pig",3.9,6.4,"Field acidified",4.9,4.02,0.09,3.8
+"366-2010",2010,"March","Trailing hose","None",0,"Shallow 6 hr","Pig",3.9,6.4,"Field acidified",4.9,4.02,0.09,3.2
+"367-2010",2010,"March","Trailing hose","None",0,"Shallow 4 hr","Pig",3.9,6.4,"Field acidified",4.9,4.02,0.09,3
+"211-2010",2010,"March","Trailing hose","None",0,"Deep 24 hr","Pig",3.9,6.4,"Field acidified",4.9,4.02,0.09,3.4
+"212-2010",2010,"March","Trailing hose","None",0,"Deep 12 hr","Pig",3.9,6.4,"Field acidified",4.9,4.02,0.09,2.1
+"213-2010",2010,"March","Trailing hose","None",0,"Deep 6 hr","Pig",3.9,6.4,"Field acidified",4.9,4.02,0.09,1.3
+"214-2010",2010,"March","Trailing hose","None",0,"Deep 4 hr","Pig",3.9,6.4,"Field acidified",4.9,4.02,0.09,1
+"187-2010",2010,"April","Trailing hose","Winter cereal",25,"None","Cattle",6.5,6.4,"Field acidified",8.5,3.91,0.09,18
+"200-2010",2010,"April","Trailing hose","None",0,"None","Cattle",6.5,6.4,"Field acidified",8.5,3.91,0.09,18
+"348-2010",2010,"April","Trailing hose","None",0,"Shallow 24 hr","Cattle",6.5,6.4,"Field acidified",8.5,3.91,0.09,11
+"349-2010",2010,"April","Trailing hose","None",0,"Shallow 12 hr","Cattle",6.5,6.4,"Field acidified",8.5,3.91,0.09,8.3
+"350-2010",2010,"April","Trailing hose","None",0,"Shallow 6 hr","Cattle",6.5,6.4,"Field acidified",8.5,3.91,0.09,6.9
+"351-2010",2010,"April","Trailing hose","None",0,"Shallow 4 hr","Cattle",6.5,6.4,"Field acidified",8.5,3.91,0.09,6.3
+"182-2010",2010,"April","Trailing hose","None",0,"Deep 24 hr","Cattle",6.5,6.4,"Field acidified",8.5,3.91,0.09,8.1
+"183-2010",2010,"April","Trailing hose","None",0,"Deep 12 hr","Cattle",6.5,6.4,"Field acidified",8.5,3.91,0.09,5
+"184-2010",2010,"April","Trailing hose","None",0,"Deep 6 hr","Cattle",6.5,6.4,"Field acidified",8.5,3.91,0.09,3
+"185-2010",2010,"April","Trailing hose","None",0,"Deep 4 hr","Cattle",6.5,6.4,"Field acidified",8.5,3.91,0.09,2.2
+"220-2010",2010,"April","Trailing hose","Winter cereal",25,"None","Pig",3.9,6.4,"Field acidified",8.5,3.91,0.09,10
+"233-2010",2010,"April","Trailing hose","None",0,"None","Pig",3.9,6.4,"Field acidified",8.5,3.91,0.09,10
+"368-2010",2010,"April","Trailing hose","None",0,"Shallow 24 hr","Pig",3.9,6.4,"Field acidified",8.5,3.91,0.09,6
+"369-2010",2010,"April","Trailing hose","None",0,"Shallow 12 hr","Pig",3.9,6.4,"Field acidified",8.5,3.91,0.09,4.8
+"370-2010",2010,"April","Trailing hose","None",0,"Shallow 6 hr","Pig",3.9,6.4,"Field acidified",8.5,3.91,0.09,4
+"371-2010",2010,"April","Trailing hose","None",0,"Shallow 4 hr","Pig",3.9,6.4,"Field acidified",8.5,3.91,0.09,3.6
+"215-2010",2010,"April","Trailing hose","None",0,"Deep 24 hr","Pig",3.9,6.4,"Field acidified",8.5,3.91,0.09,4.7
+"216-2010",2010,"April","Trailing hose","None",0,"Deep 12 hr","Pig",3.9,6.4,"Field acidified",8.5,3.91,0.09,3
+"217-2010",2010,"April","Trailing hose","None",0,"Deep 6 hr","Pig",3.9,6.4,"Field acidified",8.5,3.91,0.09,1.9
+"218-2010",2010,"April","Trailing hose","None",0,"Deep 4 hr","Pig",3.9,6.4,"Field acidified",8.5,3.91,0.09,1.4
+"188-2010",2010,"May","Trailing hose","Spring cereal",15,"None","Cattle",6.5,6.4,"Field acidified",12.4,3.56,0.09,22
+"221-2010",2010,"May","Trailing hose","Spring cereal",15,"None","Pig",3.9,6.4,"Field acidified",12.4,3.56,0.09,11
+"206-2010",2010,"Spring-summer","Broadcast","Cereal and grass",15,"None","Cattle",6.5,6.4,"Field acidified",14.3,3.4,0.09,42
+"239-2010",2010,"Spring-summer","Broadcast","Cereal and grass",15,"None","Pig",3.9,6.4,"Field acidified",14.3,3.4,0.09,25
+"189-2010",2010,"Summer","Trailing hose","Grass",10,"None","Cattle",6.5,6.4,"Field acidified",16.9,3.18,0.09,27
+"201-2010",2010,"Summer","Trailing hose","None",0,"None","Cattle",6.5,6.4,"Field acidified",16.9,3.18,0.09,27
+"352-2010",2010,"Summer","Trailing hose","None",0,"Shallow 24 hr","Cattle",6.5,6.4,"Field acidified",16.9,3.18,0.09,20
+"353-2010",2010,"Summer","Trailing hose","None",0,"Shallow 12 hr","Cattle",6.5,6.4,"Field acidified",16.9,3.18,0.09,16
+"354-2010",2010,"Summer","Trailing hose","None",0,"Shallow 6 hr","Cattle",6.5,6.4,"Field acidified",16.9,3.18,0.09,13
+"355-2010",2010,"Summer","Trailing hose","None",0,"Shallow 4 hr","Cattle",6.5,6.4,"Field acidified",16.9,3.18,0.09,11
+"190-2010",2010,"Summer","Trailing hose","None",0,"Deep 24 hr","Cattle",6.5,6.4,"Field acidified",16.9,3.18,0.09,18
+"191-2010",2010,"Summer","Trailing hose","None",0,"Deep 12 hr","Cattle",6.5,6.4,"Field acidified",16.9,3.18,0.09,12
+"192-2010",2010,"Summer","Trailing hose","None",0,"Deep 6 hr","Cattle",6.5,6.4,"Field acidified",16.9,3.18,0.09,7.5
+"193-2010",2010,"Summer","Trailing hose","None",0,"Deep 4 hr","Cattle",6.5,6.4,"Field acidified",16.9,3.18,0.09,5.6
+"222-2010",2010,"Summer","Trailing hose","Grass",10,"None","Pig",3.9,6.4,"Field acidified",16.9,3.18,0.09,12
+"234-2010",2010,"Summer","Trailing hose","None",0,"None","Pig",3.9,6.4,"Field acidified",16.9,3.18,0.09,12
+"372-2010",2010,"Summer","Trailing hose","None",0,"Shallow 24 hr","Pig",3.9,6.4,"Field acidified",16.9,3.18,0.09,8.7
+"373-2010",2010,"Summer","Trailing hose","None",0,"Shallow 12 hr","Pig",3.9,6.4,"Field acidified",16.9,3.18,0.09,7.5
+"374-2010",2010,"Summer","Trailing hose","None",0,"Shallow 6 hr","Pig",3.9,6.4,"Field acidified",16.9,3.18,0.09,6
+"375-2010",2010,"Summer","Trailing hose","None",0,"Shallow 4 hr","Pig",3.9,6.4,"Field acidified",16.9,3.18,0.09,5.3
+"223-2010",2010,"Summer","Trailing hose","None",0,"Deep 24 hr","Pig",3.9,6.4,"Field acidified",16.9,3.18,0.09,7.7
+"224-2010",2010,"Summer","Trailing hose","None",0,"Deep 12 hr","Pig",3.9,6.4,"Field acidified",16.9,3.18,0.09,6
+"225-2010",2010,"Summer","Trailing hose","None",0,"Deep 6 hr","Pig",3.9,6.4,"Field acidified",16.9,3.18,0.09,4.1
+"226-2010",2010,"Summer","Trailing hose","None",0,"Deep 4 hr","Pig",3.9,6.4,"Field acidified",16.9,3.18,0.09,3.1
+"207-2010",2010,"Late summer-autumn","Broadcast","Grass",10,"None","Cattle",6.5,6.4,"Field acidified",16.6,3.22,0.09,43
+"210-2010",2010,"Late summer-autumn","Broadcast","None",0,"None","Cattle",6.5,6.4,"Field acidified",16.6,3.22,0.09,43
+"362-2010",2010,"Late summer-autumn","Broadcast","None",0,"Shallow < 12 hr","Cattle",6.5,6.4,"Field acidified",16.6,3.22,0.09,34
+"363-2010",2010,"Late summer-autumn","Broadcast","None",0,"Shallow > 12 hr","Cattle",6.5,6.4,"Field acidified",16.6,3.22,0.09,34
+"208-2010",2010,"Late summer-autumn","Broadcast","None",0,"Deep < 12 hr","Cattle",6.5,6.4,"Field acidified",16.6,3.22,0.09,31
+"209-2010",2010,"Late summer-autumn","Broadcast","None",0,"Deep > 12 hr","Cattle",6.5,6.4,"Field acidified",16.6,3.22,0.09,31
+"240-2010",2010,"Late summer-autumn","Broadcast","Grass",10,"None","Pig",3.9,6.4,"Field acidified",16.6,3.22,0.09,25
+"243-2010",2010,"Late summer-autumn","Broadcast","None",0,"None","Pig",3.9,6.4,"Field acidified",16.6,3.22,0.09,25
+"382-2010",2010,"Late summer-autumn","Broadcast","None",0,"Shallow < 12 hr","Pig",3.9,6.4,"Field acidified",16.6,3.22,0.09,14
+"383-2010",2010,"Late summer-autumn","Broadcast","None",0,"Shallow > 12 hr","Pig",3.9,6.4,"Field acidified",16.6,3.22,0.09,14
+"241-2010",2010,"Late summer-autumn","Broadcast","None",0,"Deep < 12 hr","Pig",3.9,6.4,"Field acidified",16.6,3.22,0.09,10
+"242-2010",2010,"Late summer-autumn","Broadcast","None",0,"Deep > 12 hr","Pig",3.9,6.4,"Field acidified",16.6,3.22,0.09,10
+"194-2010",2010,"Autumn","Trailing hose","Grass",15,"None","Cattle",6.5,6.4,"Field acidified",14.6,3.45,0.09,25
+"202-2010",2010,"Autumn","Trailing hose","None",0,"None","Cattle",6.5,6.4,"Field acidified",14.6,3.45,0.09,25
+"356-2010",2010,"Autumn","Trailing hose","None",0,"Shallow 24 hr","Cattle",6.5,6.4,"Field acidified",14.6,3.45,0.09,18
+"357-2010",2010,"Autumn","Trailing hose","None",0,"Shallow 12 hr","Cattle",6.5,6.4,"Field acidified",14.6,3.45,0.09,14
+"358-2010",2010,"Autumn","Trailing hose","None",0,"Shallow 6 hr","Cattle",6.5,6.4,"Field acidified",14.6,3.45,0.09,11
+"359-2010",2010,"Autumn","Trailing hose","None",0,"Shallow 4 hr","Cattle",6.5,6.4,"Field acidified",14.6,3.45,0.09,9.7
+"195-2010",2010,"Autumn","Trailing hose","None",0,"Deep 24 hr","Cattle",6.5,6.4,"Field acidified",14.6,3.45,0.09,15
+"196-2010",2010,"Autumn","Trailing hose","None",0,"Deep 12 hr","Cattle",6.5,6.4,"Field acidified",14.6,3.45,0.09,9.9
+"197-2010",2010,"Autumn","Trailing hose","None",0,"Deep 6 hr","Cattle",6.5,6.4,"Field acidified",14.6,3.45,0.09,6
+"198-2010",2010,"Autumn","Trailing hose","None",0,"Deep 4 hr","Cattle",6.5,6.4,"Field acidified",14.6,3.45,0.09,4.4
+"227-2010",2010,"Autumn","Trailing hose","Grass",15,"None","Pig",3.9,6.4,"Field acidified",14.6,3.45,0.09,12
+"235-2010",2010,"Autumn","Trailing hose","None",0,"None","Pig",3.9,6.4,"Field acidified",14.6,3.45,0.09,12
+"376-2010",2010,"Autumn","Trailing hose","None",0,"Shallow 24 hr","Pig",3.9,6.4,"Field acidified",14.6,3.45,0.09,8.1
+"377-2010",2010,"Autumn","Trailing hose","None",0,"Shallow 12 hr","Pig",3.9,6.4,"Field acidified",14.6,3.45,0.09,6.8
+"378-2010",2010,"Autumn","Trailing hose","None",0,"Shallow 6 hr","Pig",3.9,6.4,"Field acidified",14.6,3.45,0.09,5.4
+"379-2010",2010,"Autumn","Trailing hose","None",0,"Shallow 4 hr","Pig",3.9,6.4,"Field acidified",14.6,3.45,0.09,4.8
+"228-2010",2010,"Autumn","Trailing hose","None",0,"Deep 24 hr","Pig",3.9,6.4,"Field acidified",14.6,3.45,0.09,7
+"229-2010",2010,"Autumn","Trailing hose","None",0,"Deep 12 hr","Pig",3.9,6.4,"Field acidified",14.6,3.45,0.09,5.2
+"230-2010",2010,"Autumn","Trailing hose","None",0,"Deep 6 hr","Pig",3.9,6.4,"Field acidified",14.6,3.45,0.09,3.4
+"231-2010",2010,"Autumn","Trailing hose","None",0,"Deep 4 hr","Pig",3.9,6.4,"Field acidified",14.6,3.45,0.09,2.6
+"205-2010",2010,"Winter-spring","Broadcast","None",0,"None","Cattle",6.5,6.4,"Field acidified",12,3.53,0.09,41
+"360-2010",2010,"Winter-spring","Broadcast","None",0,"Shallow < 12 hr","Cattle",6.5,6.4,"Field acidified",12,3.53,0.09,29
+"361-2010",2010,"Winter-spring","Broadcast","None",0,"Shallow > 12 hr","Cattle",6.5,6.4,"Field acidified",12,3.53,0.09,29
+"203-2010",2010,"Winter-spring","Broadcast","None",0,"Deep < 12 hr","Cattle",6.5,6.4,"Field acidified",12,3.53,0.09,25
+"204-2010",2010,"Winter-spring","Broadcast","None",0,"Deep > 12 hr","Cattle",6.5,6.4,"Field acidified",12,3.53,0.09,25
+"238-2010",2010,"Winter-spring","Broadcast","None",0,"None","Pig",3.9,6.4,"Field acidified",12,3.53,0.09,25
+"380-2010",2010,"Winter-spring","Broadcast","None",0,"Shallow < 12 hr","Pig",3.9,6.4,"Field acidified",12,3.53,0.09,13
+"381-2010",2010,"Winter-spring","Broadcast","None",0,"Shallow > 12 hr","Pig",3.9,6.4,"Field acidified",12,3.53,0.09,13
+"236-2010",2010,"Winter-spring","Broadcast","None",0,"Deep < 12 hr","Pig",3.9,6.4,"Field acidified",12,3.53,0.09,10
+"237-2010",2010,"Winter-spring","Broadcast","None",0,"Deep > 12 hr","Pig",3.9,6.4,"Field acidified",12,3.53,0.09,10
+"186-2000",2000,"March","Trailing hose","Winter cereal",15,"None","Cattle",6.4,6.4,"Field acidified",4,4.02,0.09,13
+"199-2000",2000,"March","Trailing hose","None",0,"None","Cattle",6.4,6.4,"Field acidified",4,4.02,0.09,13
+"344-2000",2000,"March","Trailing hose","None",0,"Shallow 24 hr","Cattle",6.4,6.4,"Field acidified",4,4.02,0.09,6.7
+"345-2000",2000,"March","Trailing hose","None",0,"Shallow 12 hr","Cattle",6.4,6.4,"Field acidified",4,4.02,0.09,5.4
+"346-2000",2000,"March","Trailing hose","None",0,"Shallow 6 hr","Cattle",6.4,6.4,"Field acidified",4,4.02,0.09,4.6
+"347-2000",2000,"March","Trailing hose","None",0,"Shallow 4 hr","Cattle",6.4,6.4,"Field acidified",4,4.02,0.09,4.3
+"178-2000",2000,"March","Trailing hose","None",0,"Deep 24 hr","Cattle",6.4,6.4,"Field acidified",4,4.02,0.09,4.6
+"179-2000",2000,"March","Trailing hose","None",0,"Deep 12 hr","Cattle",6.4,6.4,"Field acidified",4,4.02,0.09,2.8
+"180-2000",2000,"March","Trailing hose","None",0,"Deep 6 hr","Cattle",6.4,6.4,"Field acidified",4,4.02,0.09,1.7
+"181-2000",2000,"March","Trailing hose","None",0,"Deep 4 hr","Cattle",6.4,6.4,"Field acidified",4,4.02,0.09,1.3
+"219-2000",2000,"March","Trailing hose","Winter cereal",15,"None","Pig",3.9,6.4,"Field acidified",4,4.02,0.09,8.9
+"232-2000",2000,"March","Trailing hose","None",0,"None","Pig",3.9,6.4,"Field acidified",4,4.02,0.09,8.9
+"364-2000",2000,"March","Trailing hose","None",0,"Shallow 24 hr","Pig",3.9,6.4,"Field acidified",4,4.02,0.09,4.5
+"365-2000",2000,"March","Trailing hose","None",0,"Shallow 12 hr","Pig",3.9,6.4,"Field acidified",4,4.02,0.09,3.6
+"366-2000",2000,"March","Trailing hose","None",0,"Shallow 6 hr","Pig",3.9,6.4,"Field acidified",4,4.02,0.09,3.1
+"367-2000",2000,"March","Trailing hose","None",0,"Shallow 4 hr","Pig",3.9,6.4,"Field acidified",4,4.02,0.09,2.9
+"211-2000",2000,"March","Trailing hose","None",0,"Deep 24 hr","Pig",3.9,6.4,"Field acidified",4,4.02,0.09,3.1
+"212-2000",2000,"March","Trailing hose","None",0,"Deep 12 hr","Pig",3.9,6.4,"Field acidified",4,4.02,0.09,1.9
+"213-2000",2000,"March","Trailing hose","None",0,"Deep 6 hr","Pig",3.9,6.4,"Field acidified",4,4.02,0.09,1.2
+"214-2000",2000,"March","Trailing hose","None",0,"Deep 4 hr","Pig",3.9,6.4,"Field acidified",4,4.02,0.09,0.95
+"187-2000",2000,"April","Trailing hose","Winter cereal",25,"None","Cattle",6.4,6.4,"Field acidified",8.5,3.45,0.09,17
+"200-2000",2000,"April","Trailing hose","None",0,"None","Cattle",6.4,6.4,"Field acidified",8.5,3.45,0.09,17
+"348-2000",2000,"April","Trailing hose","None",0,"Shallow 24 hr","Cattle",6.4,6.4,"Field acidified",8.5,3.45,0.09,9.6
+"349-2000",2000,"April","Trailing hose","None",0,"Shallow 12 hr","Cattle",6.4,6.4,"Field acidified",8.5,3.45,0.09,7.5
+"350-2000",2000,"April","Trailing hose","None",0,"Shallow 6 hr","Cattle",6.4,6.4,"Field acidified",8.5,3.45,0.09,6.3
+"351-2000",2000,"April","Trailing hose","None",0,"Shallow 4 hr","Cattle",6.4,6.4,"Field acidified",8.5,3.45,0.09,5.8
+"182-2000",2000,"April","Trailing hose","None",0,"Deep 24 hr","Cattle",6.4,6.4,"Field acidified",8.5,3.45,0.09,7.2
+"183-2000",2000,"April","Trailing hose","None",0,"Deep 12 hr","Cattle",6.4,6.4,"Field acidified",8.5,3.45,0.09,4.4
+"184-2000",2000,"April","Trailing hose","None",0,"Deep 6 hr","Cattle",6.4,6.4,"Field acidified",8.5,3.45,0.09,2.6
+"185-2000",2000,"April","Trailing hose","None",0,"Deep 4 hr","Cattle",6.4,6.4,"Field acidified",8.5,3.45,0.09,2
+"220-2000",2000,"April","Trailing hose","Winter cereal",25,"None","Pig",3.9,6.4,"Field acidified",8.5,3.45,0.09,10
+"233-2000",2000,"April","Trailing hose","None",0,"None","Pig",3.9,6.4,"Field acidified",8.5,3.45,0.09,10
+"368-2000",2000,"April","Trailing hose","None",0,"Shallow 24 hr","Pig",3.9,6.4,"Field acidified",8.5,3.45,0.09,5.6
+"369-2000",2000,"April","Trailing hose","None",0,"Shallow 12 hr","Pig",3.9,6.4,"Field acidified",8.5,3.45,0.09,4.5
+"370-2000",2000,"April","Trailing hose","None",0,"Shallow 6 hr","Pig",3.9,6.4,"Field acidified",8.5,3.45,0.09,3.7
+"371-2000",2000,"April","Trailing hose","None",0,"Shallow 4 hr","Pig",3.9,6.4,"Field acidified",8.5,3.45,0.09,3.5
+"215-2000",2000,"April","Trailing hose","None",0,"Deep 24 hr","Pig",3.9,6.4,"Field acidified",8.5,3.45,0.09,4.3
+"216-2000",2000,"April","Trailing hose","None",0,"Deep 12 hr","Pig",3.9,6.4,"Field acidified",8.5,3.45,0.09,2.7
+"217-2000",2000,"April","Trailing hose","None",0,"Deep 6 hr","Pig",3.9,6.4,"Field acidified",8.5,3.45,0.09,1.7
+"218-2000",2000,"April","Trailing hose","None",0,"Deep 4 hr","Pig",3.9,6.4,"Field acidified",8.5,3.45,0.09,1.3
+"188-2000",2000,"May","Trailing hose","Spring cereal",15,"None","Cattle",6.4,6.4,"Field acidified",12.5,3.33,0.09,22
+"221-2000",2000,"May","Trailing hose","Spring cereal",15,"None","Pig",3.9,6.4,"Field acidified",12.5,3.33,0.09,11
+"206-2000",2000,"Spring-summer","Broadcast","Cereal and grass",15,"None","Cattle",6.4,6.4,"Field acidified",14.3,3.22,0.09,41
+"239-2000",2000,"Spring-summer","Broadcast","Cereal and grass",15,"None","Pig",3.9,6.4,"Field acidified",14.3,3.22,0.09,25
+"189-2000",2000,"Summer","Trailing hose","Grass",10,"None","Cattle",6.4,6.4,"Field acidified",16.9,3.1,0.09,26
+"201-2000",2000,"Summer","Trailing hose","None",0,"None","Cattle",6.4,6.4,"Field acidified",16.9,3.1,0.09,26
+"352-2000",2000,"Summer","Trailing hose","None",0,"Shallow 24 hr","Cattle",6.4,6.4,"Field acidified",16.9,3.1,0.09,20
+"353-2000",2000,"Summer","Trailing hose","None",0,"Shallow 12 hr","Cattle",6.4,6.4,"Field acidified",16.9,3.1,0.09,16
+"354-2000",2000,"Summer","Trailing hose","None",0,"Shallow 6 hr","Cattle",6.4,6.4,"Field acidified",16.9,3.1,0.09,12
+"355-2000",2000,"Summer","Trailing hose","None",0,"Shallow 4 hr","Cattle",6.4,6.4,"Field acidified",16.9,3.1,0.09,11
+"190-2000",2000,"Summer","Trailing hose","None",0,"Deep 24 hr","Cattle",6.4,6.4,"Field acidified",16.9,3.1,0.09,18
+"191-2000",2000,"Summer","Trailing hose","None",0,"Deep 12 hr","Cattle",6.4,6.4,"Field acidified",16.9,3.1,0.09,12
+"192-2000",2000,"Summer","Trailing hose","None",0,"Deep 6 hr","Cattle",6.4,6.4,"Field acidified",16.9,3.1,0.09,7.4
+"193-2000",2000,"Summer","Trailing hose","None",0,"Deep 4 hr","Cattle",6.4,6.4,"Field acidified",16.9,3.1,0.09,5.5
+"222-2000",2000,"Summer","Trailing hose","Grass",10,"None","Pig",3.9,6.4,"Field acidified",16.9,3.1,0.09,12
+"234-2000",2000,"Summer","Trailing hose","None",0,"None","Pig",3.9,6.4,"Field acidified",16.9,3.1,0.09,12
+"372-2000",2000,"Summer","Trailing hose","None",0,"Shallow 24 hr","Pig",3.9,6.4,"Field acidified",16.9,3.1,0.09,8.7
+"373-2000",2000,"Summer","Trailing hose","None",0,"Shallow 12 hr","Pig",3.9,6.4,"Field acidified",16.9,3.1,0.09,7.4
+"374-2000",2000,"Summer","Trailing hose","None",0,"Shallow 6 hr","Pig",3.9,6.4,"Field acidified",16.9,3.1,0.09,6
+"375-2000",2000,"Summer","Trailing hose","None",0,"Shallow 4 hr","Pig",3.9,6.4,"Field acidified",16.9,3.1,0.09,5.3
+"223-2000",2000,"Summer","Trailing hose","None",0,"Deep 24 hr","Pig",3.9,6.4,"Field acidified",16.9,3.1,0.09,7.7
+"224-2000",2000,"Summer","Trailing hose","None",0,"Deep 12 hr","Pig",3.9,6.4,"Field acidified",16.9,3.1,0.09,6
+"225-2000",2000,"Summer","Trailing hose","None",0,"Deep 6 hr","Pig",3.9,6.4,"Field acidified",16.9,3.1,0.09,4
+"226-2000",2000,"Summer","Trailing hose","None",0,"Deep 4 hr","Pig",3.9,6.4,"Field acidified",16.9,3.1,0.09,3.1
+"207-2000",2000,"Late summer-autumn","Broadcast","Grass",10,"None","Cattle",6.4,6.4,"Field acidified",16.7,3.1,0.09,42
+"210-2000",2000,"Late summer-autumn","Broadcast","None",0,"None","Cattle",6.4,6.4,"Field acidified",16.7,3.1,0.09,42
+"362-2000",2000,"Late summer-autumn","Broadcast","None",0,"Shallow < 12 hr","Cattle",6.4,6.4,"Field acidified",16.7,3.1,0.09,33
+"363-2000",2000,"Late summer-autumn","Broadcast","None",0,"Shallow > 12 hr","Cattle",6.4,6.4,"Field acidified",16.7,3.1,0.09,33
+"208-2000",2000,"Late summer-autumn","Broadcast","None",0,"Deep < 12 hr","Cattle",6.4,6.4,"Field acidified",16.7,3.1,0.09,30
+"209-2000",2000,"Late summer-autumn","Broadcast","None",0,"Deep > 12 hr","Cattle",6.4,6.4,"Field acidified",16.7,3.1,0.09,30
+"240-2000",2000,"Late summer-autumn","Broadcast","Grass",10,"None","Pig",3.9,6.4,"Field acidified",16.7,3.1,0.09,25
+"243-2000",2000,"Late summer-autumn","Broadcast","None",0,"None","Pig",3.9,6.4,"Field acidified",16.7,3.1,0.09,25
+"382-2000",2000,"Late summer-autumn","Broadcast","None",0,"Shallow < 12 hr","Pig",3.9,6.4,"Field acidified",16.7,3.1,0.09,14
+"383-2000",2000,"Late summer-autumn","Broadcast","None",0,"Shallow > 12 hr","Pig",3.9,6.4,"Field acidified",16.7,3.1,0.09,14
+"241-2000",2000,"Late summer-autumn","Broadcast","None",0,"Deep < 12 hr","Pig",3.9,6.4,"Field acidified",16.7,3.1,0.09,10
+"242-2000",2000,"Late summer-autumn","Broadcast","None",0,"Deep > 12 hr","Pig",3.9,6.4,"Field acidified",16.7,3.1,0.09,10
+"194-2000",2000,"Autumn","Trailing hose","Grass",15,"None","Cattle",6.4,6.4,"Field acidified",14.6,3.33,0.09,24
+"202-2000",2000,"Autumn","Trailing hose","None",0,"None","Cattle",6.4,6.4,"Field acidified",14.6,3.33,0.09,24
+"356-2000",2000,"Autumn","Trailing hose","None",0,"Shallow 24 hr","Cattle",6.4,6.4,"Field acidified",14.6,3.33,0.09,17
+"357-2000",2000,"Autumn","Trailing hose","None",0,"Shallow 12 hr","Cattle",6.4,6.4,"Field acidified",14.6,3.33,0.09,13
+"358-2000",2000,"Autumn","Trailing hose","None",0,"Shallow 6 hr","Cattle",6.4,6.4,"Field acidified",14.6,3.33,0.09,11
+"359-2000",2000,"Autumn","Trailing hose","None",0,"Shallow 4 hr","Cattle",6.4,6.4,"Field acidified",14.6,3.33,0.09,9.4
+"195-2000",2000,"Autumn","Trailing hose","None",0,"Deep 24 hr","Cattle",6.4,6.4,"Field acidified",14.6,3.33,0.09,15
+"196-2000",2000,"Autumn","Trailing hose","None",0,"Deep 12 hr","Cattle",6.4,6.4,"Field acidified",14.6,3.33,0.09,9.6
+"197-2000",2000,"Autumn","Trailing hose","None",0,"Deep 6 hr","Cattle",6.4,6.4,"Field acidified",14.6,3.33,0.09,5.8
+"198-2000",2000,"Autumn","Trailing hose","None",0,"Deep 4 hr","Cattle",6.4,6.4,"Field acidified",14.6,3.33,0.09,4.3
+"227-2000",2000,"Autumn","Trailing hose","Grass",15,"None","Pig",3.9,6.4,"Field acidified",14.6,3.33,0.09,12
+"235-2000",2000,"Autumn","Trailing hose","None",0,"None","Pig",3.9,6.4,"Field acidified",14.6,3.33,0.09,12
+"376-2000",2000,"Autumn","Trailing hose","None",0,"Shallow 24 hr","Pig",3.9,6.4,"Field acidified",14.6,3.33,0.09,8
+"377-2000",2000,"Autumn","Trailing hose","None",0,"Shallow 12 hr","Pig",3.9,6.4,"Field acidified",14.6,3.33,0.09,6.7
+"378-2000",2000,"Autumn","Trailing hose","None",0,"Shallow 6 hr","Pig",3.9,6.4,"Field acidified",14.6,3.33,0.09,5.4
+"379-2000",2000,"Autumn","Trailing hose","None",0,"Shallow 4 hr","Pig",3.9,6.4,"Field acidified",14.6,3.33,0.09,4.8
+"228-2000",2000,"Autumn","Trailing hose","None",0,"Deep 24 hr","Pig",3.9,6.4,"Field acidified",14.6,3.33,0.09,6.9
+"229-2000",2000,"Autumn","Trailing hose","None",0,"Deep 12 hr","Pig",3.9,6.4,"Field acidified",14.6,3.33,0.09,5.1
+"230-2000",2000,"Autumn","Trailing hose","None",0,"Deep 6 hr","Pig",3.9,6.4,"Field acidified",14.6,3.33,0.09,3.3
+"231-2000",2000,"Autumn","Trailing hose","None",0,"Deep 4 hr","Pig",3.9,6.4,"Field acidified",14.6,3.33,0.09,2.5
+"205-2000",2000,"Winter-spring","Broadcast","None",0,"None","Cattle",6.4,6.4,"Field acidified",11.9,3.42,0.09,41
+"360-2000",2000,"Winter-spring","Broadcast","None",0,"Shallow < 12 hr","Cattle",6.4,6.4,"Field acidified",11.9,3.42,0.09,29
+"361-2000",2000,"Winter-spring","Broadcast","None",0,"Shallow > 12 hr","Cattle",6.4,6.4,"Field acidified",11.9,3.42,0.09,29
+"203-2000",2000,"Winter-spring","Broadcast","None",0,"Deep < 12 hr","Cattle",6.4,6.4,"Field acidified",11.9,3.42,0.09,25
+"204-2000",2000,"Winter-spring","Broadcast","None",0,"Deep > 12 hr","Cattle",6.4,6.4,"Field acidified",11.9,3.42,0.09,25
+"238-2000",2000,"Winter-spring","Broadcast","None",0,"None","Pig",3.9,6.4,"Field acidified",11.9,3.42,0.09,25
+"380-2000",2000,"Winter-spring","Broadcast","None",0,"Shallow < 12 hr","Pig",3.9,6.4,"Field acidified",11.9,3.42,0.09,13
+"381-2000",2000,"Winter-spring","Broadcast","None",0,"Shallow > 12 hr","Pig",3.9,6.4,"Field acidified",11.9,3.42,0.09,13
+"236-2000",2000,"Winter-spring","Broadcast","None",0,"Deep < 12 hr","Pig",3.9,6.4,"Field acidified",11.9,3.42,0.09,10
+"237-2000",2000,"Winter-spring","Broadcast","None",0,"Deep > 12 hr","Pig",3.9,6.4,"Field acidified",11.9,3.42,0.09,10
+"186-1990",1990,"March","Trailing hose","Winter cereal",15,"None","Cattle",7,6.4,"Field acidified",4.4,4.48,0.09,15
+"199-1990",1990,"March","Trailing hose","None",0,"None","Cattle",7,6.4,"Field acidified",4.4,4.48,0.09,15
+"344-1990",1990,"March","Trailing hose","None",0,"Shallow 24 hr","Cattle",7,6.4,"Field acidified",4.4,4.48,0.09,7.7
+"345-1990",1990,"March","Trailing hose","None",0,"Shallow 12 hr","Cattle",7,6.4,"Field acidified",4.4,4.48,0.09,6.1
+"346-1990",1990,"March","Trailing hose","None",0,"Shallow 6 hr","Cattle",7,6.4,"Field acidified",4.4,4.48,0.09,5.2
+"347-1990",1990,"March","Trailing hose","None",0,"Shallow 4 hr","Cattle",7,6.4,"Field acidified",4.4,4.48,0.09,4.9
+"178-1990",1990,"March","Trailing hose","None",0,"Deep 24 hr","Cattle",7,6.4,"Field acidified",4.4,4.48,0.09,5.4
+"179-1990",1990,"March","Trailing hose","None",0,"Deep 12 hr","Cattle",7,6.4,"Field acidified",4.4,4.48,0.09,3.3
+"180-1990",1990,"March","Trailing hose","None",0,"Deep 6 hr","Cattle",7,6.4,"Field acidified",4.4,4.48,0.09,2
+"181-1990",1990,"March","Trailing hose","None",0,"Deep 4 hr","Cattle",7,6.4,"Field acidified",4.4,4.48,0.09,1.5
+"219-1990",1990,"March","Trailing hose","Winter cereal",15,"None","Pig",3.7,6.4,"Field acidified",4.4,4.48,0.09,9.2
+"232-1990",1990,"March","Trailing hose","None",0,"None","Pig",3.7,6.4,"Field acidified",4.4,4.48,0.09,9.2
+"364-1990",1990,"March","Trailing hose","None",0,"Shallow 24 hr","Pig",3.7,6.4,"Field acidified",4.4,4.48,0.09,4.8
+"365-1990",1990,"March","Trailing hose","None",0,"Shallow 12 hr","Pig",3.7,6.4,"Field acidified",4.4,4.48,0.09,3.9
+"366-1990",1990,"March","Trailing hose","None",0,"Shallow 6 hr","Pig",3.7,6.4,"Field acidified",4.4,4.48,0.09,3.3
+"367-1990",1990,"March","Trailing hose","None",0,"Shallow 4 hr","Pig",3.7,6.4,"Field acidified",4.4,4.48,0.09,3
+"211-1990",1990,"March","Trailing hose","None",0,"Deep 24 hr","Pig",3.7,6.4,"Field acidified",4.4,4.48,0.09,3.5
+"212-1990",1990,"March","Trailing hose","None",0,"Deep 12 hr","Pig",3.7,6.4,"Field acidified",4.4,4.48,0.09,2.2
+"213-1990",1990,"March","Trailing hose","None",0,"Deep 6 hr","Pig",3.7,6.4,"Field acidified",4.4,4.48,0.09,1.4
+"214-1990",1990,"March","Trailing hose","None",0,"Deep 4 hr","Pig",3.7,6.4,"Field acidified",4.4,4.48,0.09,1.1
+"187-1990",1990,"April","Trailing hose","Winter cereal",25,"None","Cattle",7,6.4,"Field acidified",7.6,4.02,0.09,18
+"200-1990",1990,"April","Trailing hose","None",0,"None","Cattle",7,6.4,"Field acidified",7.6,4.02,0.09,18
+"348-1990",1990,"April","Trailing hose","None",0,"Shallow 24 hr","Cattle",7,6.4,"Field acidified",7.6,4.02,0.09,9.9
+"349-1990",1990,"April","Trailing hose","None",0,"Shallow 12 hr","Cattle",7,6.4,"Field acidified",7.6,4.02,0.09,7.8
+"350-1990",1990,"April","Trailing hose","None",0,"Shallow 6 hr","Cattle",7,6.4,"Field acidified",7.6,4.02,0.09,6.5
+"351-1990",1990,"April","Trailing hose","None",0,"Shallow 4 hr","Cattle",7,6.4,"Field acidified",7.6,4.02,0.09,6
+"182-1990",1990,"April","Trailing hose","None",0,"Deep 24 hr","Cattle",7,6.4,"Field acidified",7.6,4.02,0.09,7.3
+"183-1990",1990,"April","Trailing hose","None",0,"Deep 12 hr","Cattle",7,6.4,"Field acidified",7.6,4.02,0.09,4.4
+"184-1990",1990,"April","Trailing hose","None",0,"Deep 6 hr","Cattle",7,6.4,"Field acidified",7.6,4.02,0.09,2.7
+"185-1990",1990,"April","Trailing hose","None",0,"Deep 4 hr","Cattle",7,6.4,"Field acidified",7.6,4.02,0.09,2
+"220-1990",1990,"April","Trailing hose","Winter cereal",25,"None","Pig",3.7,6.4,"Field acidified",7.6,4.02,0.09,9.9
+"233-1990",1990,"April","Trailing hose","None",0,"None","Pig",3.7,6.4,"Field acidified",7.6,4.02,0.09,9.9
+"368-1990",1990,"April","Trailing hose","None",0,"Shallow 24 hr","Pig",3.7,6.4,"Field acidified",7.6,4.02,0.09,5.6
+"369-1990",1990,"April","Trailing hose","None",0,"Shallow 12 hr","Pig",3.7,6.4,"Field acidified",7.6,4.02,0.09,4.5
+"370-1990",1990,"April","Trailing hose","None",0,"Shallow 6 hr","Pig",3.7,6.4,"Field acidified",7.6,4.02,0.09,3.7
+"371-1990",1990,"April","Trailing hose","None",0,"Shallow 4 hr","Pig",3.7,6.4,"Field acidified",7.6,4.02,0.09,3.4
+"215-1990",1990,"April","Trailing hose","None",0,"Deep 24 hr","Pig",3.7,6.4,"Field acidified",7.6,4.02,0.09,4.3
+"216-1990",1990,"April","Trailing hose","None",0,"Deep 12 hr","Pig",3.7,6.4,"Field acidified",7.6,4.02,0.09,2.8
+"217-1990",1990,"April","Trailing hose","None",0,"Deep 6 hr","Pig",3.7,6.4,"Field acidified",7.6,4.02,0.09,1.7
+"218-1990",1990,"April","Trailing hose","None",0,"Deep 4 hr","Pig",3.7,6.4,"Field acidified",7.6,4.02,0.09,1.3
+"188-1990",1990,"May","Trailing hose","Spring cereal",15,"None","Cattle",7,6.4,"Field acidified",11.7,3.45,0.09,22
+"221-1990",1990,"May","Trailing hose","Spring cereal",15,"None","Pig",3.7,6.4,"Field acidified",11.7,3.45,0.09,11
+"206-1990",1990,"Spring-summer","Broadcast","Cereal and grass",15,"None","Cattle",7,6.4,"Field acidified",13.7,3.4,0.09,45
+"239-1990",1990,"Spring-summer","Broadcast","Cereal and grass",15,"None","Pig",3.7,6.4,"Field acidified",13.7,3.4,0.09,24
+"189-1990",1990,"Summer","Trailing hose","Grass",10,"None","Cattle",7,6.4,"Field acidified",16.4,3.18,0.09,28
+"201-1990",1990,"Summer","Trailing hose","None",0,"None","Cattle",7,6.4,"Field acidified",16.4,3.18,0.09,28
+"352-1990",1990,"Summer","Trailing hose","None",0,"Shallow 24 hr","Cattle",7,6.4,"Field acidified",16.4,3.18,0.09,20
+"353-1990",1990,"Summer","Trailing hose","None",0,"Shallow 12 hr","Cattle",7,6.4,"Field acidified",16.4,3.18,0.09,16
+"354-1990",1990,"Summer","Trailing hose","None",0,"Shallow 6 hr","Cattle",7,6.4,"Field acidified",16.4,3.18,0.09,12
+"355-1990",1990,"Summer","Trailing hose","None",0,"Shallow 4 hr","Cattle",7,6.4,"Field acidified",16.4,3.18,0.09,11
+"190-1990",1990,"Summer","Trailing hose","None",0,"Deep 24 hr","Cattle",7,6.4,"Field acidified",16.4,3.18,0.09,18
+"191-1990",1990,"Summer","Trailing hose","None",0,"Deep 12 hr","Cattle",7,6.4,"Field acidified",16.4,3.18,0.09,12
+"192-1990",1990,"Summer","Trailing hose","None",0,"Deep 6 hr","Cattle",7,6.4,"Field acidified",16.4,3.18,0.09,7.1
+"193-1990",1990,"Summer","Trailing hose","None",0,"Deep 4 hr","Cattle",7,6.4,"Field acidified",16.4,3.18,0.09,5.2
+"222-1990",1990,"Summer","Trailing hose","Grass",10,"None","Pig",3.7,6.4,"Field acidified",16.4,3.18,0.09,12
+"234-1990",1990,"Summer","Trailing hose","None",0,"None","Pig",3.7,6.4,"Field acidified",16.4,3.18,0.09,12
+"372-1990",1990,"Summer","Trailing hose","None",0,"Shallow 24 hr","Pig",3.7,6.4,"Field acidified",16.4,3.18,0.09,8.2
+"373-1990",1990,"Summer","Trailing hose","None",0,"Shallow 12 hr","Pig",3.7,6.4,"Field acidified",16.4,3.18,0.09,7
+"374-1990",1990,"Summer","Trailing hose","None",0,"Shallow 6 hr","Pig",3.7,6.4,"Field acidified",16.4,3.18,0.09,5.7
+"375-1990",1990,"Summer","Trailing hose","None",0,"Shallow 4 hr","Pig",3.7,6.4,"Field acidified",16.4,3.18,0.09,5.1
+"223-1990",1990,"Summer","Trailing hose","None",0,"Deep 24 hr","Pig",3.7,6.4,"Field acidified",16.4,3.18,0.09,7.2
+"224-1990",1990,"Summer","Trailing hose","None",0,"Deep 12 hr","Pig",3.7,6.4,"Field acidified",16.4,3.18,0.09,5.6
+"225-1990",1990,"Summer","Trailing hose","None",0,"Deep 6 hr","Pig",3.7,6.4,"Field acidified",16.4,3.18,0.09,3.8
+"226-1990",1990,"Summer","Trailing hose","None",0,"Deep 4 hr","Pig",3.7,6.4,"Field acidified",16.4,3.18,0.09,2.9
+"207-1990",1990,"Late summer-autumn","Broadcast","Grass",10,"None","Cattle",7,6.4,"Field acidified",16.1,3.18,0.09,46
+"210-1990",1990,"Late summer-autumn","Broadcast","None",0,"None","Cattle",7,6.4,"Field acidified",16.1,3.18,0.09,46
+"362-1990",1990,"Late summer-autumn","Broadcast","None",0,"Shallow < 12 hr","Cattle",7,6.4,"Field acidified",16.1,3.18,0.09,36
+"363-1990",1990,"Late summer-autumn","Broadcast","None",0,"Shallow > 12 hr","Cattle",7,6.4,"Field acidified",16.1,3.18,0.09,36
+"208-1990",1990,"Late summer-autumn","Broadcast","None",0,"Deep < 12 hr","Cattle",7,6.4,"Field acidified",16.1,3.18,0.09,33
+"209-1990",1990,"Late summer-autumn","Broadcast","None",0,"Deep > 12 hr","Cattle",7,6.4,"Field acidified",16.1,3.18,0.09,33
+"240-1990",1990,"Late summer-autumn","Broadcast","Grass",10,"None","Pig",3.7,6.4,"Field acidified",16.1,3.18,0.09,24
+"243-1990",1990,"Late summer-autumn","Broadcast","None",0,"None","Pig",3.7,6.4,"Field acidified",16.1,3.18,0.09,24
+"382-1990",1990,"Late summer-autumn","Broadcast","None",0,"Shallow < 12 hr","Pig",3.7,6.4,"Field acidified",16.1,3.18,0.09,13
+"383-1990",1990,"Late summer-autumn","Broadcast","None",0,"Shallow > 12 hr","Pig",3.7,6.4,"Field acidified",16.1,3.18,0.09,13
+"241-1990",1990,"Late summer-autumn","Broadcast","None",0,"Deep < 12 hr","Pig",3.7,6.4,"Field acidified",16.1,3.18,0.09,9.9
+"242-1990",1990,"Late summer-autumn","Broadcast","None",0,"Deep > 12 hr","Pig",3.7,6.4,"Field acidified",16.1,3.18,0.09,9.9
+"194-1990",1990,"Autumn","Trailing hose","Grass",15,"None","Cattle",7,6.4,"Field acidified",13.7,3.33,0.09,25
+"202-1990",1990,"Autumn","Trailing hose","None",0,"None","Cattle",7,6.4,"Field acidified",13.7,3.33,0.09,25
+"356-1990",1990,"Autumn","Trailing hose","None",0,"Shallow 24 hr","Cattle",7,6.4,"Field acidified",13.7,3.33,0.09,16
+"357-1990",1990,"Autumn","Trailing hose","None",0,"Shallow 12 hr","Cattle",7,6.4,"Field acidified",13.7,3.33,0.09,13
+"358-1990",1990,"Autumn","Trailing hose","None",0,"Shallow 6 hr","Cattle",7,6.4,"Field acidified",13.7,3.33,0.09,10
+"359-1990",1990,"Autumn","Trailing hose","None",0,"Shallow 4 hr","Cattle",7,6.4,"Field acidified",13.7,3.33,0.09,9.1
+"195-1990",1990,"Autumn","Trailing hose","None",0,"Deep 24 hr","Cattle",7,6.4,"Field acidified",13.7,3.33,0.09,13
+"196-1990",1990,"Autumn","Trailing hose","None",0,"Deep 12 hr","Cattle",7,6.4,"Field acidified",13.7,3.33,0.09,8.5
+"197-1990",1990,"Autumn","Trailing hose","None",0,"Deep 6 hr","Cattle",7,6.4,"Field acidified",13.7,3.33,0.09,5.1
+"198-1990",1990,"Autumn","Trailing hose","None",0,"Deep 4 hr","Cattle",7,6.4,"Field acidified",13.7,3.33,0.09,3.7
+"227-1990",1990,"Autumn","Trailing hose","Grass",15,"None","Pig",3.7,6.4,"Field acidified",13.7,3.33,0.09,11
+"235-1990",1990,"Autumn","Trailing hose","None",0,"None","Pig",3.7,6.4,"Field acidified",13.7,3.33,0.09,11
+"376-1990",1990,"Autumn","Trailing hose","None",0,"Shallow 24 hr","Pig",3.7,6.4,"Field acidified",13.7,3.33,0.09,7.4
+"377-1990",1990,"Autumn","Trailing hose","None",0,"Shallow 12 hr","Pig",3.7,6.4,"Field acidified",13.7,3.33,0.09,6.1
+"378-1990",1990,"Autumn","Trailing hose","None",0,"Shallow 6 hr","Pig",3.7,6.4,"Field acidified",13.7,3.33,0.09,4.9
+"379-1990",1990,"Autumn","Trailing hose","None",0,"Shallow 4 hr","Pig",3.7,6.4,"Field acidified",13.7,3.33,0.09,4.4
+"228-1990",1990,"Autumn","Trailing hose","None",0,"Deep 24 hr","Pig",3.7,6.4,"Field acidified",13.7,3.33,0.09,6.3
+"229-1990",1990,"Autumn","Trailing hose","None",0,"Deep 12 hr","Pig",3.7,6.4,"Field acidified",13.7,3.33,0.09,4.5
+"230-1990",1990,"Autumn","Trailing hose","None",0,"Deep 6 hr","Pig",3.7,6.4,"Field acidified",13.7,3.33,0.09,2.9
+"231-1990",1990,"Autumn","Trailing hose","None",0,"Deep 4 hr","Pig",3.7,6.4,"Field acidified",13.7,3.33,0.09,2.2
+"205-1990",1990,"Winter-spring","Broadcast","None",0,"None","Cattle",7,6.4,"Field acidified",11.3,3.59,0.09,44
+"360-1990",1990,"Winter-spring","Broadcast","None",0,"Shallow < 12 hr","Cattle",7,6.4,"Field acidified",11.3,3.59,0.09,30
+"361-1990",1990,"Winter-spring","Broadcast","None",0,"Shallow > 12 hr","Cattle",7,6.4,"Field acidified",11.3,3.59,0.09,30
+"203-1990",1990,"Winter-spring","Broadcast","None",0,"Deep < 12 hr","Cattle",7,6.4,"Field acidified",11.3,3.59,0.09,25
+"204-1990",1990,"Winter-spring","Broadcast","None",0,"Deep > 12 hr","Cattle",7,6.4,"Field acidified",11.3,3.59,0.09,25
+"238-1990",1990,"Winter-spring","Broadcast","None",0,"None","Pig",3.7,6.4,"Field acidified",11.3,3.59,0.09,24
+"380-1990",1990,"Winter-spring","Broadcast","None",0,"Shallow < 12 hr","Pig",3.7,6.4,"Field acidified",11.3,3.59,0.09,13
+"381-1990",1990,"Winter-spring","Broadcast","None",0,"Shallow > 12 hr","Pig",3.7,6.4,"Field acidified",11.3,3.59,0.09,13
+"236-1990",1990,"Winter-spring","Broadcast","None",0,"Deep < 12 hr","Pig",3.7,6.4,"Field acidified",11.3,3.59,0.09,9.5
+"237-1990",1990,"Winter-spring","Broadcast","None",0,"Deep > 12 hr","Pig",3.7,6.4,"Field acidified",11.3,3.59,0.09,9.5
+"186-1980",1980,"March","Trailing hose","Winter cereal",15,"None","Cattle",7.3,6.4,"Field acidified",3.3,4.37,0.09,13
+"199-1980",1980,"March","Trailing hose","None",0,"None","Cattle",7.3,6.4,"Field acidified",3.3,4.37,0.09,13
+"344-1980",1980,"March","Trailing hose","None",0,"Shallow 24 hr","Cattle",7.3,6.4,"Field acidified",3.3,4.37,0.09,6.6
+"345-1980",1980,"March","Trailing hose","None",0,"Shallow 12 hr","Cattle",7.3,6.4,"Field acidified",3.3,4.37,0.09,5.3
+"346-1980",1980,"March","Trailing hose","None",0,"Shallow 6 hr","Cattle",7.3,6.4,"Field acidified",3.3,4.37,0.09,4.5
+"347-1980",1980,"March","Trailing hose","None",0,"Shallow 4 hr","Cattle",7.3,6.4,"Field acidified",3.3,4.37,0.09,4.3
+"178-1980",1980,"March","Trailing hose","None",0,"Deep 24 hr","Cattle",7.3,6.4,"Field acidified",3.3,4.37,0.09,4.5
+"179-1980",1980,"March","Trailing hose","None",0,"Deep 12 hr","Cattle",7.3,6.4,"Field acidified",3.3,4.37,0.09,2.7
+"180-1980",1980,"March","Trailing hose","None",0,"Deep 6 hr","Cattle",7.3,6.4,"Field acidified",3.3,4.37,0.09,1.7
+"181-1980",1980,"March","Trailing hose","None",0,"Deep 4 hr","Cattle",7.3,6.4,"Field acidified",3.3,4.37,0.09,1.3
+"219-1980",1980,"March","Trailing hose","Winter cereal",15,"None","Pig",3.2,6.4,"Field acidified",3.3,4.37,0.09,8.5
+"232-1980",1980,"March","Trailing hose","None",0,"None","Pig",3.2,6.4,"Field acidified",3.3,4.37,0.09,8.5
+"364-1980",1980,"March","Trailing hose","None",0,"Shallow 24 hr","Pig",3.2,6.4,"Field acidified",3.3,4.37,0.09,4.2
+"365-1980",1980,"March","Trailing hose","None",0,"Shallow 12 hr","Pig",3.2,6.4,"Field acidified",3.3,4.37,0.09,3.4
+"366-1980",1980,"March","Trailing hose","None",0,"Shallow 6 hr","Pig",3.2,6.4,"Field acidified",3.3,4.37,0.09,2.9
+"367-1980",1980,"March","Trailing hose","None",0,"Shallow 4 hr","Pig",3.2,6.4,"Field acidified",3.3,4.37,0.09,2.7
+"211-1980",1980,"March","Trailing hose","None",0,"Deep 24 hr","Pig",3.2,6.4,"Field acidified",3.3,4.37,0.09,2.9
+"212-1980",1980,"March","Trailing hose","None",0,"Deep 12 hr","Pig",3.2,6.4,"Field acidified",3.3,4.37,0.09,1.9
+"213-1980",1980,"March","Trailing hose","None",0,"Deep 6 hr","Pig",3.2,6.4,"Field acidified",3.3,4.37,0.09,1.2
+"214-1980",1980,"March","Trailing hose","None",0,"Deep 4 hr","Pig",3.2,6.4,"Field acidified",3.3,4.37,0.09,0.92
+"187-1980",1980,"April","Trailing hose","Winter cereal",25,"None","Cattle",7.3,6.4,"Field acidified",6.8,3.79,0.09,16
+"200-1980",1980,"April","Trailing hose","None",0,"None","Cattle",7.3,6.4,"Field acidified",6.8,3.79,0.09,16
+"348-1980",1980,"April","Trailing hose","None",0,"Shallow 24 hr","Cattle",7.3,6.4,"Field acidified",6.8,3.79,0.09,8.5
+"349-1980",1980,"April","Trailing hose","None",0,"Shallow 12 hr","Cattle",7.3,6.4,"Field acidified",6.8,3.79,0.09,6.8
+"350-1980",1980,"April","Trailing hose","None",0,"Shallow 6 hr","Cattle",7.3,6.4,"Field acidified",6.8,3.79,0.09,5.7
+"351-1980",1980,"April","Trailing hose","None",0,"Shallow 4 hr","Cattle",7.3,6.4,"Field acidified",6.8,3.79,0.09,5.3
+"182-1980",1980,"April","Trailing hose","None",0,"Deep 24 hr","Cattle",7.3,6.4,"Field acidified",6.8,3.79,0.09,6.1
+"183-1980",1980,"April","Trailing hose","None",0,"Deep 12 hr","Cattle",7.3,6.4,"Field acidified",6.8,3.79,0.09,3.7
+"184-1980",1980,"April","Trailing hose","None",0,"Deep 6 hr","Cattle",7.3,6.4,"Field acidified",6.8,3.79,0.09,2.2
+"185-1980",1980,"April","Trailing hose","None",0,"Deep 4 hr","Cattle",7.3,6.4,"Field acidified",6.8,3.79,0.09,1.7
+"220-1980",1980,"April","Trailing hose","Winter cereal",25,"None","Pig",3.2,6.4,"Field acidified",6.8,3.79,0.09,9.1
+"233-1980",1980,"April","Trailing hose","None",0,"None","Pig",3.2,6.4,"Field acidified",6.8,3.79,0.09,9.1
+"368-1980",1980,"April","Trailing hose","None",0,"Shallow 24 hr","Pig",3.2,6.4,"Field acidified",6.8,3.79,0.09,4.9
+"369-1980",1980,"April","Trailing hose","None",0,"Shallow 12 hr","Pig",3.2,6.4,"Field acidified",6.8,3.79,0.09,3.9
+"370-1980",1980,"April","Trailing hose","None",0,"Shallow 6 hr","Pig",3.2,6.4,"Field acidified",6.8,3.79,0.09,3.3
+"371-1980",1980,"April","Trailing hose","None",0,"Shallow 4 hr","Pig",3.2,6.4,"Field acidified",6.8,3.79,0.09,3.1
+"215-1980",1980,"April","Trailing hose","None",0,"Deep 24 hr","Pig",3.2,6.4,"Field acidified",6.8,3.79,0.09,3.6
+"216-1980",1980,"April","Trailing hose","None",0,"Deep 12 hr","Pig",3.2,6.4,"Field acidified",6.8,3.79,0.09,2.3
+"217-1980",1980,"April","Trailing hose","None",0,"Deep 6 hr","Pig",3.2,6.4,"Field acidified",6.8,3.79,0.09,1.5
+"218-1980",1980,"April","Trailing hose","None",0,"Deep 4 hr","Pig",3.2,6.4,"Field acidified",6.8,3.79,0.09,1.1
+"188-1980",1980,"May","Trailing hose","Spring cereal",15,"None","Cattle",7.3,6.4,"Field acidified",12,3.68,0.09,23
+"221-1980",1980,"May","Trailing hose","Spring cereal",15,"None","Pig",3.2,6.4,"Field acidified",12,3.68,0.09,10
+"206-1980",1980,"Spring-summer","Broadcast","Cereal and grass",15,"None","Cattle",7.3,6.4,"Field acidified",13.1,3.4,0.09,46
+"239-1980",1980,"Spring-summer","Broadcast","Cereal and grass",15,"None","Pig",3.2,6.4,"Field acidified",13.1,3.4,0.09,23
+"189-1980",1980,"Summer","Trailing hose","Grass",10,"None","Cattle",7.3,6.4,"Field acidified",15.6,3.18,0.09,28
+"201-1980",1980,"Summer","Trailing hose","None",0,"None","Cattle",7.3,6.4,"Field acidified",15.6,3.18,0.09,28
+"352-1980",1980,"Summer","Trailing hose","None",0,"Shallow 24 hr","Cattle",7.3,6.4,"Field acidified",15.6,3.18,0.09,19
+"353-1980",1980,"Summer","Trailing hose","None",0,"Shallow 12 hr","Cattle",7.3,6.4,"Field acidified",15.6,3.18,0.09,15
+"354-1980",1980,"Summer","Trailing hose","None",0,"Shallow 6 hr","Cattle",7.3,6.4,"Field acidified",15.6,3.18,0.09,12
+"355-1980",1980,"Summer","Trailing hose","None",0,"Shallow 4 hr","Cattle",7.3,6.4,"Field acidified",15.6,3.18,0.09,11
+"190-1980",1980,"Summer","Trailing hose","None",0,"Deep 24 hr","Cattle",7.3,6.4,"Field acidified",15.6,3.18,0.09,16
+"191-1980",1980,"Summer","Trailing hose","None",0,"Deep 12 hr","Cattle",7.3,6.4,"Field acidified",15.6,3.18,0.09,10
+"192-1980",1980,"Summer","Trailing hose","None",0,"Deep 6 hr","Cattle",7.3,6.4,"Field acidified",15.6,3.18,0.09,6.2
+"193-1980",1980,"Summer","Trailing hose","None",0,"Deep 4 hr","Cattle",7.3,6.4,"Field acidified",15.6,3.18,0.09,4.6
+"222-1980",1980,"Summer","Trailing hose","Grass",10,"None","Pig",3.2,6.4,"Field acidified",15.6,3.18,0.09,11
+"234-1980",1980,"Summer","Trailing hose","None",0,"None","Pig",3.2,6.4,"Field acidified",15.6,3.18,0.09,11
+"372-1980",1980,"Summer","Trailing hose","None",0,"Shallow 24 hr","Pig",3.2,6.4,"Field acidified",15.6,3.18,0.09,7.2
+"373-1980",1980,"Summer","Trailing hose","None",0,"Shallow 12 hr","Pig",3.2,6.4,"Field acidified",15.6,3.18,0.09,6.2
+"374-1980",1980,"Summer","Trailing hose","None",0,"Shallow 6 hr","Pig",3.2,6.4,"Field acidified",15.6,3.18,0.09,5
+"375-1980",1980,"Summer","Trailing hose","None",0,"Shallow 4 hr","Pig",3.2,6.4,"Field acidified",15.6,3.18,0.09,4.5
+"223-1980",1980,"Summer","Trailing hose","None",0,"Deep 24 hr","Pig",3.2,6.4,"Field acidified",15.6,3.18,0.09,6.2
+"224-1980",1980,"Summer","Trailing hose","None",0,"Deep 12 hr","Pig",3.2,6.4,"Field acidified",15.6,3.18,0.09,4.8
+"225-1980",1980,"Summer","Trailing hose","None",0,"Deep 6 hr","Pig",3.2,6.4,"Field acidified",15.6,3.18,0.09,3.3
+"226-1980",1980,"Summer","Trailing hose","None",0,"Deep 4 hr","Pig",3.2,6.4,"Field acidified",15.6,3.18,0.09,2.5
+"207-1980",1980,"Late summer-autumn","Broadcast","Grass",10,"None","Cattle",7.3,6.4,"Field acidified",15.2,3.41,0.09,47
+"210-1980",1980,"Late summer-autumn","Broadcast","None",0,"None","Cattle",7.3,6.4,"Field acidified",15.2,3.41,0.09,47
+"362-1980",1980,"Late summer-autumn","Broadcast","None",0,"Shallow < 12 hr","Cattle",7.3,6.4,"Field acidified",15.2,3.41,0.09,37
+"363-1980",1980,"Late summer-autumn","Broadcast","None",0,"Shallow > 12 hr","Cattle",7.3,6.4,"Field acidified",15.2,3.41,0.09,37
+"208-1980",1980,"Late summer-autumn","Broadcast","None",0,"Deep < 12 hr","Cattle",7.3,6.4,"Field acidified",15.2,3.41,0.09,33
+"209-1980",1980,"Late summer-autumn","Broadcast","None",0,"Deep > 12 hr","Cattle",7.3,6.4,"Field acidified",15.2,3.41,0.09,33
+"240-1980",1980,"Late summer-autumn","Broadcast","Grass",10,"None","Pig",3.2,6.4,"Field acidified",15.2,3.41,0.09,23
+"243-1980",1980,"Late summer-autumn","Broadcast","None",0,"None","Pig",3.2,6.4,"Field acidified",15.2,3.41,0.09,23
+"382-1980",1980,"Late summer-autumn","Broadcast","None",0,"Shallow < 12 hr","Pig",3.2,6.4,"Field acidified",15.2,3.41,0.09,12
+"383-1980",1980,"Late summer-autumn","Broadcast","None",0,"Shallow > 12 hr","Pig",3.2,6.4,"Field acidified",15.2,3.41,0.09,12
+"241-1980",1980,"Late summer-autumn","Broadcast","None",0,"Deep < 12 hr","Pig",3.2,6.4,"Field acidified",15.2,3.41,0.09,8.6
+"242-1980",1980,"Late summer-autumn","Broadcast","None",0,"Deep > 12 hr","Pig",3.2,6.4,"Field acidified",15.2,3.41,0.09,8.6
+"194-1980",1980,"Autumn","Trailing hose","Grass",15,"None","Cattle",7.3,6.4,"Field acidified",13.6,3.45,0.09,25
+"202-1980",1980,"Autumn","Trailing hose","None",0,"None","Cattle",7.3,6.4,"Field acidified",13.6,3.45,0.09,25
+"356-1980",1980,"Autumn","Trailing hose","None",0,"Shallow 24 hr","Cattle",7.3,6.4,"Field acidified",13.6,3.45,0.09,17
+"357-1980",1980,"Autumn","Trailing hose","None",0,"Shallow 12 hr","Cattle",7.3,6.4,"Field acidified",13.6,3.45,0.09,13
+"358-1980",1980,"Autumn","Trailing hose","None",0,"Shallow 6 hr","Cattle",7.3,6.4,"Field acidified",13.6,3.45,0.09,10
+"359-1980",1980,"Autumn","Trailing hose","None",0,"Shallow 4 hr","Cattle",7.3,6.4,"Field acidified",13.6,3.45,0.09,9.4
+"195-1980",1980,"Autumn","Trailing hose","None",0,"Deep 24 hr","Cattle",7.3,6.4,"Field acidified",13.6,3.45,0.09,14
+"196-1980",1980,"Autumn","Trailing hose","None",0,"Deep 12 hr","Cattle",7.3,6.4,"Field acidified",13.6,3.45,0.09,8.6
+"197-1980",1980,"Autumn","Trailing hose","None",0,"Deep 6 hr","Cattle",7.3,6.4,"Field acidified",13.6,3.45,0.09,5.1
+"198-1980",1980,"Autumn","Trailing hose","None",0,"Deep 4 hr","Cattle",7.3,6.4,"Field acidified",13.6,3.45,0.09,3.8
+"227-1980",1980,"Autumn","Trailing hose","Grass",15,"None","Pig",3.2,6.4,"Field acidified",13.6,3.45,0.09,10
+"235-1980",1980,"Autumn","Trailing hose","None",0,"None","Pig",3.2,6.4,"Field acidified",13.6,3.45,0.09,10
+"376-1980",1980,"Autumn","Trailing hose","None",0,"Shallow 24 hr","Pig",3.2,6.4,"Field acidified",13.6,3.45,0.09,6.8
+"377-1980",1980,"Autumn","Trailing hose","None",0,"Shallow 12 hr","Pig",3.2,6.4,"Field acidified",13.6,3.45,0.09,5.7
+"378-1980",1980,"Autumn","Trailing hose","None",0,"Shallow 6 hr","Pig",3.2,6.4,"Field acidified",13.6,3.45,0.09,4.6
+"379-1980",1980,"Autumn","Trailing hose","None",0,"Shallow 4 hr","Pig",3.2,6.4,"Field acidified",13.6,3.45,0.09,4.2
+"228-1980",1980,"Autumn","Trailing hose","None",0,"Deep 24 hr","Pig",3.2,6.4,"Field acidified",13.6,3.45,0.09,5.8
+"229-1980",1980,"Autumn","Trailing hose","None",0,"Deep 12 hr","Pig",3.2,6.4,"Field acidified",13.6,3.45,0.09,4.3
+"230-1980",1980,"Autumn","Trailing hose","None",0,"Deep 6 hr","Pig",3.2,6.4,"Field acidified",13.6,3.45,0.09,2.8
+"231-1980",1980,"Autumn","Trailing hose","None",0,"Deep 4 hr","Pig",3.2,6.4,"Field acidified",13.6,3.45,0.09,2.2
+"205-1980",1980,"Winter-spring","Broadcast","None",0,"None","Cattle",7.3,6.4,"Field acidified",10.9,3.6,0.09,45
+"360-1980",1980,"Winter-spring","Broadcast","None",0,"Shallow < 12 hr","Cattle",7.3,6.4,"Field acidified",10.9,3.6,0.09,30
+"361-1980",1980,"Winter-spring","Broadcast","None",0,"Shallow > 12 hr","Cattle",7.3,6.4,"Field acidified",10.9,3.6,0.09,30
+"203-1980",1980,"Winter-spring","Broadcast","None",0,"Deep < 12 hr","Cattle",7.3,6.4,"Field acidified",10.9,3.6,0.09,25
+"204-1980",1980,"Winter-spring","Broadcast","None",0,"Deep > 12 hr","Cattle",7.3,6.4,"Field acidified",10.9,3.6,0.09,25
+"238-1980",1980,"Winter-spring","Broadcast","None",0,"None","Pig",3.2,6.4,"Field acidified",10.9,3.6,0.09,23
+"380-1980",1980,"Winter-spring","Broadcast","None",0,"Shallow < 12 hr","Pig",3.2,6.4,"Field acidified",10.9,3.6,0.09,12
+"381-1980",1980,"Winter-spring","Broadcast","None",0,"Shallow > 12 hr","Pig",3.2,6.4,"Field acidified",10.9,3.6,0.09,12
+"236-1980",1980,"Winter-spring","Broadcast","None",0,"Deep < 12 hr","Pig",3.2,6.4,"Field acidified",10.9,3.6,0.09,8.4
+"237-1980",1980,"Winter-spring","Broadcast","None",0,"Deep > 12 hr","Pig",3.2,6.4,"Field acidified",10.9,3.6,0.09,8.4

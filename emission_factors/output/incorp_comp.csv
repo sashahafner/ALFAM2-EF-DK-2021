@@ -1,14 +1,14 @@
-"decade","app.timing","app.mthd","man.source","man.trt","Deep_12.0","Deep_24.0","Deep_4.0","Deep_6.0","None_None","Shallow_12.0","Shallow_24.0","Shallow_4.0","Shallow_6.0","rr4d","rr24d","rr4s","rr24s"
-2010,"March","Trailing hose","Cattle","None",6.8,11,3.1,4.1,22,11,14,8.1,8.8,85.9,50,63.2,36.4
-2010,"March","Trailing hose","Pig","None",4.9,7,2.4,3.2,14,7.1,8.6,5.3,5.8,82.9,50,62.1,38.6
-2010,"March","Trailing hose","Digestate","None",16,20,8.7,11,28,NA,22,14,16,68.9,28.6,50,21.4
-2010,"April","Trailing hose","Cattle","None",10,16,4.7,6.4,27,15,19,10,NA,82.6,40.7,63,29.6
-2010,"April","Trailing hose","Pig","None",6.5,8.3,3.5,4.5,15,8.5,9.8,6.2,NA,76.7,44.7,58.7,34.7
-2010,"April","Trailing hose","Digestate","None",20,21,13,NA,29,NA,NA,NA,19,55.2,27.6,NA,NA
-2010,"May","Trailing hose","Cattle","None",NA,NA,NA,NA,30,NA,NA,NA,NA,NA,NA,NA,NA
-2010,"Summer","Trailing hose","Cattle","None",22,27,11,15,33,25,29,17,20,66.7,18.2,48.5,12.1
-2010,"Summer","Trailing hose","Pig","None",8.9,9.6,6.7,7.8,16,NA,NA,8.8,9.6,58.1,40,45,NA
-2010,"Summer","Trailing hose","Digestate","None",NA,23,20,21,NA,24,24,23,23,NA,NA,NA,NA
-2010,"Autumn","Trailing hose","Cattle","None",19,25,9.2,12,32,NA,26,15,17,71.2,21.9,53.1,18.8
-2010,"Autumn","Trailing hose","Pig","None",8.6,9.4,5.8,7,NA,NA,NA,NA,9,NA,NA,NA,NA
-2010,"Autumn","Trailing hose","Digestate","None",NA,NA,19,NA,NA,NA,NA,21,NA,NA,NA,NA,NA
+"decade","app.timing","app.mthd","man.source","man.trt","None_None","Shallow_12.0","Shallow_24.0","Shallow_4.0","Shallow_6.0","Deep_12.0","Deep_24.0","Deep_4.0","Deep_6.0","rr4d","rr24d","rr4s","rr24s"
+2010,"March","Trailing hose","Cattle","None",22,11,14,8.1,8.8,6.8,11,3.1,4.1,85.9,50,63.2,36.4
+2010,"March","Trailing hose","Pig","None",14,7.1,8.6,5.3,5.8,4.9,7,2.4,3.2,82.9,50,62.1,38.6
+2010,"March","Trailing hose","Digestate","None",28,NA,22,14,16,16,20,8.7,11,68.9,28.6,50,21.4
+2010,"April","Trailing hose","Cattle","None",27,15,19,10,NA,10,16,4.7,6.4,82.6,40.7,63,29.6
+2010,"April","Trailing hose","Pig","None",15,8.5,9.8,6.2,NA,6.5,8.3,3.5,4.5,76.7,44.7,58.7,34.7
+2010,"April","Trailing hose","Digestate","None",29,NA,NA,NA,19,20,21,13,NA,55.2,27.6,NA,NA
+2010,"May","Trailing hose","Cattle","None",30,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
+2010,"Summer","Trailing hose","Cattle","None",33,25,29,17,20,22,27,11,15,66.7,18.2,48.5,12.1
+2010,"Summer","Trailing hose","Pig","None",16,NA,NA,8.8,9.6,8.9,9.6,6.7,7.8,58.1,40,45,NA
+2010,"Summer","Trailing hose","Digestate","None",NA,24,24,23,23,NA,23,20,21,NA,NA,NA,NA
+2010,"Autumn","Trailing hose","Cattle","None",32,NA,26,15,17,19,25,9.2,12,71.2,21.9,53.1,18.8
+2010,"Autumn","Trailing hose","Pig","None",NA,NA,NA,NA,9,8.6,9.4,5.8,7,NA,NA,NA,NA
+2010,"Autumn","Trailing hose","Digestate","None",NA,NA,NA,21,NA,NA,NA,19,NA,NA,NA,NA,NA

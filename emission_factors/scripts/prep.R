@@ -1,4 +1,4 @@
-# Merge inputs
+# Merge inputs, sort out some variables
 
 # Duplicate conditions df for all decades
 dat <- merge(conds, data.frame(decade = c(1980  + 0:3 * 10)), by = NULL)
@@ -19,12 +19,14 @@ dat$incorp.descrip[dat$app.mthd %in% c('Closed slot injection', 'Open slot injec
 dat$incorp.descrip[grepl('^None', dat$incorp.descrip)] <- 'None'
 dat$incorp.descrip <- gsub('\\.0$', ' hr', dat$incorp.descrip)
 dat$incorp.descrip <- gsub('hours', ' hr', dat$incorp.descrip)
-dat$incorp.descrip <- factor(dat$incorp.descrip, levels = c('None', 
+dat$incorp.descrip <- gsub('  ', ' ', dat$incorp.descrip)
+dat$incorp.descrip <- factor(dat$incorp.descrip, levels = c('None', 'Not relevant',
                                                             'Shallow 24 hr', 'Shallow > 12 hr', 'Shallow 12 hr', 'Shallow < 12 hr', 
                                                             'Shallow 6 hr', 'Shallow 4 hr',
                                                             'Deep 24 hr', 'Deep > 12 hr', 'Deep 12 hr', 'Deep < 12 hr', 
                                                             'Deep 6 hr', 'Deep 4 hr'))
-table(dat$incorp.descrip)
+# Sort incorporation for output order
+dat$incorp <- factor(dat$incorp, levels = c('None', 'Shallow', 'Deep'))
 
 # Add crop and application data
 dat <- merge(dat, crops, by = c('app.mthd', 'crop.status', 'app.timing', 'app.mthd.d', 'app.timing.d'), all = TRUE)
