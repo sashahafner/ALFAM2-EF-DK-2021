@@ -24,6 +24,12 @@ write.csv(efdu, '../output/Appendix_01_untreated.csv', row.names = FALSE)
 write.csv(efdb, '../output/Appendix_01_barn.csv', row.names = FALSE)
 write.csv(efdf, '../output/Appendix_01_field.csv', row.names = FALSE)
 
+# EF results as in Appendix 1 but with incorp timing for sorting
+efd <- dat[, c('id', 'decade', 'app.timing', 'app.mthd', 'crop', 'crop.hght', 't.incorp', 'incorp.descrip', 'man.source', 'man.dm', 'man.ph', 'man.trt', 'air.temp', 'wind.2m', 'rain.rate', 'EFp')]
+efd$t.incorp[is.na(efd$t.incorp)] <- 'None'
+efd <- rounddf(efd, 3, func = signif)
+write.csv(efd, '../output/Appendix_01b.csv', row.names = FALSE)
+
 # EF tables
 t5 <- subset(dat, crop %in% c('None') & app.mthd %in% c('Closed slot injection') &
              man.source %in% c('Cattle', 'Pig') &
