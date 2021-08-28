@@ -2,5 +2,5 @@
 # S. Hafner
 
 # Read in data
-d <- read.csv('../../database/ALFAM2_interval.csv')
-ds <- read.csv('../../database/ALFAM2_plot.csv')
+d <- read.csv('../../database/ALFAM2_interval.csv', stringsAsFactors = TRUE)
+ds <- read.csv('../../database/ALFAM2_plot.csv', stringsAsFactors = TRUE)

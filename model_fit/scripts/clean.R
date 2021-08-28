@@ -64,4 +64,5 @@ d$flag[is.na(d$rain)] <- 'r'
 d$rain[is.na(d$rain)] <- 0
 d$rain.rate[is.na(d$rain.rate)] <- 0
 
-
+# Drop observations that still have missing wind speed or air temperature
+d <- d[!is.na(d$wind.2m) & !is.na(d$air.temp), ]

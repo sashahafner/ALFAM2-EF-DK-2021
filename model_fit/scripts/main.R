@@ -13,5 +13,3 @@ source('eval_subs.R')
 source('fit_summ.R')
 render('explore.Rmd', output_dir = '../logs')
 source('plots.R')
-
-dim(d234)

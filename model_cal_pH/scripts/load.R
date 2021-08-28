@@ -1,7 +1,7 @@
 # Read in data
 
-d <- read.csv('../../database/ALFAM2_interval.csv')
-ds <- read.csv('../../database/ALFAM2_plot.csv')
+d <- read.csv('../../database/ALFAM2_interval.csv', stringsAsFactors = TRUE)
+ds <- read.csv('../../database/ALFAM2_plot.csv', stringsAsFactors = TRUE)
 
 # Johanna's wind tunnel data
 dsj <- data.frame(read_xlsx('../data/200109_A to SH.xlsx', sheet = 1, skip = 1))
