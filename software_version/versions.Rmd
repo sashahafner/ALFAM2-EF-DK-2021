@@ -1,0 +1,8 @@
+---
+title: 'Software versions'
+output: pdf_document
+classoption: landscape
+author: Sasha D. Hafner
+date: August 2020
+---
+
