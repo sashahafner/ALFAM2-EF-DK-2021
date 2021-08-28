@@ -184,22 +184,22 @@
 
  6752 rows and 12 columns
  6708 unique rows
-                     e.int app.mthd  man.dm man.source air.temp wind.2m   lwind rain.rate rain.cum     till incorp
-Class              numeric   factor numeric     factor  numeric numeric numeric   numeric  numeric  numeric factor
-Minimum              -2.99       bc       1        cat     -1.9  0.0423   -1.37         0        0        0   none
-Maximum               43.3       ts    13.6        pig     34.1    28.4    1.45       7.1     55.9        1   none
-Mean                  1.28     bsth     5.7        cat     12.8    2.97   0.377    0.0475     2.87 0.000296   none
-Unique (excld. NA)    4567        5     221          2      986    2048    2048       566      775        2      1
-Missing values           0        0       0          0        0       0       0         0        0        0      0
-Sorted               FALSE    FALSE   FALSE      FALSE    FALSE   FALSE   FALSE     FALSE    FALSE    FALSE   TRUE
-                        crop
-Class                 factor
-Minimum            bare soil
-Maximum              stubble
-Mean                  cereal
-Unique (excld. NA)         5
-Missing values             0
-Sorted                 FALSE
+                     e.int app.mthd  man.dm man.source air.temp wind.2m   lwind
+Class              numeric   factor numeric     factor  numeric numeric numeric
+Minimum              -2.99       bc       1        cat     -1.9  0.0423   -1.37
+Maximum               43.3       ts    13.6        pig     34.1    28.4    1.45
+Mean                  1.28     bsth     5.7        cat     12.8    2.97   0.377
+Unique (excld. NA)    4567        5     221          2      986    2048    2048
+Missing values           0        0       0          0        0       0       0
+Sorted               FALSE    FALSE   FALSE      FALSE    FALSE   FALSE   FALSE
+                   rain.rate rain.cum     till incorp      crop
+Class                numeric  numeric  numeric factor    factor
+Minimum                    0        0        0   none bare soil
+Maximum                  7.1     55.9        1   none   stubble
+Mean                  0.0475     2.87 0.000296   none    cereal
+Unique (excld. NA)       566      775        2      1         5
+Missing values             0        0        0      0         0
+Sorted                 FALSE    FALSE    FALSE   TRUE     FALSE
 
 > # None missing
 > 
@@ -337,22 +337,22 @@ Sorted                 FALSE
 
  5514 rows and 12 columns
  5488 unique rows
-                     e.int app.mthd  man.dm man.source air.temp wind.2m   lwind rain.rate rain.cum     till incorp
-Class              numeric   factor numeric     factor  numeric numeric numeric   numeric  numeric  numeric factor
-Minimum              -2.99       bc       1        cat     -1.9  0.0423   -1.37         0        0        0   none
-Maximum                 23       ts    11.9        pig     32.1    28.4    1.45       4.4     55.9        1   none
-Mean                  1.19     bsth    5.62        cat     12.9    3.05    0.39    0.0446     1.88 0.000363   none
-Unique (excld. NA)    4017        4     199          2      979    2008    2008       558      729        2      1
-Missing values           0        0       0          0        0       0       0         0        0        0      0
-Sorted               FALSE    FALSE   FALSE      FALSE    FALSE   FALSE   FALSE     FALSE    FALSE    FALSE   TRUE
-                        crop
-Class                 factor
-Minimum            bare soil
-Maximum              stubble
-Mean                  cereal
-Unique (excld. NA)         5
-Missing values             0
-Sorted                 FALSE
+                     e.int app.mthd  man.dm man.source air.temp wind.2m   lwind
+Class              numeric   factor numeric     factor  numeric numeric numeric
+Minimum              -2.99       bc       1        cat     -1.9  0.0423   -1.37
+Maximum                 23       ts    11.9        pig     32.1    28.4    1.45
+Mean                  1.19     bsth    5.62        cat     12.9    3.05    0.39
+Unique (excld. NA)    4017        4     199          2      979    2008    2008
+Missing values           0        0       0          0        0       0       0
+Sorted               FALSE    FALSE   FALSE      FALSE    FALSE   FALSE   FALSE
+                   rain.rate rain.cum     till incorp      crop
+Class                numeric  numeric  numeric factor    factor
+Minimum                    0        0        0   none bare soil
+Maximum                  4.4     55.9        1   none   stubble
+Mean                  0.0446     1.88 0.000363   none    cereal
+Unique (excld. NA)       558      729        2      1         5
+Missing values             0        0        0      0         0
+Sorted                 FALSE    FALSE    FALSE   TRUE     FALSE
 
 > # None missing
 > 
@@ -484,22 +484,22 @@ DK NL
 
  56 rows and 12 columns
  56 unique rows
-                     e.int app.mthd  man.dm man.source air.temp wind.2m   lwind rain.rate rain.cum    till incorp
-Class              numeric   factor numeric     factor  numeric numeric numeric   numeric  numeric numeric factor
-Minimum                  0       cs     6.4        cat     3.72     0.8 -0.0969         0        0       0   none
-Maximum                0.5       cs    10.5        pig     25.7     6.5   0.813      1.54       23       0   none
-Mean                 0.106       cs    8.17        cat     13.8    3.03   0.427       0.1     2.22       0   none
-Unique (excld. NA)      33        1       5          2       49      39      39         9       11       1      1
-Missing values           0        0       0          0        0       0       0         0        0       0      0
-Sorted               FALSE     TRUE   FALSE      FALSE    FALSE   FALSE   FALSE     FALSE    FALSE    TRUE   TRUE
-                      crop
-Class               factor
-Minimum              grass
-Maximum            stubble
-Mean                 grass
-Unique (excld. NA)       2
-Missing values           0
-Sorted                TRUE
+                     e.int app.mthd  man.dm man.source air.temp wind.2m   lwind
+Class              numeric   factor numeric     factor  numeric numeric numeric
+Minimum                  0       cs     6.4        cat     3.72     0.8 -0.0969
+Maximum                0.5       cs    10.5        pig     25.7     6.5   0.813
+Mean                 0.106       cs    8.17        cat     13.8    3.03   0.427
+Unique (excld. NA)      33        1       5          2       49      39      39
+Missing values           0        0       0          0        0       0       0
+Sorted               FALSE     TRUE   FALSE      FALSE    FALSE   FALSE   FALSE
+                   rain.rate rain.cum    till incorp    crop
+Class                numeric  numeric numeric factor  factor
+Minimum                    0        0       0   none   grass
+Maximum                 1.54       23       0   none stubble
+Mean                     0.1     2.22       0   none   grass
+Unique (excld. NA)         9       11       1      1       2
+Missing values             0        0       0      0       0
+Sorted                 FALSE    FALSE    TRUE   TRUE    TRUE
 
 > # None missing
 > 

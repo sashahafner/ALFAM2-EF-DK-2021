@@ -33,6 +33,7 @@ dim(ds4)
 
 For all calibration data.
 ```{r}
+dscal <- unique(rbind(ds2, ds2cs, ds4))
 table(dscal$meas.tech2)
 table(dscal$country, dscal$meas.tech2)
 table(dscal$inst, dscal$meas.tech2)

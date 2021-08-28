@@ -512,7 +512,7 @@ mods2[[i]][['mod']] <- m <- optim(par = parset, fn = function(par)
 Sys.time()
 
 # Get pars
-mods2[[i]][['coef']] <- pp <- c(m$par, fixed2)
+mods2[[i]][['coef']] <- pp <- c(m$par, mods2[['h']][['coef']])
 
 # Echo pars and other model info
 print(pp)

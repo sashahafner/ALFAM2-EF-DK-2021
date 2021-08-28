@@ -4,37 +4,37 @@ encoding = "native.enc" chosen
 has srcrefs:
 List of 16
  $ : 'srcref' int [1:8] 4 1 4 21 1 21 4 4
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c8e4d7960> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9ad327cd0> 
  $ : 'srcref' int [1:8] 6 1 6 76 1 76 6 6
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c8e4d7960> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9ad327cd0> 
  $ : 'srcref' int [1:8] 7 1 7 20 1 20 7 7
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c8e4d7960> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9ad327cd0> 
  $ : 'srcref' int [1:8] 10 1 17 33 1 33 10 17
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c8e4d7960> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9ad327cd0> 
  $ : 'srcref' int [1:8] 20 1 25 33 1 33 20 25
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c8e4d7960> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9ad327cd0> 
  $ : 'srcref' int [1:8] 27 1 32 36 1 36 27 32
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c8e4d7960> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9ad327cd0> 
  $ : 'srcref' int [1:8] 36 1 75 1 1 1 36 75
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c8e4d7960> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9ad327cd0> 
  $ : 'srcref' int [1:8] 78 1 78 16 1 16 78 78
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c8e4d7960> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9ad327cd0> 
  $ : 'srcref' int [1:8] 79 1 79 54 1 54 79 79
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c8e4d7960> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9ad327cd0> 
  $ : 'srcref' int [1:8] 82 1 82 27 1 27 82 82
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c8e4d7960> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9ad327cd0> 
  $ : 'srcref' int [1:8] 84 1 90 1 1 1 84 90
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c8e4d7960> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9ad327cd0> 
  $ : 'srcref' int [1:8] 92 1 92 59 1 59 92 92
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c8e4d7960> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9ad327cd0> 
  $ : 'srcref' int [1:8] 93 1 93 61 1 61 93 93
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c8e4d7960> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9ad327cd0> 
  $ : 'srcref' int [1:8] 95 1 95 51 1 51 95 95
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c8e4d7960> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9ad327cd0> 
  $ : 'srcref' int [1:8] 96 1 96 59 1 59 96 96
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c8e4d7960> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9ad327cd0> 
  $ : 'srcref' int [1:8] 97 1 97 58 1 58 97 97
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c8e4d7960> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9ad327cd0> 
 
 >>>> eval(expression_nr. 1 )
 		 =================
@@ -327,207 +327,207 @@ curr.fun: symbol write.csv
  .. after ‘expression(write.csv(pars.incorp.md, '../output/pars_incorp_med.csv'))’
 'envir' chosen:<environment: R_GlobalEnv>
 encoding = "native.enc" chosen
---> parsed 234 expressions; now eval(.)ing them:
+--> parsed 232 expressions; now eval(.)ing them:
 has srcrefs:
-List of 234
+List of 232
  $ : 'srcref' int [1:8] 7 1 7 15 1 15 7 7
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 8 1 8 15 1 15 8 8
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 12 1 32 1 1 1 12 32
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 35 1 37 30 1 30 35 37
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 40 1 40 49 1 49 40 40
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 43 1 48 1 1 1 43 48
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 51 1 51 37 1 37 51 51
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 54 1 54 50 1 50 54 54
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 57 1 58 29 1 29 57 58
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 72 1 72 8 1 8 72 72
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 73 1 73 19 1 19 73 73
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 74 1 74 12 1 12 74 74
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 78 1 78 13 1 13 78 78
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 79 1 79 12 1 12 79 79
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 82 1 82 49 1 49 82 82
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 83 1 83 30 1 30 83 83
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 84 1 84 23 1 23 84 84
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 87 1 87 112 1 112 87 87
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 89 1 89 25 1 25 89 89
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 92 1 92 10 1 10 92 92
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 93 1 93 20 1 20 93 93
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 94 1 97 57 1 57 94 97
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 98 1 98 10 1 10 98 98
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 101 1 101 45 1 45 101 101
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 104 1 104 9 1 9 104 104
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 105 1 105 8 1 8 105 105
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 108 1 108 51 1 51 108 108
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 111 1 112 60 1 60 111 112
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 114 1 114 10 1 10 114 114
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 125 1 125 8 1 8 125 125
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 126 1 126 19 1 19 126 126
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 127 1 127 12 1 12 127 127
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 131 1 131 13 1 13 131 131
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 132 1 132 12 1 12 132 132
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 135 1 135 49 1 49 135 135
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 136 1 136 30 1 30 136 136
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 137 1 137 23 1 23 137 137
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 140 1 140 112 1 112 140 140
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 142 1 142 25 1 25 142 142
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 145 1 145 10 1 10 145 145
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 146 1 146 20 1 20 146 146
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 147 1 150 57 1 57 147 150
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 151 1 151 10 1 10 151 151
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 154 1 154 45 1 45 154 154
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 157 1 157 9 1 9 157 157
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 158 1 158 8 1 8 158 158
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 161 1 161 51 1 51 161 161
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 164 1 165 60 1 60 164 165
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 167 1 167 10 1 10 167 167
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 176 1 176 8 1 8 176 176
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 177 1 177 19 1 19 177 177
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 178 1 178 12 1 12 178 178
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 182 1 182 13 1 13 182 182
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 185 1 185 49 1 49 185 185
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 186 1 186 30 1 30 186 186
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 187 1 187 23 1 23 187 187
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 190 1 190 112 1 112 190 190
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 192 1 192 25 1 25 192 192
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 195 1 195 10 1 10 195 195
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 196 1 196 20 1 20 196 196
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 197 1 200 57 1 57 197 200
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 201 1 201 10 1 10 201 201
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 204 1 204 35 1 35 204 204
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 207 1 207 9 1 9 207 207
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 208 1 208 8 1 8 208 208
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 211 1 211 51 1 51 211 211
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 214 1 215 60 1 60 214 215
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 217 1 217 10 1 10 217 217
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 225 1 225 8 1 8 225 225
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 226 1 226 19 1 19 226 226
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 227 1 227 12 1 12 227 227
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 231 1 231 13 1 13 231 231
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 232 1 232 12 1 12 232 232
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 235 1 235 49 1 49 235 235
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 236 1 236 30 1 30 236 236
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 237 1 237 23 1 23 237 237
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 240 1 240 112 1 112 240 240
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 242 1 242 25 1 25 242 242
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 245 1 245 10 1 10 245 245
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 246 1 246 20 1 20 246 246
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 247 1 250 57 1 57 247 250
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 251 1 251 10 1 10 251 251
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 254 1 254 45 1 45 254 254
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 257 1 257 9 1 9 257 257
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 258 1 258 8 1 8 258 258
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 261 1 261 51 1 51 261 261
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 264 1 265 60 1 60 264 265
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 267 1 267 10 1 10 267 267
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 276 1 276 8 1 8 276 276
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 277 1 277 19 1 19 277 277
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 278 1 278 90 1 90 278 278
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 279 1 279 12 1 12 279 279
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 283 1 283 13 1 13 283 283
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 284 1 284 12 1 12 284 284
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 287 1 287 49 1 49 287 287
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 288 1 288 30 1 30 288 288
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 289 1 289 23 1 23 289 289
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 292 1 292 112 1 112 292 292
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
  $ : 'srcref' int [1:8] 294 1 294 25 1 25 294 294
-  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x561c9519cec0> 
+  ..- attr(*, "srcfile")=Classes 'srcfilecopy', 'srcfile' <environment: 0x55d9b5a1a380> 
   [list output truncated]
 
 >>>> eval(expression_nr. 1 )
@@ -763,7 +763,7 @@ curr.fun: symbol print
 > # Parameter estimation (timed)
 > Sys.time()
 curr.fun: symbol Sys.time
-[1] "2021-05-25 10:45:18 EDT"
+[1] "2021-08-28 11:28:05 EDT"
  .. after ‘expression(Sys.time())’
 
 >>>> eval(expression_nr. 21 )
@@ -787,7 +787,7 @@ curr.fun: symbol <-
 
 > Sys.time()
 curr.fun: symbol Sys.time
-[1] "2021-05-25 11:01:55 EDT"
+[1] "2021-08-28 11:45:51 EDT"
  .. after ‘expression(Sys.time())’
 
 >>>> eval(expression_nr. 24 )
@@ -878,7 +878,7 @@ curr.fun: symbol <-
 
 > Sys.time()
 curr.fun: symbol Sys.time
-[1] "2021-05-25 11:01:57 EDT"
+[1] "2021-08-28 11:45:53 EDT"
  .. after ‘expression(Sys.time())’
 
 >>>> eval(expression_nr. 30 )
@@ -1022,7 +1022,7 @@ curr.fun: symbol print
 > # Parameter estimation (timed)
 > Sys.time()
 curr.fun: symbol Sys.time
-[1] "2021-05-25 11:01:59 EDT"
+[1] "2021-08-28 11:45:55 EDT"
  .. after ‘expression(Sys.time())’
 
 >>>> eval(expression_nr. 41 )
@@ -1046,7 +1046,7 @@ curr.fun: symbol <-
 
 > Sys.time()
 curr.fun: symbol Sys.time
-[1] "2021-05-25 11:18:22 EDT"
+[1] "2021-08-28 12:03:35 EDT"
  .. after ‘expression(Sys.time())’
 
 >>>> eval(expression_nr. 44 )
@@ -1133,7 +1133,7 @@ curr.fun: symbol <-
 
 > Sys.time()
 curr.fun: symbol Sys.time
-[1] "2021-05-25 11:18:24 EDT"
+[1] "2021-08-28 12:03:37 EDT"
  .. after ‘expression(Sys.time())’
 
 >>>> eval(expression_nr. 50 )
@@ -1267,7 +1267,7 @@ curr.fun: symbol print
 > # Parameter estimation (timed)
 > Sys.time()
 curr.fun: symbol Sys.time
-[1] "2021-05-25 11:18:26 EDT"
+[1] "2021-08-28 12:03:40 EDT"
  .. after ‘expression(Sys.time())’
 
 >>>> eval(expression_nr. 60 )
@@ -1291,7 +1291,7 @@ curr.fun: symbol <-
 
 > Sys.time()
 curr.fun: symbol Sys.time
-[1] "2021-05-25 11:34:54 EDT"
+[1] "2021-08-28 12:21:21 EDT"
  .. after ‘expression(Sys.time())’
 
 >>>> eval(expression_nr. 63 )
@@ -1378,7 +1378,7 @@ curr.fun: symbol <-
 
 > Sys.time()
 curr.fun: symbol Sys.time
-[1] "2021-05-25 11:34:56 EDT"
+[1] "2021-08-28 12:21:24 EDT"
  .. after ‘expression(Sys.time())’
 
 >>>> eval(expression_nr. 69 )
@@ -1520,7 +1520,7 @@ curr.fun: symbol print
 > # Parameter estimation (timed)
 > Sys.time()
 curr.fun: symbol Sys.time
-[1] "2021-05-25 11:34:58 EDT"
+[1] "2021-08-28 12:21:26 EDT"
  .. after ‘expression(Sys.time())’
 
 >>>> eval(expression_nr. 80 )
@@ -1544,7 +1544,7 @@ curr.fun: symbol <-
 
 > Sys.time()
 curr.fun: symbol Sys.time
-[1] "2021-05-25 11:51:50 EDT"
+[1] "2021-08-28 12:39:08 EDT"
  .. after ‘expression(Sys.time())’
 
 >>>> eval(expression_nr. 83 )
@@ -1631,7 +1631,7 @@ curr.fun: symbol <-
 
 > Sys.time()
 curr.fun: symbol Sys.time
-[1] "2021-05-25 11:51:52 EDT"
+[1] "2021-08-28 12:39:10 EDT"
  .. after ‘expression(Sys.time())’
 
 >>>> eval(expression_nr. 89 )
@@ -1779,7 +1779,7 @@ curr.fun: symbol print
 > # Parameter estimation (timed)
 > Sys.time()
 curr.fun: symbol Sys.time
-[1] "2021-05-25 11:51:54 EDT"
+[1] "2021-08-28 12:39:12 EDT"
  .. after ‘expression(Sys.time())’
 
 >>>> eval(expression_nr. 101 )
@@ -1803,7 +1803,7 @@ curr.fun: symbol <-
 
 > Sys.time()
 curr.fun: symbol Sys.time
-[1] "2021-05-25 12:08:53 EDT"
+[1] "2021-08-28 12:57:01 EDT"
  .. after ‘expression(Sys.time())’
 
 >>>> eval(expression_nr. 104 )
@@ -1888,7 +1888,7 @@ curr.fun: symbol <-
 
 > Sys.time()
 curr.fun: symbol Sys.time
-[1] "2021-05-25 12:08:55 EDT"
+[1] "2021-08-28 12:57:03 EDT"
  .. after ‘expression(Sys.time())’
 
 >>>> eval(expression_nr. 110 )
@@ -2029,7 +2029,7 @@ curr.fun: symbol print
 > # Parameter estimation (timed)
 > Sys.time()
 curr.fun: symbol Sys.time
-[1] "2021-05-25 12:08:58 EDT"
+[1] "2021-08-28 12:57:05 EDT"
  .. after ‘expression(Sys.time())’
 
 >>>> eval(expression_nr. 122 )
@@ -2053,7 +2053,7 @@ curr.fun: symbol <-
 
 > Sys.time()
 curr.fun: symbol Sys.time
-[1] "2021-05-25 12:25:45 EDT"
+[1] "2021-08-28 13:14:50 EDT"
  .. after ‘expression(Sys.time())’
 
 >>>> eval(expression_nr. 125 )
@@ -2136,7 +2136,7 @@ curr.fun: symbol <-
 
 > Sys.time()
 curr.fun: symbol Sys.time
-[1] "2021-05-25 12:25:47 EDT"
+[1] "2021-08-28 13:14:52 EDT"
  .. after ‘expression(Sys.time())’
 
 >>>> eval(expression_nr. 131 )
@@ -2276,7 +2276,7 @@ curr.fun: symbol print
 > # Parameter estimation (timed)
 > Sys.time()
 curr.fun: symbol Sys.time
-[1] "2021-05-25 12:25:49 EDT"
+[1] "2021-08-28 13:14:55 EDT"
  .. after ‘expression(Sys.time())’
 
 >>>> eval(expression_nr. 143 )
@@ -2300,7 +2300,7 @@ curr.fun: symbol <-
 
 > Sys.time()
 curr.fun: symbol Sys.time
-[1] "2021-05-25 12:42:17 EDT"
+[1] "2021-08-28 13:32:40 EDT"
  .. after ‘expression(Sys.time())’
 
 >>>> eval(expression_nr. 146 )
@@ -2383,7 +2383,7 @@ curr.fun: symbol <-
 
 > Sys.time()
 curr.fun: symbol Sys.time
-[1] "2021-05-25 12:42:19 EDT"
+[1] "2021-08-28 13:32:42 EDT"
  .. after ‘expression(Sys.time())’
 
 >>>> eval(expression_nr. 152 )
@@ -2520,7 +2520,7 @@ curr.fun: symbol print
 > # Parameter estimation (timed)
 > Sys.time()
 curr.fun: symbol Sys.time
-[1] "2021-05-25 12:42:21 EDT"
+[1] "2021-08-28 13:32:44 EDT"
  .. after ‘expression(Sys.time())’
 
 >>>> eval(expression_nr. 164 )
@@ -2544,7 +2544,7 @@ curr.fun: symbol <-
 
 > Sys.time()
 curr.fun: symbol Sys.time
-[1] "2021-05-25 12:58:45 EDT"
+[1] "2021-08-28 13:50:29 EDT"
  .. after ‘expression(Sys.time())’
 
 >>>> eval(expression_nr. 167 )
@@ -2625,7 +2625,7 @@ curr.fun: symbol <-
 
 > Sys.time()
 curr.fun: symbol Sys.time
-[1] "2021-05-25 12:58:47 EDT"
+[1] "2021-08-28 13:50:32 EDT"
  .. after ‘expression(Sys.time())’
 
 >>>> eval(expression_nr. 173 )
@@ -2638,32 +2638,26 @@ curr.fun: symbol Sys.time
 > # Calibration settings
 > # i i i i i i i  
 > # For cs only
-> i <- 'i' 
+> # Note that par set h pars are used as fixed pars!
+> # Set i is the set used for EFS  .... [TRUNCATED] 
 curr.fun: symbol <-
  .. after ‘expression(i <- 'i')’
 
 >>>> eval(expression_nr. 174 )
 		 =================
 
-> fixed2 <- mods2[['h']][['coef']]
-curr.fun: symbol <-
- .. after ‘expression(fixed2 <- mods2[['h']][['coef']])’
-
->>>> eval(expression_nr. 175 )
-		 =================
-
 > parset <- p3
 curr.fun: symbol <-
  .. after ‘expression(parset <- p3)’
 
->>>> eval(expression_nr. 176 )
+>>>> eval(expression_nr. 175 )
 		 =================
 
 > datset <- d2cs
 curr.fun: symbol <-
  .. after ‘expression(datset <- d2cs)’
 
->>>> eval(expression_nr. 177 )
+>>>> eval(expression_nr. 176 )
 		 =================
 
 > # ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -2675,16 +2669,7 @@ app.mthd.cs.f0 app.mthd.cs.r3
 curr.fun: symbol print
  .. after ‘expression(print(parset))’
 
->>>> eval(expression_nr. 178 )
-		 =================
-
-> print(fixed)
-man.ph.r1 man.ph.r3 
-    0.665     0.238 
-curr.fun: symbol print
- .. after ‘expression(print(fixed))’
-
->>>> eval(expression_nr. 179 )
+>>>> eval(expression_nr. 177 )
 		 =================
 
 > # Echo dataset info
@@ -2692,14 +2677,14 @@ curr.fun: symbol print
 curr.fun: symbol <-
  .. after ‘expression(pvars <- unique(gsub('\\.[rf][0-4]$', '', names(parset))))’
 
->>>> eval(expression_nr. 180 )
+>>>> eval(expression_nr. 178 )
 		 =================
 
 > pvars <- pvars[pvars != 'int']
 curr.fun: symbol <-
  .. after ‘expression(pvars <- pvars[pvars != 'int'])’
 
->>>> eval(expression_nr. 181 )
+>>>> eval(expression_nr. 179 )
 		 =================
 
 > dfsumm(datset[, pvars, drop = FALSE])
@@ -2717,7 +2702,7 @@ Sorted                    TRUE
 curr.fun: symbol dfsumm
  .. after ‘expression(dfsumm(datset[, pvars, drop = FALSE]))’
 
->>>> eval(expression_nr. 182 )
+>>>> eval(expression_nr. 180 )
 		 =================
 
 > # Look for problem observations before running
@@ -2725,7 +2710,7 @@ curr.fun: symbol dfsumm
 curr.fun: symbol <-
  .. after ‘expression(pr <- ALFAM2mod(datset, app.name = 'tan.app', time.name = 'ct', group = 'pmid', pars = parset, parallel = FALSE))’
 
->>>> eval(expression_nr. 183 )
+>>>> eval(expression_nr. 181 )
 		 =================
 
 > # Should be no NA
@@ -2734,54 +2719,55 @@ integer(0)
 curr.fun: symbol print
  .. after ‘expression(print(which(is.na(pr$e))))’
 
->>>> eval(expression_nr. 184 )
+>>>> eval(expression_nr. 182 )
 		 =================
 
 > # Parameter estimation (timed)
 > Sys.time()
 curr.fun: symbol Sys.time
-[1] "2021-05-25 12:58:47 EDT"
+[1] "2021-08-28 13:50:32 EDT"
  .. after ‘expression(Sys.time())’
 
->>>> eval(expression_nr. 185 )
+>>>> eval(expression_nr. 183 )
 		 =================
 
 > mods2[[i]] <- list()
 curr.fun: symbol <-
  .. after ‘expression(mods2[[i]] <- list())’
 
->>>> eval(expression_nr. 186 )
+>>>> eval(expression_nr. 184 )
 		 =================
 
+> # Note unusual fixed argument!
 > mods2[[i]][['mod']] <- m <- optim(par = parset, fn = function(par) 
-+                                         resCalcOptim(p = par, dat = datset, to = 'er', fixed = fixed, app.name = 'tan.app', group = 'pmid',
-+                                                 method = 'TAE',  weights = 1, parallel .... [TRUNCATED] 
-22.556  24.245  26.064  21.671  20.837  18.803  16.966  18.765  18.503  15.204  13.219  11.573  8.9053  7.139  4.6424  2.7555  1.0519  0.54652  0.29218  0.3286  0.28878  0.35336  0.31864  0.38483  0.29567  0.30596  0.28922  0.29421  0.28968  0.29061  0.28869  0.29124  0.28812  0.2881  0.28875  0.28934  0.28837  0.28855  0.28823  0.28825  0.28815  0.2881  0.28825  0.28826  0.2881  0.28816  0.2881  0.28811  0.28809  0.28811  0.28809  0.2881  0.28809  0.28809  0.2881  0.2881  0.28809  0.28809  0.2881  0.2881  0.28809  0.28809  0.28809  0.2881  0.28809  0.28809  0.28809  0.28809  0.28809  curr.fun: symbol <-
- .. after ‘expression(mods2[[i]][['mod']] <- m <- optim(par = parset, fn = function(par) ’‘                                        resCalcOptim(p = par, dat = datset, to = 'er', fixed = fixed, app.name = 'tan.app', group = 'pmid',’‘                                                method = 'TAE',  weights = 1, parallel = FALSE), ’‘                                  method = 'Nelder-Mead'))’
++                                         resCalcOptim(p = par, dat = datset, to = 'er', fixed = mods2[['h']][['coef']], 
++                                                      app.name = 'tan.app' .... [TRUNCATED] 
+9.6562  10.956  9.6599  8.4332  7.2962  7.2911  6.2468  4.4748  2.814  2.2878  1.096  0.48367  0.31275  0.29427  0.30015  0.33176  0.27619  0.29147  0.28502  0.29558  0.28479  0.28024  0.27808  0.29591  0.27784  0.27624  0.27641  0.27965  0.27673  0.27587  0.27965  0.28139  0.27611  0.27591  0.2759  0.27704  0.276  0.27578  0.27704  0.27778  0.27586  0.27583  0.27581  0.27615  0.27582  0.27581  0.27578  0.27627  0.27579  0.27594  0.27578  0.27581  0.27578  0.27578  0.27578  0.27578  0.27578  0.27578  0.27577  0.27577  0.27582  0.27577  0.27578  0.27578  0.27577  0.27578  0.27577  0.27577  0.27577  0.27577  0.27577  0.27577  0.27577  0.27577  0.27577  0.27577  0.27577  0.27577  0.27577  0.27577  0.27577  0.27577  0.27579  0.27577  0.27577  0.27577  0.27577  0.27577  0.27577  0.27577  0.27577  0.27577  0.27577  0.27577  0.27577  0.27577  0.27577  0.27577  0.27577  0.27577  0.27577  0.27577  0.27577  curr.fun: symbol <-
+ .. after ‘expression(mods2[[i]][['mod']] <- m <- optim(par = parset, fn = function(par) ’‘                                        resCalcOptim(p = par, dat = datset, to = 'er', fixed = mods2[['h']][['coef']], ’‘                                                     app.name = 'tan.app', group = 'pmid',’‘                                                method = 'TAE',  weights = 1, parallel = FALSE), ’‘                                  method = 'Nelder-Mead'))’
 
->>>> eval(expression_nr. 187 )
+>>>> eval(expression_nr. 185 )
 		 =================
 
 > Sys.time()
 curr.fun: symbol Sys.time
-[1] "2021-05-25 12:58:50 EDT"
+[1] "2021-08-28 13:50:36 EDT"
  .. after ‘expression(Sys.time())’
 
->>>> eval(expression_nr. 188 )
+>>>> eval(expression_nr. 186 )
 		 =================
 
 > # Get pars
-> mods2[[i]][['coef']] <- pp <- c(m$par, fixed2)
+> mods2[[i]][['coef']] <- pp <- c(m$par, mods2[['h']][['coef']])
 curr.fun: symbol <-
- .. after ‘expression(mods2[[i]][['coef']] <- pp <- c(m$par, fixed2))’
+ .. after ‘expression(mods2[[i]][['coef']] <- pp <- c(m$par, mods2[['h']][['coef']]))’
 
->>>> eval(expression_nr. 189 )
+>>>> eval(expression_nr. 187 )
 		 =================
 
 > # Echo pars and other model info
 > print(pp)
    app.mthd.cs.f0    app.mthd.cs.r3            int.f0            int.r1 
-      -5.80613021       -8.13751015       -0.60568338       -0.93921516 
+      -7.63373787       -0.66647417       -0.60568338       -0.93921516 
            int.r2            int.r3    app.mthd.os.f0    app.rate.ni.f0 
       -1.79918546       -3.22841225       -1.74351499       -0.01114900 
         man.dm.f0    app.mthd.bc.r1         man.dm.r1       air.temp.r1 
@@ -2793,20 +2779,20 @@ curr.fun: symbol <-
 curr.fun: symbol print
  .. after ‘expression(print(pp))’
 
->>>> eval(expression_nr. 190 )
+>>>> eval(expression_nr. 188 )
 		 =================
 
 > print(m)
 $par
 app.mthd.cs.f0 app.mthd.cs.r3 
-      -5.80613       -8.13751 
+    -7.6337379     -0.6664742 
 
 $value
-[1] 0.2880892
+[1] 0.2757681
 
 $counts
 function gradient 
-      69       NA 
+     103       NA 
 
 $convergence
 [1] 0
@@ -2817,7 +2803,7 @@ NULL
 curr.fun: symbol print
  .. after ‘expression(print(m))’
 
->>>> eval(expression_nr. 191 )
+>>>> eval(expression_nr. 189 )
 		 =================
 
 > # Export pars
@@ -2825,24 +2811,24 @@ curr.fun: symbol print
 curr.fun: symbol write.csv
  .. after ‘expression(write.csv(pp, paste0('../output/pars_', i, '.csv')))’
 
->>>> eval(expression_nr. 192 )
+>>>> eval(expression_nr. 190 )
 		 =================
 
-> # Run model for all observations using parameter estimates
+> # Run model for all observations using parameter estimates (for both d2 and d2cs here for model i)
 > mods2[[i]][['pred']] <- pr <- ALFAM2mod(rbindf(d2, d2cs), app.name = 'tan.app', time.name = 'ct', time.incorp = 'time.incorp', 
 +                 group = 'pmid', pars = pp, parallel = FALSE)
 curr.fun: symbol <-
  .. after ‘expression(mods2[[i]][['pred']] <- pr <- ALFAM2mod(rbindf(d2, d2cs), app.name = 'tan.app', time.name = 'ct', time.incorp = 'time.incorp', ’‘                group = 'pmid', pars = pp, parallel = FALSE))’
 
->>>> eval(expression_nr. 193 )
+>>>> eval(expression_nr. 191 )
 		 =================
 
 > Sys.time()
 curr.fun: symbol Sys.time
-[1] "2021-05-25 12:58:52 EDT"
+[1] "2021-08-28 13:50:38 EDT"
  .. after ‘expression(Sys.time())’
 
->>>> eval(expression_nr. 194 )
+>>>> eval(expression_nr. 192 )
 		 =================
 
 > #------------------------------------------------------- 
@@ -2854,32 +2840,33 @@ curr.fun: symbol Sys.time
 > # Calibration settings
 > # j j j j j j j 
 > # As with h but drop weighting, for comparison
+> # Parameter set 3
 > i <- 'j' 
 curr.fun: symbol <-
  .. after ‘expression(i <- 'j')’
 
->>>> eval(expression_nr. 195 )
+>>>> eval(expression_nr. 193 )
 		 =================
 
 > parset <- mods2[['h']][['coef']]
 curr.fun: symbol <-
  .. after ‘expression(parset <- mods2[['h']][['coef']])’
 
->>>> eval(expression_nr. 196 )
+>>>> eval(expression_nr. 194 )
 		 =================
 
 > parset <- parset[!names(parset) %in% names(fixed)]
 curr.fun: symbol <-
  .. after ‘expression(parset <- parset[!names(parset) %in% names(fixed)])’
 
->>>> eval(expression_nr. 197 )
+>>>> eval(expression_nr. 195 )
 		 =================
 
 > datset <- d2
 curr.fun: symbol <-
  .. after ‘expression(datset <- d2)’
 
->>>> eval(expression_nr. 198 )
+>>>> eval(expression_nr. 196 )
 		 =================
 
 > # ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -2897,7 +2884,7 @@ curr.fun: symbol <-
 curr.fun: symbol print
  .. after ‘expression(print(parset))’
 
->>>> eval(expression_nr. 199 )
+>>>> eval(expression_nr. 197 )
 		 =================
 
 > print(fixed)
@@ -2906,7 +2893,7 @@ man.ph.r1 man.ph.r3
 curr.fun: symbol print
  .. after ‘expression(print(fixed))’
 
->>>> eval(expression_nr. 200 )
+>>>> eval(expression_nr. 198 )
 		 =================
 
 > # Echo dataset info
@@ -2914,14 +2901,14 @@ curr.fun: symbol print
 curr.fun: symbol <-
  .. after ‘expression(pvars <- gsub('\\.[rf][0-4]$', '', names(parset)))’
 
->>>> eval(expression_nr. 201 )
+>>>> eval(expression_nr. 199 )
 		 =================
 
 > pvars <- pvars[pvars != 'int']
 curr.fun: symbol <-
  .. after ‘expression(pvars <- pvars[pvars != 'int'])’
 
->>>> eval(expression_nr. 202 )
+>>>> eval(expression_nr. 200 )
 		 =================
 
 > dfsumm(datset[, pvars])
@@ -2955,7 +2942,7 @@ Sorted                   FALSE          FALSE
 curr.fun: symbol dfsumm
  .. after ‘expression(dfsumm(datset[, pvars]))’
 
->>>> eval(expression_nr. 203 )
+>>>> eval(expression_nr. 201 )
 		 =================
 
 > # Look for problem observations before running
@@ -2963,7 +2950,7 @@ curr.fun: symbol dfsumm
 curr.fun: symbol <-
  .. after ‘expression(pr <- ALFAM2mod(datset, app.name = 'tan.app', time.name = 'ct', group = 'pmid', pars = parset, parallel = FALSE))’
 
->>>> eval(expression_nr. 204 )
+>>>> eval(expression_nr. 202 )
 		 =================
 
 > # Should be no NA
@@ -2972,23 +2959,23 @@ integer(0)
 curr.fun: symbol print
  .. after ‘expression(print(which(is.na(pr$e))))’
 
->>>> eval(expression_nr. 205 )
+>>>> eval(expression_nr. 203 )
 		 =================
 
 > # Parameter estimation (timed)
 > Sys.time()
 curr.fun: symbol Sys.time
-[1] "2021-05-25 12:58:54 EDT"
+[1] "2021-08-28 13:50:40 EDT"
  .. after ‘expression(Sys.time())’
 
->>>> eval(expression_nr. 206 )
+>>>> eval(expression_nr. 204 )
 		 =================
 
 > mods2[[i]] <- list()
 curr.fun: symbol <-
  .. after ‘expression(mods2[[i]] <- list())’
 
->>>> eval(expression_nr. 207 )
+>>>> eval(expression_nr. 205 )
 		 =================
 
 > mods2[[i]][['mod']] <- m <- optim(par = parset, fn = function(par) 
@@ -2997,15 +2984,15 @@ curr.fun: symbol <-
 361.84  405.55  391.37  371.42  499.13  366.1  2604.2  414.67  363.81  463.04  511.05  399.46  470.15  361.89  364.22  376.44  396.09  756.36  703.9  2468.7  612.75  1957.1  505.41  574.37  444.15  1384  427.88  424.75  393.54  423.73  397.24  433.54  385.77  476.47  403.05  778.51  395.61  464.41  385.18  401.03  381.95  397.55  372.9  436.5  376.93  402.24  379.71  378.7  372.9  457.19  380.14  389.96  366.92  398.66  371.68  391.22  370.34  388.68  371.52  373.26  362.13  395.47  371.34  384.2  370.43  383.66  366.31  372.48  366.08  376.72  367.42  374.69  366.21  373.1  365.02  368.96  363.85  369.9  364.82  371.99  366.57  369.32  362.38  367.8  361.76  367.56  364.17  367.04  362.21  366.19  361.45  367.42  362.59  368.87  363.26  361.21  364.02  368.24  362.97  361.81  360.94  365.46  362.45  361.71  360.85  362.7  360.62  361.59  360.55  366.76  361.12  362.52  360.62  363.46  361.55  362.75  361.25  362.32  360.73  360.75  360.48  360.44  362  361.15  360.53  361.19  360.38  361.21  360.36  360.77  360.27  359.96  361.7  360.44  360.15  360  359.88  363.17  360.32  360.29  360.02  360.54  359.98  360.58  360  360.66  360.17  360.73  360.09  360.59  360.17  360.23  360  360.27  359.94  359.8  360.15  360.64  360.03  359.6  359.88  359.78  359.75  359.87  359.7  359.99  359.76  359.84  359.71  359.77  359.68  360.25  359.88  359.69  359.65  359.81  359.69  360.16  359.75  359.7  359.64  359.69  359.61  359.63  359.6  360.1  359.67  359.7  359.62  359.63  359.58  359.48  359.58  359.85  359.63  359.57  359.56  359.59  359.55  359.62  359.57  359.46  359.43  359.49  359.49  359.46  359.48  359.45  359.47  359.54  359.5  359.48  359.47  359.47  359.46  359.39  359.45  359.42  359.42  359.47  359.44  359.37  359.42  359.53  359.45  359.4  359.4  359.44  359.41  359.37  359.48  359.37  359.43  359.33  359.33  359.37  359.37  359.43  359.38  359.38  359.37  359.4  359.38  359.34  359.34  359.31  359.31  359.42  359.37  359.32  359.32  359.38  359.35  359.33  359.32  359.29  359.27  359.28  359.3  359.41  359.34  359.34  359.32  359.29  359.3  359.29  359.29  359.3  359.3  359.3  359.29  359.28  359.28  359.27  359.32  359.29  359.28  359.25  359.26  359.26  359.26  359.27  359.27  359.27  359.27  359.27  359.26  359.24  359.24  359.29  359.26  359.3  359.26  359.26  359.25  359.28  359.26  359.25  359.25  359.24  359.24  359.27  359.25  359.23  359.23  359.24  359.24  359.25  359.24  359.23  359.23  359.24  359.24  359.25  359.24  359.24  359.23  359.23  359.23  359.23  359.24  359.25  359.24  359.22  359.23  359.21  359.21  359.21  359.22  359.23  359.22  359.22  359.22  359.21  359.22  359.22  359.22  359.21  359.21  359.21  359.21  359.21  359.21  359.24  359.22  359.21  359.21  359.22  359.21  359.2  359.21  359.22  359.21  359.22  359.21  359.2  359.21  359.21  359.21  359.2  359.2  359.21  359.2  359.2  359.2  359.2  359.2  359.2  359.2  359.2  359.2  359.19  359.19  359.19  359.2  359.2  359.2  359.19  359.18  359.19  359.19  359.2  359.19  359.2  359.2  359.19  359.19  359.19  359.19  359.19  359.19  359.19  359.19  359.18  359.19  359.18  359.17  359.18  359.18  359.18  359.18  359.19  359.18  359.2  359.19  359.18  359.18  359.19  359.19  359.18  359.18  359.17  359.17  359.18  359.18  359.17  359.18  359.18  359.18  359.17  359.17  359.17  359.17  359.17  359.18  359.17  359.16  359.17  359.17  359.17  359.17  359.17  359.17  359.17  359.17  359.16  359.17  359.17  359.17  359.16  359.17  359.16  359.16  359.16  359.16  359.16  359.16  359.17  359.16  359.16  359.15  359.16  359.16  359.15  359.16  359.16  359.16  359.15  359.16  359.15  359.14  359.15  359.15  359.15  359.15  359.15  359.15  359.15  359.15  359.15  359.15  359.15  359.15  359.15  359.15  359.14  359.15  359.15  359.15  359.14  359.15  359.15  359.15  359.15  359.15  359.14  359.15  359.15  359.15  359.14  359.14  359.14  359.14  359.14  359.14  359.14  359.14  359.14  359.14  359.14  359.14  curr.fun: symbol <-
  .. after ‘expression(mods2[[i]][['mod']] <- m <- optim(par = parset, fn = function(par) ’‘                                        resCalcOptim(p = par, dat = datset, to = 'er', fixed = fixed, app.name = 'tan.app', group = 'pmid',’‘                                                method = 'TAE',  weights = 1, parallel = FALSE), ’‘                                  method = 'Nelder-Mead'))’
 
->>>> eval(expression_nr. 208 )
+>>>> eval(expression_nr. 206 )
 		 =================
 
 > Sys.time()
 curr.fun: symbol Sys.time
-[1] "2021-05-25 13:15:47 EDT"
+[1] "2021-08-28 14:08:21 EDT"
  .. after ‘expression(Sys.time())’
 
->>>> eval(expression_nr. 209 )
+>>>> eval(expression_nr. 207 )
 		 =================
 
 > # Get pars
@@ -3013,7 +3000,7 @@ curr.fun: symbol Sys.time
 curr.fun: symbol <-
  .. after ‘expression(mods2[[i]][['coef']] <- pp <- c(m$par, fixed))’
 
->>>> eval(expression_nr. 210 )
+>>>> eval(expression_nr. 208 )
 		 =================
 
 > # Echo pars and other model info
@@ -3031,7 +3018,7 @@ curr.fun: symbol <-
 curr.fun: symbol print
  .. after ‘expression(print(pp))’
 
->>>> eval(expression_nr. 211 )
+>>>> eval(expression_nr. 209 )
 		 =================
 
 > print(m)
@@ -3061,7 +3048,7 @@ NULL
 curr.fun: symbol print
  .. after ‘expression(print(m))’
 
->>>> eval(expression_nr. 212 )
+>>>> eval(expression_nr. 210 )
 		 =================
 
 > # Export pars
@@ -3069,7 +3056,7 @@ curr.fun: symbol print
 curr.fun: symbol write.csv
  .. after ‘expression(write.csv(pp, paste0('../output/pars_', i, '.csv')))’
 
->>>> eval(expression_nr. 213 )
+>>>> eval(expression_nr. 211 )
 		 =================
 
 > # Run model for all observations using parameter estimates
@@ -3078,15 +3065,15 @@ curr.fun: symbol write.csv
 curr.fun: symbol <-
  .. after ‘expression(mods2[[i]][['pred']] <- pr <- ALFAM2mod(datset, app.name = 'tan.app', time.name = 'ct', time.incorp = 'time.incorp', ’‘                group = 'pmid', pars = pp, parallel = FALSE))’
 
->>>> eval(expression_nr. 214 )
+>>>> eval(expression_nr. 212 )
 		 =================
 
 > Sys.time()
 curr.fun: symbol Sys.time
-[1] "2021-05-25 13:15:49 EDT"
+[1] "2021-08-28 14:08:23 EDT"
  .. after ‘expression(Sys.time())’
 
->>>> eval(expression_nr. 215 )
+>>>> eval(expression_nr. 213 )
 		 =================
 
 > #------------------------------------------------------- 
@@ -3101,28 +3088,28 @@ curr.fun: symbol Sys.time
 curr.fun: symbol <-
  .. after ‘expression(i <- 'k')’
 
->>>> eval(expression_nr. 216 )
+>>>> eval(expression_nr. 214 )
 		 =================
 
 > parset <- mods2[['h']][['coef']]
 curr.fun: symbol <-
  .. after ‘expression(parset <- mods2[['h']][['coef']])’
 
->>>> eval(expression_nr. 217 )
+>>>> eval(expression_nr. 215 )
 		 =================
 
 > parset <- parset[!names(parset) %in% names(fixed)]
 curr.fun: symbol <-
  .. after ‘expression(parset <- parset[!names(parset) %in% names(fixed)])’
 
->>>> eval(expression_nr. 218 )
+>>>> eval(expression_nr. 216 )
 		 =================
 
 > datset <- d2
 curr.fun: symbol <-
  .. after ‘expression(datset <- d2)’
 
->>>> eval(expression_nr. 219 )
+>>>> eval(expression_nr. 217 )
 		 =================
 
 > # ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -3140,7 +3127,7 @@ curr.fun: symbol <-
 curr.fun: symbol print
  .. after ‘expression(print(parset))’
 
->>>> eval(expression_nr. 220 )
+>>>> eval(expression_nr. 218 )
 		 =================
 
 > # Echo dataset info
@@ -3148,14 +3135,14 @@ curr.fun: symbol print
 curr.fun: symbol <-
  .. after ‘expression(pvars <- gsub('\\.[rf][0-4]$', '', names(parset)))’
 
->>>> eval(expression_nr. 221 )
+>>>> eval(expression_nr. 219 )
 		 =================
 
 > pvars <- pvars[pvars != 'int']
 curr.fun: symbol <-
  .. after ‘expression(pvars <- pvars[pvars != 'int'])’
 
->>>> eval(expression_nr. 222 )
+>>>> eval(expression_nr. 220 )
 		 =================
 
 > dfsumm(datset[, pvars])
@@ -3189,7 +3176,7 @@ Sorted                   FALSE          FALSE
 curr.fun: symbol dfsumm
  .. after ‘expression(dfsumm(datset[, pvars]))’
 
->>>> eval(expression_nr. 223 )
+>>>> eval(expression_nr. 221 )
 		 =================
 
 > # Look for problem observations before running
@@ -3197,7 +3184,7 @@ curr.fun: symbol dfsumm
 curr.fun: symbol <-
  .. after ‘expression(pr <- ALFAM2mod(datset, app.name = 'tan.app', time.name = 'ct', group = 'pmid', pars = parset, parallel = FALSE))’
 
->>>> eval(expression_nr. 224 )
+>>>> eval(expression_nr. 222 )
 		 =================
 
 > # Should be no NA
@@ -3206,23 +3193,23 @@ integer(0)
 curr.fun: symbol print
  .. after ‘expression(print(which(is.na(pr$e))))’
 
->>>> eval(expression_nr. 225 )
+>>>> eval(expression_nr. 223 )
 		 =================
 
 > # Parameter estimation (timed)
 > Sys.time()
 curr.fun: symbol Sys.time
-[1] "2021-05-25 13:15:51 EDT"
+[1] "2021-08-28 14:08:25 EDT"
  .. after ‘expression(Sys.time())’
 
->>>> eval(expression_nr. 226 )
+>>>> eval(expression_nr. 224 )
 		 =================
 
 > mods2[[i]] <- list()
 curr.fun: symbol <-
  .. after ‘expression(mods2[[i]] <- list())’
 
->>>> eval(expression_nr. 227 )
+>>>> eval(expression_nr. 225 )
 		 =================
 
 > mods2[[i]][['mod']] <- m <- optim(par = parset, fn = function(par) 
@@ -3231,15 +3218,15 @@ curr.fun: symbol <-
 0.44185  0.4963  0.47885  0.44239  0.54246  0.44711  3.0198  0.50356  0.45066  0.53831  0.54465  0.4936  0.52406  0.44136  0.44537  0.44995  0.45187  0.82803  0.78241  2.8098  0.68949  1.9994  0.56198  1.2792  0.47739  0.62872  0.49678  0.48691  0.45866  0.49316  0.44946  0.46659  0.44936  0.54732  0.46499  0.51084  0.46439  0.45701  0.44266  0.48102  0.44294  0.44978  0.43351  0.68073  0.44683  0.44731  0.43323  0.44501  0.4301  0.45061  0.43564  0.43065  0.43048  0.43408  0.42973  0.45251  0.43529  0.44558  0.43352  0.46179  0.43478  0.42993  0.42865  0.47985  0.43542  0.43563  0.4308  0.44601  0.43065  0.43132  0.42784  0.42915  0.42769  0.43053  0.42781  0.43208  0.42821  0.44295  0.42951  0.43045  0.42671  0.43541  0.42983  0.43454  0.42981  0.43271  0.42872  0.43079  0.42789  0.42879  0.42762  0.42797  0.42714  0.42934  0.42778  0.42161  0.42952  0.43141  0.42718  0.42726  0.42643  0.42596  0.42589  0.42551  0.42547  0.42707  0.42583  0.42678  0.42595  0.42523  0.42526  0.42869  0.42652  0.42563  0.42541  0.42911  0.42602  0.42655  0.42569  0.42454  0.42486  0.42589  0.42512  0.42474  0.42464  0.42452  0.42463  0.4235  0.42413  0.42442  0.42448  0.42375  0.42404  0.42348  0.42382  0.42316  0.42369  0.42295  0.42343  0.42243  0.42312  0.42272  0.42302  0.42172  0.42255  0.42109  0.42103  0.42103  0.42176  0.42084  0.42287  0.42041  0.42261  0.42052  0.42095  0.41997  0.42144  0.42114  0.42024  0.4211  0.42014  0.42054  0.42017  0.42096  0.42012  0.4218  0.42038  0.42131  0.42018  0.42097  0.42004  0.42042  0.4199  0.42176  0.42037  0.42176  0.4206  0.41933  0.42056  0.42078  0.42011  0.42091  0.42012  0.42031  0.41989  0.42025  0.41989  0.42021  0.41986  0.41991  0.41972  0.41948  0.41956  0.4199  0.41967  0.41981  0.41965  0.41972  0.41964  0.41949  0.41951  0.41991  0.41972  0.41945  0.41949  0.41996  0.41964  0.41952  0.41943  0.41919  0.41913  0.41999  0.41958  0.4194  0.41934  0.41907  0.41889  0.41904  0.41914  0.41892  0.41907  0.41906  0.4191  0.41903  0.41907  0.419  0.41905  0.41876  0.41861  0.41861  0.41841  0.41868  0.41876  0.41844  0.41863  0.41897  0.41875  0.41837  0.41858  0.4187  0.41862  0.41832  0.41863  0.41849  0.41841  0.41871  0.41853  0.41837  0.41838  0.4182  0.41839  0.4181  0.4182  0.41789  0.41775  0.41812  0.41812  0.41812  0.41809  0.41846  0.41821  0.41766  0.41732  0.41796  0.41795  0.41787  0.4179  0.41796  0.41791  0.41798  0.4179  0.41775  0.41781  0.41845  0.41805  0.4175  0.41767  0.41748  0.41764  0.41807  0.41781  0.41743  0.41757  0.41753  0.4176  0.41747  0.41753  0.41758  0.41755  0.41756  0.41752  0.41728  0.41727  0.41733  0.41737  0.41719  0.4171  0.4174  0.41734  0.41734  0.4173  0.41726  0.41726  0.4171  0.41715  0.41712  0.41716  0.41704  0.41722  0.41702  0.41698  0.41707  0.41707  0.41684  0.41669  0.41689  0.41695  0.41739  0.41712  0.41681  0.41689  0.41685  0.41689  0.41671  0.41681  0.41699  0.41687  0.41704  0.41691  0.41673  0.41677  0.41687  0.41682  0.41667  0.41675  0.41716  0.4169  0.4166  0.41651  0.41682  0.41674  0.41667  0.41666  0.4167  0.41668  0.41654  0.4166  0.41681  0.4167  0.41661  0.41662  0.41659  0.4166  0.41654  0.41657  0.4165  0.41655  0.41658  0.41656  0.41654  0.41654  0.41685  0.41665  0.41646  0.41643  0.41643  0.41648  0.41647  0.41648  0.4164  0.41635  0.4164  0.41643  0.41634  0.41633  0.41624  0.41611  0.41626  0.41631  0.41636  0.41634  0.41637  0.41632  0.41629  0.4163  0.41624  0.41626  0.41647  0.41635  0.41623  0.41624  0.41629  0.41626  0.41629  0.41624  0.4161  0.41604  0.41607  0.41613  0.4162  0.41616  0.41626  0.41619  0.41617  0.41615  0.41624  0.41617  0.41612  0.41613  0.41608  0.4161  0.4162  0.41614  0.41607  0.41609  0.41618  0.41612  0.4161  0.41609  0.41601  0.41598  0.41598  0.41602  0.41602  0.41603  0.41593  0.41587  0.41592  0.41597  0.41596  0.41597  0.41588  0.41593  0.41588  0.41592  0.41593  0.41593  0.41589  0.41591  0.41585  0.41586  0.41603  0.41595  0.41581  0.41576  0.41586  0.41586  0.41574  0.41564  0.41587  0.41583  0.41574  0.41578  0.41566  0.41574  0.41571  0.41575  0.41583  0.41579  0.41573  0.41574  0.41567  0.41571  0.41566  0.4157  0.41577  0.41574  0.41562  0.41555  0.41568  0.41568  0.4157  0.41568  0.41557  0.41563  0.41552  0.41539  0.41552  0.41557  0.41546  0.41554  0.41549  0.41554  0.41547  0.41553  0.41548  0.41552  0.41541  0.41548  0.41545  0.41548  0.41537  0.41529  0.41532  0.4154  0.41533  0.41539  0.41538  0.4154  0.4153  0.41535  curr.fun: symbol <-
  .. after ‘expression(mods2[[i]][['mod']] <- m <- optim(par = parset, fn = function(par) ’‘                                        resCalcOptim(p = par, dat = datset, to = 'er', app.name = 'tan.app', group = 'pmid',’‘                                                method = 'TAE',  weights = datset$weightc, parallel = FALSE), ’‘                                  method = 'Nelder-Mead'))’
 
->>>> eval(expression_nr. 228 )
+>>>> eval(expression_nr. 226 )
 		 =================
 
 > Sys.time()
 curr.fun: symbol Sys.time
-[1] "2021-05-25 13:32:34 EDT"
+[1] "2021-08-28 14:26:11 EDT"
  .. after ‘expression(Sys.time())’
 
->>>> eval(expression_nr. 229 )
+>>>> eval(expression_nr. 227 )
 		 =================
 
 > # Get pars
@@ -3247,7 +3234,7 @@ curr.fun: symbol Sys.time
 curr.fun: symbol <-
  .. after ‘expression(mods2[[i]][['coef']] <- pp <- m$par)’
 
->>>> eval(expression_nr. 230 )
+>>>> eval(expression_nr. 228 )
 		 =================
 
 > # Echo pars and other model info
@@ -3263,7 +3250,7 @@ curr.fun: symbol <-
 curr.fun: symbol print
  .. after ‘expression(print(pp))’
 
->>>> eval(expression_nr. 231 )
+>>>> eval(expression_nr. 229 )
 		 =================
 
 > print(m)
@@ -3293,7 +3280,7 @@ NULL
 curr.fun: symbol print
  .. after ‘expression(print(m))’
 
->>>> eval(expression_nr. 232 )
+>>>> eval(expression_nr. 230 )
 		 =================
 
 > # Export pars
@@ -3301,7 +3288,7 @@ curr.fun: symbol print
 curr.fun: symbol write.csv
  .. after ‘expression(write.csv(pp, paste0('../output/pars_', i, '.csv')))’
 
->>>> eval(expression_nr. 233 )
+>>>> eval(expression_nr. 231 )
 		 =================
 
 > # Run model for all observations using parameter estimates
@@ -3310,12 +3297,12 @@ curr.fun: symbol write.csv
 curr.fun: symbol <-
  .. after ‘expression(mods2[[i]][['pred']] <- pr <- ALFAM2mod(datset, app.name = 'tan.app', time.name = 'ct', time.incorp = 'time.incorp', ’‘                group = 'pmid', pars = pp, parallel = FALSE))’
 
->>>> eval(expression_nr. 234 )
+>>>> eval(expression_nr. 232 )
 		 =================
 
 > Sys.time()
 curr.fun: symbol Sys.time
-[1] "2021-05-25 13:32:36 EDT"
+[1] "2021-08-28 14:26:13 EDT"
  .. after ‘expression(Sys.time())’
 
 > #------------------------------------------------------- 
