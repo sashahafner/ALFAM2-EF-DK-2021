@@ -1,4 +1,4 @@
-# Determination of pH parameters and uncertainty
+# Determination of pH parameters
 # S. Hafner
 
 rm(list = ls())
@@ -14,6 +14,5 @@ sink('../logs/calibration.txt')
   source('cal_acid.R', echo = TRUE)
   warnings()
 sink()
-render('var.Rmd', output_dir = '../reports')
 render('boot.Rmd', output_dir = '../reports')
 source('plots.R')
