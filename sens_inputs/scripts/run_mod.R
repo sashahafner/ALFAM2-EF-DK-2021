@@ -8,4 +8,4 @@ pru <- ALFAM2mod(dat, app.name = 'tan.app', time.name = 'ct', time.incorp = 'tim
 
 # Run with par set 1 from paper
 pr1 <- ALFAM2mod(dat, app.name = 'tan.app', time.name = 'ct', time.incorp = 'time.incorp', 
-                group = 'sida', parallel = FALSE, add.incorp.rows = TRUE)
+                group = 'sida', pars = ALFAM2pars01, parallel = FALSE, add.incorp.rows = TRUE)
