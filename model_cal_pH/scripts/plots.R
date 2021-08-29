@@ -20,7 +20,7 @@ ggsave('../plots/curves.png', height = 6, width = 7)
 ggplot(d3, aes(e.rel, er.pred, colour = man.ph, group = pmid)) +
   facet_wrap(~ uexper) +
   geom_abline(intercept = 0, slope = 1, colour = 'gray65') +
-  geom_line() +
+  geom_line()
 ggsave('../plots/bivar.png', height = 6, width = 7)
 
 ggplot(acid.pars, aes(int.r1 + int.r3, fill = uexper)) +
