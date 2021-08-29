@@ -19,6 +19,7 @@ Calculation of emission factors, i.e., the primary product of this work.
 Model parameters are read from `model_cal` directory.
 Emission factors are in `emission_factors/output`.
 Results presented in Section 4.2 of the report.
+Files in `output` generally have names that match objects in the report.
 
 * functions
 Definition of some functions used in other directories.
@@ -30,7 +31,7 @@ Several alternatives are explored.
 Incorporation parameter values are calculated here using a subset of experiments.
 Parameters used for calculation of emission factors are in `output/pars_set2.csv`.
 May take hours to run.
-**Table A9.1 . . .NTS see fit_summ2.csv, but 457 not 449, check ALFAM(1)**
+Model performance statistics in `output/fit_summ2.csv` are given in Table A9.1.
 
 * `model_cal_pH`
 Calibration of ALFAM2 model with respect to pH only.
@@ -40,6 +41,7 @@ Emission data used here include some not yet in ALFAM2 database (see `model_cal_
 * `model_fit`
 Evaluation of model fit based on all calibration data.
 Both graphical (see `plots`) and numeric (see `output`).
+Table A9.2 in report is from `output/fit_summ.csv`.
 
 * `model_structure`
 Exploration of importance of r3 parameter.
@@ -66,12 +68,23 @@ Resulting means in `output/weather_means.csv` are given in Table 4.
 Evaluation of effect of weather resolution (fixed means vs. 3 hour means) on calculated emission.
 Results presented in Appendix 6.
 
+* `examples`
+Example calculations as described in Appendix 11 in the report.
+
+* `software_versions`
+See the file `software_versions.txt` for a record of the package and R versions used for calculations.
+Run `main.R` to create a new version (although this generally won't make sense to do).
+
 # Running scripts
 To calculate emission factors, run `emission_factors/main.R` using [R](https://www.r-project.org/). 
 For the complete calculation of emission factors and all supporting analyses can be repeated by running the main.R script withing the scripts subdirectory within each of the directories listed above (except database and functions). 
 Results are written to files in the output and plots subdirectories.
 See the logs subdirectory where relevant for ALFAM2 package version, or pars.txt to check parameter values.
 Other required packages are listed in the packages.R scripts.
+Unfortunately, it is possible that these scripts will not work (or will work differently) with future versions of R or the add-on packages used here.
+All calculations were originally carried out using R version 3.6.3 and ALFAM2 version 0.3.2, but scripts were later updated to work with R v4.1.1 (change in default for `stringsAsFactors` argument in `read.csv()` was addressed) and ALFAM2 v0.5.0 (change in default parameter values was addressed).
+If necessary, see `software_versions/software_versions.txt`.
+
 
 # More information
 For more information on the ALFAM2 model and project see [www.alfam.dk](www.alfam.dk).
