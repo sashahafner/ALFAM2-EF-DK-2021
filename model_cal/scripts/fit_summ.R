@@ -2,6 +2,7 @@
 
 d.pred$ct.grp <- cut(d.pred$ct, breaks = 0:100 * 24)
 
+d.pred.168 <- subset(d.pred.168, !is.na(er.pred))
 fsumm <- as.data.frame(summarise(group_by(d.pred.168, par.set, app.mthd), n.obs = length(er), MBE = mbe(er, er.pred), MAE = mae(er, er.pred), RMSE = rmse(er, er.pred), ME = me(er, er.pred)))
 fsumm <- rounddf(fsumm, 3)
 

@@ -31,14 +31,17 @@ da1$app.mthd.os <- FALSE
 da1$app.mthd.cs <- FALSE 
 da1$app.mthd.pi <- FALSE 
 
+# All predictions for trailing hose
 dd <- ALFAM1mod(da1, time.name = 'ct', group = 'pmid')
 dd$par.set <- 'EF 2008'
 
 # Multiply by fixed reductions or increases
 dd$er[da1$app.mthd == 'bc'] <- 1.7 * dd$er[da1$app.mthd == 'bc']
 dd$er[da1$app.mthd == 'os'] <- 0.75 * dd$er[da1$app.mthd == 'os']
-dd$er[da1$app.mthd == 'ts'] <- NA
+# Leave trailing shoe at trailing hose level for fit stats
+##dd$er[da1$app.mthd == 'ts'] <- NA
 dd$er[da1$app.mthd == 'cs'] <- 0.05 * dd$er[da1$app.mthd == 'cs']
+# Pressurized injection should not be present anyway
 dd$er[da1$app.mthd == 'pi'] <- NA
 
 d.pred <- rbindf(d.pred, dd)
