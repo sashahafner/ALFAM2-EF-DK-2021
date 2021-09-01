@@ -37,7 +37,7 @@ pars <- c(int.f0 = -0.605683377135473,
           incorp.deep.r3 = -1.2656956200405)
 
 # Create data frame with inputs
-dat <- data.frame(id = c('039-2010', '003-2010', '024-2010', '111-2010', '169-2010'),
+dat <- data.frame(id = c('039-2010', '004-2010', '024-2010', '111-2010', '169-2010'),
                   ct = 168,
                   man.source.pig = c(TRUE, FALSE, FALSE, FALSE, TRUE),
                   app.rate.ni = c(0, 0, 30, 30, 30),
