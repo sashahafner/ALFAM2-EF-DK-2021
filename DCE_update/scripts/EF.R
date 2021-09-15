@@ -1,4 +1,4 @@
-# Calculation of emission factors for Table 3 in DCE EF memo Nov 2020
+# Example calculation of emission factors
 
 # Package
 library(ALFAM2)
@@ -39,28 +39,21 @@ pars <- c(int.f0 = -0.605683377135473,
           incorp.deep.r3 = -1.2656956200405)
 
 # Create data frame with inputs
-dat <- as.data.frame(
-  data.frame(id = 1:17,
-                  ct = 168,
-                  man.source.pig = c(TRUE, FALSE, FALSE, FALSE, TRUE),
-                  app.rate.ni = c(0, 0, 30, 30, 30),
-                  man.dm = c(3.9, 6.5, 6.5, 5.1, 3.9),
-                  man.ph = c(7.2, 7.0, 7.0, 7.9, 6.0),
-                  app.mthd.cs = c(TRUE, FALSE, FALSE, FALSE, FALSE),
-                  app.mthd.os = c(FALSE, TRUE, FALSE, FALSE, FALSE),
-                  app.mthd.bc = c(FALSE, FALSE, FALSE, TRUE, FALSE),
-                  incorp.deep = c(FALSE, FALSE, TRUE, FALSE, FALSE),
-                  t.incorp = c(NA, NA, 4, NA, NA),
-                  air.temp = c(4.9, 8.5, 16.9, 16.6, 14.6),
-                  wind.2m = c(4.02, 3.91, 3.18, 3.22, 3.45),
-                  rain.rate = 0.09,
-                  tan.app = 100)
+dat <- as.data.frame(read_xlsx('../inputs/inputs.xlsx', sheet = 1))
+dat$ct <- 168
+dat$rain.rate <- 0.09
+dat$tan.app <- 100
+dat$app.rate.ni <- ifelse(grepl('injection$', dat$app.mthd), 0, 30)
+dat$app.mthd.cs <- ifelse(dat$app.mthd == 'Closed slot injection', TRUE, FALSE)
+dat$app.mthd.os <- ifelse(dat$app.mthd == 'Open slot injection', TRUE, FALSE)
+dat$man.source.pig <- ifelse(dat$man.source == 'Pig', TRUE, FALSE)
 
-
+head(dat)
 preds <- ALFAM2mod(dat, pars = pars, app.name = 'tan.app', time.name = 'ct', 
-                   time.incorp = 't.incorp', group = 'id', warn = TRUE)
+                   group = 'id', warn = TRUE)
 
-preds
 
-write.csv(preds, 'example_EF_output.csv', row.names = FALSE)
-write.csv(rounddf(preds, 2, func = signif), 'example_EF_output_rounded.csv', row.names = FALSE)
+dat$EF <- signif(100 * preds$er, 2)
+
+write.csv(preds, 'preds.csv', row.names = FALSE)
+write.csv(dat, 'dat.csv', row.names = FALSE)
