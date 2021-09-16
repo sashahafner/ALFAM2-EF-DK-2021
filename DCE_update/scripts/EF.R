@@ -47,13 +47,18 @@ dat$app.rate.ni <- ifelse(grepl('injection$', dat$app.mthd), 0, 30)
 dat$app.mthd.cs <- ifelse(dat$app.mthd == 'Closed slot injection', TRUE, FALSE)
 dat$app.mthd.os <- ifelse(dat$app.mthd == 'Open slot injection', TRUE, FALSE)
 dat$man.source.pig <- ifelse(dat$man.source == 'Pig', TRUE, FALSE)
+dat$incorp.deep <- ifelse(dat$incorp == 'Deep', TRUE, FALSE)
 
-head(dat)
-preds <- ALFAM2mod(dat, pars = pars, app.name = 'tan.app', time.name = 'ct', 
+preds <- ALFAM2mod(dat, pars = pars, app.name = 'tan.app', time.name = 'ct', time.incorp = 't.incorp',
                    group = 'id', warn = TRUE)
+
+## Check with default pars (gives identical results)
+#preds <- ALFAM2mod(dat, app.name = 'tan.app', time.name = 'ct', time.incorp = 't.incorp',
+#                   group = 'id', warn = TRUE)
 
 
 dat$EF <- signif(100 * preds$er, 2)
+dat$flag <- ifelse(dat$EF.report != dat$EF, 'Check', '')
 
-write.csv(preds, 'preds.csv', row.names = FALSE)
-write.csv(dat, 'dat.csv', row.names = FALSE)
+write.csv(preds, '../output/preds.csv', row.names = FALSE)
+write.csv(dat, '../output/DCE_EFs.csv', row.names = FALSE)
