@@ -111,6 +111,11 @@ plot(e.rel.final ~ factor(pmid), data = subset(ds1, app.mthd == 'cs'))
 
 Problem is 1183.  
 
+Crop and crop height.
 
-
+```{r}
+table(ds2$crop)
+ds2$crop.z[is.na(ds2$crop.z)] <- 0
+quantile(ds2$crop.z)
+```
 
