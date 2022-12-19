@@ -18,6 +18,7 @@ sink()
 
 source('count_tables.R')
 render('explore.Rmd', output_dir = '../reports')
+render('var_ranges.Rmd', output_dir = '../reports')
 
 sink('../logs/calibration.txt')
   source('cal_incorp.R', echo = TRUE, verbose = TRUE, max.deparse.length = 300)

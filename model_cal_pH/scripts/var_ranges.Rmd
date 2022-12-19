@@ -1,0 +1,28 @@
+---
+title: Ranges in predictor variables
+author: Sasha D. Hafner
+output: pdf_document
+date: Dec 2022
+---
+
+Main calibration set:
+```{r}
+table(ds3$country, ds3$app.mthd)
+dim(ds3)
+dim(d3)
+```
+
+Ranges etc.
+
+```{r}
+dfsumm(ds3[, c('man.dm', 'man.ph')])
+dfsumm(d3[, c('air.temp', 'wind.2m', 'ct')])
+```
+
+Quantiles.
+
+
+```{r}
+quantile(ds3$man.ph, 0:20 / 20, na.rm = TRUE)
+```
+
