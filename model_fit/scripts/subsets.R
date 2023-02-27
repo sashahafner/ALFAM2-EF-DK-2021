@@ -14,3 +14,5 @@ d4 <- subset(d, pmid %in% pmid.cal4)
 # 2 = main, 3 = pH, 4 = incorporation
 d234 <- subset(d, pmid %in% unique(c(pmid.cal2, pmid.cal2cs, pmid.cal3, pmid.cal4)))
 d234$set <- ifelse(d234$incorp != 'none', 'Incorporation', ifelse(d234$acid, 'Acidification', 'Neither'))
+
+ds234 <- subset(ds, pmid %in% unique(c(pmid.cal2, pmid.cal2cs, pmid.cal3, pmid.cal4))) 

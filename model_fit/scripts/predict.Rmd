@@ -18,3 +18,13 @@ names(preds) <- paste0(names(preds), '.pred')
 d.pred <- cbind(d234, preds[, -1:-3])
 d.pred$error.er <- d.pred$er.pred - d.pred$er
 ```
+
+And set 1
+
+```{r}
+d234$rain.cum[is.na(d234$rain.cum)] <- 0
+preds1 <- ALFAM2mod(d234, pars = ALFAM2::ALFAM2pars01, app.name = 'tan.app', time.name = 'ct', time.incorp = 'time.incorp', group = 'pmid', warn = TRUE)
+names(preds1) <- paste0(names(preds1), '.pred1')
+d.pred <- cbind(d.pred, preds1[, -1:-3])
+d.pred$error.er1 <- d.pred$er.pred1 - d.pred$er
+```

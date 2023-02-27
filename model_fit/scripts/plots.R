@@ -78,3 +78,33 @@ ggplot(d.pred.incorp, aes(ct, er, colour = incorp, group = pmid)) +
   theme(legend.position = 'top') +
   guides(colour = guide_legend(nrow = 1))
 ggsave('../plots/emis_incorp.png', height = 7, width = 12)
+
+dd <- merge(d.pred.168, ds234[, c('pmid', 'air.temp.24')], by = 'pmid')
+ggplot(dd, aes(air.temp.24, 100 * error.er, colour = set)) + 
+  geom_smooth(method = lm, se = FALSE) +
+  geom_point() +
+  facet_wrap(~ app.mthd.nm, scale = 'free', ncol = 2) +
+  theme(legend.position = 'top') +
+  labs(x = 'First 24 h temperature (deg. C)', y = 'Model error in 168 h cum. emission (% applied TAN)',
+       fill = '') 
+ggsave('../plots/error_v_temp_ps2.png', height = 6, width = 6)
+
+ggplot(dd, aes(air.temp.24, 100 * error.er1, colour = set)) + 
+  geom_smooth(method = lm, se = FALSE) +
+  geom_point() +
+  facet_wrap(~ app.mthd.nm, scale = 'free', ncol = 2) +
+  theme(legend.position = 'top') +
+  labs(x = 'First 24 h temperature (deg. C)', y = 'Model error in 168 h cum. emission (% applied TAN)',
+       fill = '') 
+ggsave('../plots/error_v_temp_ps1.png', height = 6, width = 6)
+
+ggplot(dd, aes(air.temp.24, e.rel, colour = set)) + 
+  geom_smooth(method = lm, se = FALSE) +
+  geom_point() +
+  facet_wrap(~ app.mthd.nm, scale = 'free', ncol = 2) +
+  theme(legend.position = 'top') +
+  labs(x = 'First 24 h temperature (deg. C)', y = 'Model error in 168 h cum. emission (% applied TAN)',
+       fill = '') 
+ggsave('../plots/emis_v_temp.png', height = 6, width = 6)
+
+
