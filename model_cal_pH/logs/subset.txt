@@ -51,6 +51,34 @@
 205 210 211 300 
  28  16  98  24 
 
+> table(ds3$acid)
+
+FALSE  TRUE 
+   73    93 
+
+> table(ds3$meas.tech2)
+
+micro met        wt       cps 
+       36        32        98 
+
+> table(paste(ds3$inst, ds3$institution, ds3$country), ds3$acid)
+         
+          FALSE TRUE
+  205  DK    16   12
+  210  NL     7    9
+  211  DK    50   48
+  300  DK     0   24
+  NA  NA      0    0
+
+> table(paste(ds3$inst, ds3$institution, ds3$country), ds3$meas.tech2)
+         
+          micro met wt cps
+  205  DK        28  0   0
+  210  NL         8  8   0
+  211  DK         0  0  98
+  300  DK         0 24   0
+  NA  NA          0  0   0
+
 > # NTS: Do not limit duration
 > ### Limit to 72 hours (<= 73 hr)
 > ##d3 <- d[d$pmid %in% pmid.keep & d$ct <= 73 & d$ct >= 0, ]
@@ -62,14 +90,22 @@
 
  3311 rows and 9 columns
  3299 unique rows
-                     e.int app.mthd  man.dm man.source air.temp wind.2m    till  incorp      crop
-Class              numeric   factor numeric     factor  numeric numeric numeric  factor    factor
-Minimum             -0.362       bc     1.4        cat    -3.34   0.928       0    deep bare soil
-Maximum               32.8       ts    10.8     cattle     25.8    7.65       1 shallow   stubble
-Mean                 0.678     bsth    6.57        pig     6.26    3.75  0.0588    none bare soil
-Unique (excld. NA)    3208        2      35          5     2022     214       2       2         4
-Missing values           0        0       0          0       80    2438    2358       0         0
-Sorted               FALSE    FALSE   FALSE      FALSE    FALSE   FALSE   FALSE   FALSE     FALSE
+                     e.int app.mthd  man.dm man.source air.temp wind.2m    till
+Class              numeric   factor numeric     factor  numeric numeric numeric
+Minimum             -0.362       bc     1.4        cat    -3.34   0.928       0
+Maximum               32.8       ts    10.8     cattle     25.8    7.65       1
+Mean                 0.678     bsth    6.57        pig     6.26    3.75  0.0588
+Unique (excld. NA)    3208        2      35          5     2022     214       2
+Missing values           0        0       0          0       80    2438    2358
+Sorted               FALSE    FALSE   FALSE      FALSE    FALSE   FALSE   FALSE
+                    incorp      crop
+Class               factor    factor
+Minimum               deep bare soil
+Maximum            shallow   stubble
+Mean                  none bare soil
+Unique (excld. NA)       2         4
+Missing values           0         0
+Sorted               FALSE     FALSE
 
 > # Looks fine for these pars
 > 
@@ -95,17 +131,23 @@ Sorted               FALSE    FALSE   FALSE      FALSE    FALSE   FALSE   FALSE 
 
 > table(ds3$inst, ds3$date.start)
      
-      1990-06-12 1990-06-26 1991-04-16 1991-05-14 1991-06-11 1991-07-09 1992-05-19 2010-04-22 2010-05-04 2010-05-18
-  205          0          0          0          0          0          0          0          4          6          8
-  210          2          2          2          2          2          2          4          0          0          0
-  211          0          0          0          0          0          0          0          0          0          0
-  300          0          0          0          0          0          0          0          0          0          0
-     
-      2010-06-02 2010-06-15 2014-04-01 2014-04-03 2014-04-30 2014-05-01
-  205          4          6          0          0          0          0
-  210          0          0          0          0          0          0
-  211          0          0         10         40         40          8
+      1990-06-12 1990-06-26 1991-04-16 1991-05-14 1991-06-11 1991-07-09
+  205          0          0          0          0          0          0
+  210          2          2          2          2          2          2
+  211          0          0          0          0          0          0
   300          0          0          0          0          0          0
+     
+      1992-05-19 2010-04-22 2010-05-04 2010-05-18 2010-06-02 2010-06-15
+  205          0          4          6          8          4          6
+  210          4          0          0          0          0          0
+  211          0          0          0          0          0          0
+  300          0          0          0          0          0          0
+     
+      2014-04-01 2014-04-03 2014-04-30 2014-05-01
+  205          0          0          0          0
+  210          0          0          0          0
+  211         10         40         40          8
+  300          0          0          0          0
 
 > pmid.cal3 <- pmid.keep
 

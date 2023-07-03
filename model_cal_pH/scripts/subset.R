@@ -37,6 +37,10 @@ pmid.keep <- ds3$pmid
 
 table(ds3$country)
 table(ds3$inst)
+table(ds3$acid)
+table(ds3$meas.tech2)
+table(paste(ds3$inst, ds3$institution, ds3$country), ds3$acid)
+table(paste(ds3$inst, ds3$institution, ds3$country), ds3$meas.tech2)
 
 # NTS: Do not limit duration
 ### Limit to 72 hours (<= 73 hr)
